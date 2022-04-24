@@ -10,7 +10,7 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
 
 ---
 
-![houdini](02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
+![houdini](docs/02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
 
 ## Syllabus
 
