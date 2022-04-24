@@ -2,7 +2,7 @@ title: " "
 remote_theme: pmarsceill/just-the-docs
 search_enabled: false
 
-color_scheme: dark
+# color_scheme: dark
 
 # Back to top link
 back_to_top: true
