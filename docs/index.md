@@ -9,10 +9,6 @@ has_children: false
 
 Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
 
-Prof. Dr. Lena Gieseke  
-l.gieseke@filmuniversitaet.de  
-Film University Babelsberg KONRAD WOLF
-
 ---
 
 ![houdini](02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
