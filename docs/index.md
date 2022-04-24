@@ -5,27 +5,30 @@ nav_order: 1
 has_children: false
 ---
 
-**Procedural Generation and Simulation**
+# Procedural Generation and Simulation**
 
-Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsberg KONRAD WOLF
+Prof. Dr. Lena Gieseke  
+l.gieseke@filmuniversitaet.de  
+Film University Babelsberg KONRAD WOLF
 
 ---
 
-![houdini](02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
+![houdini](../02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
 
 ## Syllabus
 
-* [Syllabus](#syllabus)
-* [Learning Objectives](#learning-objectives)
-* [Time and Place](#time-and-place)
-* [Method of Instruction](#method-of-instruction)
-* [Schedule of Topics](#schedule-of-topics)
-* [Final Exercise](#final-exercise)
-* [Evaluation](#evaluation)
-    * [Grading](#grading)
-    * [Criteria](#criteria)
-* [Materials](#materials)
-    * [Structure](#structure)
+* [Procedural Generation and Simulation**](#procedural-generation-and-simulation)
+    * [Syllabus](#syllabus)
+    * [Learning Objectives](#learning-objectives)
+    * [Time and Place](#time-and-place)
+    * [Method of Instruction](#method-of-instruction)
+    * [Schedule of Topics](#schedule-of-topics)
+    * [Final Exercise](#final-exercise)
+    * [Evaluation](#evaluation)
+        * [Grading](#grading)
+        * [Criteria](#criteria)
+    * [Materials](#materials)
+        * [Structure](#structure)
 
 This course introduces participants to procedural and simulation algorithms for 2D and 3D graphics. Focus lies on the creation of patterns and abstracted design. Topics are reflected from all sides: their underlying formal theories, their practical implementations as well as their design. Different implementation frameworks can be used, the course focuses on Houdini and GLSL.
 
