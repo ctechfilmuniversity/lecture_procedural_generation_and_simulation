@@ -1,6 +1,6 @@
-```diff
-- For the webpage view [go here](https://ctechfilmuniversity.github.io/lecture_procedural_generation_and_simulation/)
-```
+
+For the webpage view:
+https://ctechfilmuniversity.github.io/lecture_procedural_generation_and_simulation/
 
 ---
 
