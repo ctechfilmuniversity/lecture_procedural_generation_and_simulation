@@ -8,9 +8,7 @@ nav_exclude: true
 
 Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
 
----
-
-## Session 01
+# Session 01
 
 We will discuss this session on **Monday, May 2nd**.  
 
