@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Slides
-nav_order: 2
+nav_order: 3
 has_children: false
 ---
 
@@ -9,7 +9,4 @@ has_children: false
 
 In this section you find all slides for the course.
 
-* [Part 1](shader_ws2122_01_slides.html)
-* [Part 2](shader_ws2122_02_slides.html)
-* [Part 3](shader_ws2122_03_slides.html)
-* [Part 4](shader_ws2122_04_slides.html)
+* [Lecture 01](pgs_ss22_01_slides.html)

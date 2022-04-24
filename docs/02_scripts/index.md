@@ -1,15 +1,12 @@
 ---
 layout: default
-title: Slides
+title: Scripts
 nav_order: 2
 has_children: false
 ---
 
-# Slides
+# Scripts
 
-In this section you find all slides for the course.
+In this section you find all scripts for the course.
 
-* [Part 1](shader_ws2122_01_slides.html)
-* [Part 2](shader_ws2122_02_slides.html)
-* [Part 3](shader_ws2122_03_slides.html)
-* [Part 4](shader_ws2122_04_slides.html)
+* [Chapter 01 - Introduction](pgs_ss22_01_intro_script.md)
