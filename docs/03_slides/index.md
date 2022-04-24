@@ -11,6 +11,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ## Slides
 
-In this section you find all slides for the course.
-
 * [Lecture 01](pgs_ss22_01_slides.html)

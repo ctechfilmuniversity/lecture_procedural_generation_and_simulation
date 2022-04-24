@@ -11,6 +11,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ## Scripts
 
-In this section you find all scripts for the course.
-
 * [Chapter 01 - Introduction](pgs_ss22_01_intro_script.md)
