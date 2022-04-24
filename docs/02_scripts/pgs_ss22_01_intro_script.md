@@ -1,13 +1,21 @@
-**Procedural Generation and Simulation**
+---
+layout: default
+title: Exercise
+nav_exclude: true
+---
+
+# Procedural Generation and Simulation
 
 Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
 
+
 ---
 
-# Chapter 01 - Introduction
+## Chapter 01 - Introduction
 
 
-* [Chapter 01 - Introduction](#chapter-01---introduction)
+* [Procedural Generation and Simulation](#procedural-generation-and-simulation)
+    * [Chapter 01 - Introduction](#chapter-01---introduction)
     * [Topics](#topics)
     * [Learning Objectives](#learning-objectives)
     * [Pattern](#pattern)
