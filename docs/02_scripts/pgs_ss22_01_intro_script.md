@@ -33,8 +33,8 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
             * [Forms and Textures](#forms-and-textures)
             * [Geometric Forms](#geometric-forms)
             * [Summary of Artists](#summary-of-artists)
-        * [Pattern Generation](#pattern-generation)
-            * [Example](#example)
+    * [Pattern Generation](#pattern-generation)
+        * [Example](#example)
         * [History](#history)
             * [Academia](#academia)
             * [Demoscene](#demoscene)
@@ -562,7 +562,7 @@ A procedural approach stands in contrast to manual data creation, e.g. painting 
 
 Hence, you usually differentiate between *procedural* and *data-driven* approaches. Modern approaches are often hybrids of both.
 
-### Pattern Generation
+## Pattern Generation
 
 Question: *Why does it make sense to use procedural generation for pattern creation?*
 
@@ -570,7 +570,7 @@ To create pattern, be it natural or abstracted ones, procedural generation is a 
 
 An important but notoriously difficult aspect of using procedural generation for content creation is the *parametrization* of an algorithm. Ideally, a procedural representation should have intuitively understandable and expressive parameter with which a user can design the final result.
 
-#### Example
+### Example
 
 Remember?
 
