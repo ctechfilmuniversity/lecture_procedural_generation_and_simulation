@@ -24,9 +24,9 @@ Going through the scripts and answering the questions should take < 3h. If you n
 ## Chapter 01 - Introduction
 
 * Read [Chapter 01 - Introduction](../../02_scripts/pgs_ss22_01_intro_script.md)
-* [Questions 01 - Procedural Generation](pgs_ss22_01_questions.md##questions-01---procedural-generation)
-* [Questions 02 - Patterns](pgs_ss22_01_questions.md##questions-02---patterns)
-* [Questions 03 - Abstraction](pgs_ss22_01_questions.md##questions-03---abstraction)
+* [Questions 2 - Procedural Generation](pgs_ss22_01_questions.md#questions-2---procedural-generation)
+* [Questions 3 - Patterns](pgs_ss22_01_questions.md#questions-3---patterns)
+* [Questions 4 - Abstraction](pgs_ss22_01_questions.md#questions-4---abstraction)
 
 
 ---
@@ -36,6 +36,9 @@ Answer all questions directly in a copy of the `pgs_ss22_XX_questions.md` file a
 Submit your copy as `pgs_ss22_XX_questions_lastname.md` in your assignments folder in a separate folder for each session. I prefer only lower-case characters.
 
 For example: `assignments/gieseke/01/pgs_ss22_01_questions_gieseke.md`
+
+
+
 
 
 ---
