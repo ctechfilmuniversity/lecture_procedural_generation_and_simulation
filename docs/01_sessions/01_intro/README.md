@@ -12,15 +12,15 @@ Going through the scripts and answering the questions should take < 3h. If you n
 ## Syllabus
 
 * Read the [Syllabus](../../index.md).
-* [Questions 01 - Topics & Syllabus](#questions-01---topics--syllabus)
+* [Questions 01 - Topics & Syllabus](pgs_ss22_01_questions.md#questions-01---topics--syllabus)
 
 
 ## Chapter 01 - Introduction
 
 * Read [Chapter 01 - Introduction](../../02_scripts/pgs_ss22_01_intro_script.md)
-* [Questions 01 - Procedural Generation](#questions-01---procedural-generation)
-* [Questions 02 - Patterns](#questions-02---patterns)
-* [Questions 03 - Abstraction](#questions-03---abstraction)
+* [Questions 01 - Procedural Generation](pgs_ss22_01_questions.md##questions-01---procedural-generation)
+* [Questions 02 - Patterns](pgs_ss22_01_questions.md##questions-02---patterns)
+* [Questions 03 - Abstraction](pgs_ss22_01_questions.md##questions-03---abstraction)
 
 
 ---

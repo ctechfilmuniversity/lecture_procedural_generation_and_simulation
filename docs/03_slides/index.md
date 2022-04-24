@@ -5,7 +5,11 @@ nav_order: 3
 has_children: false
 ---
 
-# Slides
+# Procedural Generation and Simulation
+
+Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
+
+## Slides
 
 In this section you find all slides for the course.
 
