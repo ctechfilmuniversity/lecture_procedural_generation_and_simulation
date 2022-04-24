@@ -9,7 +9,7 @@ Going through the scripts and answering the questions should take < 3h. If you n
 
 ## Syllabus
 
-* Read the [Syllabus](../../README.md).
+* Read the [Syllabus](../../index.md).
 * [Questions 01 - Topics & Syllabus](#questions-01---topics--syllabus)
 
 
@@ -27,7 +27,7 @@ Answer all questions directly in a copy of the `pgs_ss22_XX_questions.md` file a
 
 Submit your copy as `pgs_ss22_XX_questions_lastname.md` in your assignments folder in a separate folder for each session. I prefer only lower-case characters.
 
-For example: `gieseke/01/pgs_ss22_01_questions_gieseke.md`
+For example: `assignments/gieseke/01/pgs_ss22_01_questions_gieseke.md`
 
 
 ---
