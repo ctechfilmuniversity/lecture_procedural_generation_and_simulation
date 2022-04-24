@@ -45,7 +45,7 @@ This course introduces participants to procedural and simulation algorithms for 
 
 ## Method of Instruction
 
-The class is conducted as lectures with exercises.
+The class is conducted as lectures with exercises. Attendance is not mandatory.
 
 ## Schedule of Topics  
 
@@ -120,7 +120,7 @@ Materials are structured as follows:
 * In [`Sessions`](01_sessions) you find a [folder](01_sessions/01_intro/) with an index for each week (session = week).
     * The [README.md](01_sessions/01_intro/README.md) in each session folder gives you an overview of all the readings, assignments, practical exercises, etc. that you have to do for that week - it is your todo list! I recommend to start your work with going through that file.
     * The [pgs_ss1_xx_questions.md](01_sessions/01/pgs_ss22_01_questions.md) files separate all tasks for which you have to write something. You should make a copy of that file and write and submit your answers as a copy of that file.
-* In [`Scripts`](/02_scripts) you find all scripts.
-* In [`Slides`](/02_scripts) you find all slides.
+* In [`Scripts`](02_scripts) you find all scripts.
+* In [`Slides`](03_slides) you find all slides.
 * In `assignments` you submit your work each week to the folder with your last name and a folder with the session index. You will submit all assignments to the same folder (the one with your last name).
 
