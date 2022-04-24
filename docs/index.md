@@ -5,7 +5,7 @@ nav_order: 1
 has_children: false
 ---
 
-# Procedural Generation and Simulation**
+# Procedural Generation and Simulation
 
 Prof. Dr. Lena Gieseke  
 l.gieseke@filmuniversitaet.de  
@@ -13,11 +13,11 @@ Film University Babelsberg KONRAD WOLF
 
 ---
 
-![houdini](../02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
+![houdini](02_scripts/img/01/houdini.png) [[Wiki: Harry Houdini]](https://en.wikipedia.org/wiki/Harry_Houdini)
 
 ## Syllabus
 
-* [Procedural Generation and Simulation**](#procedural-generation-and-simulation)
+* [Procedural Generation and Simulation](#procedural-generation-and-simulation)
     * [Syllabus](#syllabus)
     * [Learning Objectives](#learning-objectives)
     * [Time and Place](#time-and-place)
