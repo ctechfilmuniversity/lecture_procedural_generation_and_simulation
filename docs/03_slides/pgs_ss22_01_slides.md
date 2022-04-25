@@ -18,16 +18,18 @@ layout: false
 
 ## Today
 
-* Introduction 
-
 --
-* Course Setup
+
+* Introduction 
 
 --
 * Pattern
 
 --
 * Procedural Generation
+
+--
+* Course Setup
 
 ---
 template: inverse
@@ -615,6 +617,8 @@ Please note, that these images are not necessarily done with Houdini. Here, it i
 
 ## Forms and Textures
 
+--
+
 <img src="img/01/cgi_05a.jpg" alt="cgi_05a" style="width:60%;">  
 [[Lukas Vojir]](https://www.instagram.com/lukasvojir/)  
 
@@ -650,6 +654,8 @@ Please note, that these images are not necessarily done with Houdini. Here, it i
 .header[Abstracted CGI]
 
 ## Geometric Forms
+
+--
 
 <img src="img/01/cgi_11.jpg" alt="cgi_11" style="width:80%;">  
 [[Chris Bjerne]](https://www.instagram.com/chris_bjerre/?hl=de)  
