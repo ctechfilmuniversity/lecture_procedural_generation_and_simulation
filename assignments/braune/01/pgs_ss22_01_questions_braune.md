@@ -48,7 +48,6 @@ Write for one of your pattern images a generating algorithm in pseudo-code or co
 
 As an exercise to see and understand the environment around you (and to have some fun 😊), try to find at least two faces. Link all images in this file.
 
-![faces_around_us](img/faces.png)
 
 
 
@@ -60,10 +59,21 @@ Chose one "traditional" painting, which is inspirational to you. The image can c
 
 Explain briefly what you like about the painting and how it might inspire you for your own work.
 
+![Monet, Soleil Levant](img/Monet_Painting.jpg)
+[Monet, Soleil Levant](https://en.wikipedia.org/wiki/Impressionism#/media/File:Claude_Monet,_Impression,_soleil_levant.jpg)
+
+I find the impressionistic painting from Monet interesting, because it seems to have alot of detail, even though the single brush strokes can still be seen. This inspires me, as simple shapes could be used, to create a detailed environment. Refelections are also something, that help to make something look realistic. And this kind of realistic look, without having to be photo realistic, is something that I really like and may be applied to a personal project.
+
 ### 4.2 Abstracted Artistic Expression in CGI
 
 Chose one CG image, which you like and of which you think that it has an artistic quality to it. The image doesn't need to be from the script, again you can chose any CGI image you like (it should use 3D graphics). You can find more examples in the [Summary of Artists](../../02_scripts/pgs_ss22_01_intro_script.md#summary-of-artists) section.  
 
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
+
+![](img/cgi_11.jpg)
+
+This image instantly caught my attention because of the atmosphere it delivers. I imagine a dystopian sci-fi world, with tech-structures everywhere. I think it has an artistic quality to it, because it is nice to look at and still leaves room for the viewer to be inspired and see his own association in this image. Although I think that art can also be something very specific and does not have to be open for interpretation, it just needs to be something, that the viewer can identify with in some kind of way or that it tells a stroy. And to me, everything is fulfilled with this art piece.
+
+
 
 
