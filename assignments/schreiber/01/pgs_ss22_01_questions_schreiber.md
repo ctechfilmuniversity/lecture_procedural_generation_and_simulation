@@ -17,8 +17,18 @@
 ## Questions 1 - Topics & Syllabus
 
 * Which of the chapter topics given in the syllabus are of most interest to you? Why?
+
+> I think noise, dynamics and particles are really cool!  
+> Whenever I used Unity's particle system, I always felt like I'm missing out on something big. All I ever got to use it for was little effects like e.g. sparks for a campfire. But there's so much power (and efficiency?) in particles systems and what drives them. I want to learn these beautiful magic spells!
+
 * Are there any further topics in regard to procedural generation and simulation that would interest you?
+
+> Not yet! I always found the 3D generation of complex objects (like trees or buildings) interesting, but I think I am happy with what's in the syllabus so far!
+
 * Which tool would you personally prefer to use for the practical tasks (e.g. Houdini, Unreal, Unity, Maya, Blender, JavaScript, p5, GLSL, ...)?
+
+> I am very interested in learning Houdini. But I know that Maya also has some capabilities in this area, which I haven't explored yet.
+
 * How would you rate your level of experience with SideFX's Houdini?
     * [ ] I have only used it in TI
     * [x] Novice (never used it, only heard of it)
