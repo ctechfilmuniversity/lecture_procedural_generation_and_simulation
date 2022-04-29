@@ -50,6 +50,7 @@ Take at least three pictures of natural patterns and at least three pictures of 
 ![](media/img_3.png)   
 ![](media/img_5.png)   
 ![](media/img_6.png)
+![](media/img_09.png)
 
 ### 3.2 Understanding and Implementing Patterns
 
@@ -73,10 +74,9 @@ for (i = 0; i < height; i + threadThickness){
 
 As an exercise to see and understand the environment around you (and to have some fun 😊), try to find at least two faces. Link all images in this file.
 
-![faces_around_us](img/faces.png)
-
-[Image sources left to right, top to bottom: [1](https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F378800000719377900%2F45f6f5459fe0d5678de052e8741700d0_400x400.jpeg&imgrefurl=https%3A%2F%2Ftwitter.com%2Ffacespics&docid=JoT1wUHfRfTWbM&tbnid=x30M4EKn_ft1wM%3A&vet=10ahUKEwisyqXc27_hAhXGJlAKHXNpArEQMwg_KAAwAA..i&w=400&h=400&bih=915&biw=1680&q=faces%20in%20things&ved=0ahUKEwisyqXc27_hAhXGJlAKHXNpArEQMwg_KAAwAA&iact=mrc&uact=8#h=400&imgdii=PorYURvb5HYYdM:&vet=10ahUKEwisyqXc27_hAhXGJlAKHXNpArEQMwg_KAAwAA..i&w=400), [2](https://www.themarysue.com/things-that-look-like-faces-pareidolia/), [3](https://www.themarysue.com/things-that-look-like-faces-pareidolia/), [4](http://www.abovetopsecret.com/forum/thread1159632/pg1), [5](https://lockerdome.com/buzzfeed.com/6814745186674964), [6](https://twitter.com/FacesPics/status/1086717380837953536), [7](https://laughingsquid.com/faces-in-things-funny-photos-of-objects-that-appear-to-have-faces/), [8](https://twitter.com/facespixx)]
-
+![](media/img_07.png)   
+![](media/img_08.png)   
+![](media/img_10.png)
 
 ## Questions 4 - Abstraction
 
