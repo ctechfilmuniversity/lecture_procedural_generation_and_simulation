@@ -48,28 +48,28 @@ Take at least three pictures of natural patterns and at least three pictures of 
 
 *2: Branches with self-similarity:*
 
-![](img/Pattern5.JPEG)
+![](img/Pattern5.jpeg)
 
 *3: Tree bark*
 
-![](img/Pattern6.JPEG)
+![](img/Pattern6.jpeg)
 
 
 *4: Sand "hills"*
 
-![](img/Pattern7.JPEG)
+![](img/Pattern7.jpeg)
 
 **Man-made Patterns:**
 
 *1: Speaker*
 
-![](img/Pattern1.JPEG)
+![](img/Pattern1.jpeg)
 
 *2: Tiles*
-![](img/Pattern2.JPEG)
+![](img/Pattern2.jpeg)
 
 *3: Grid*
-![](img/Pattern3.JPEG)
+![](img/Pattern3.jpeg)
 
 
 
@@ -105,7 +105,7 @@ function draw() {
   }
 }
 ```
-![](img/sketch.PNG)
+![](img/sketch.png)
 
 
 
@@ -113,8 +113,8 @@ function draw() {
 
 As an exercise to see and understand the environment around you (and to have some fun 😊), try to find at least two faces. Link all images in this file.
 
-![](img/Face1.JPEG)
-![](img/Face2.JPEG)
+![](img/Face1.jpeg)
+![](img/Face2.jpeg)
 
 
 
