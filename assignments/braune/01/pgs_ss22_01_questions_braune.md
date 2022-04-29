@@ -44,7 +44,7 @@ Take at least three pictures of natural patterns and at least three pictures of 
 
 *1: Leaf*
 
-![](img/Pattern4.JPEG)
+![](img/Pattern4.jpeg)
 
 *2: Branches with self-similarity:*
 
