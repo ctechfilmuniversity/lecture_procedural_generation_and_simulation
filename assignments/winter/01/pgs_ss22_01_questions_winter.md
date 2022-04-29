@@ -24,7 +24,7 @@
 * Which tool would you personally prefer to use for the practical tasks (e.g. Houdini, Unreal, Unity, Maya, Blender, JavaScript, p5, GLSL, ...)?
   * **I will definitely at least try Houdini after hearing you sing its praise. I have wanted to get into Touchdesigner for a while, but this might be my chance to take on its more capable older brother straight away. I'd also like to continue using GLSL, but my impression is that it's barely used outside of academia, so maybe it's a waste of time. Currently I don't intend to return to p5 or Javascript since GLSL suits me so much more (+traumatizing experiences with web development during cc1). Unity and Unreal would be a nice extra, as I've written before.** 
 * How would you rate your level of experience with SideFX's Houdini?
-    * [x] I have only used it in TI
+    * [x] I have only used it in TI (Not even there...)
     * [ ] Novice
     * [ ] Intermediate
     * [ ] Advanced
