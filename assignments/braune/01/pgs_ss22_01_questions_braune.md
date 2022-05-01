@@ -40,13 +40,82 @@ Briefly in your own words: how would you explain your nanny what *procedural gen
 
 Take at least three pictures of natural patterns and at least three pictures of man-made ones (patterns can be two or three dimensional). Try to include at least one pattern with self-similarity. Taking the pictures with your smart phone is just fine. Link all images in this markdown file.
 
+**Natural Patterns:**
+
+*1: Leaf*
+
+![](img/Pattern4.jpeg)
+
+*2: Branches with self-similarity:*
+
+![](img/Pattern5.jpeg)
+
+*3: Tree bark*
+
+![](img/Pattern6.jpeg)
+
+
+*4: Sand "hills"*
+
+![](img/Pattern7.jpeg)
+
+**Man-made Patterns:**
+
+*1: Speaker*
+
+![](img/Pattern1.jpeg)
+
+*2: Tiles*
+![](img/Pattern2.jpeg)
+
+*3: Grid*
+![](img/Pattern3.jpeg)
+
+
+
+
 ### 3.2 Understanding and Implementing Patterns
 
 Write for one of your pattern images a generating algorithm in pseudo-code or code. Submit the code below.
 
+> p5.js Code for man-made pattern 2 - *Tiles*:
+
+```
+let tileX = 50;
+let tileY = 25;
+let space = 2;
+
+function setup() {
+  createCanvas(200, 200);
+  background(0);
+  noStroke();
+  fill(255);
+}
+
+function draw() {
+  for (let y=0; y*(tileY+space)<height;y++){
+    for(x=0; x<=width; x+=tileX+space){
+      //add an offset every second row
+      if(y%2!==0 && x==0){  
+        x-=(tileX+space)/2;
+      }
+      //draw tile
+      rect(x,y*(tileY+space),tileX,tileY);
+    }
+  }
+}
+```
+![](img/sketch.png)
+
+
+
 ### 3.3 Seeing Faces
 
 As an exercise to see and understand the environment around you (and to have some fun 😊), try to find at least two faces. Link all images in this file.
+
+![](img/Face1.jpeg)
+![](img/Face2.jpeg)
+
 
 
 
