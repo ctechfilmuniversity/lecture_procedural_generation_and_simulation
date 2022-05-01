@@ -65,7 +65,7 @@ Chose one "traditional" painting, which is inspirational to you. The image can c
 
 Explain briefly what you like about the painting and how it might inspire you for your own work.
 
-![Dancing woman](/img/Dancing.jpeg)
+<img src="img/Dancing.jpeg" width="600" alt="bark" />
 
 >This street art is from SOBR a french artist. This piece is part of the project "It's time to dance". You can find parts of the art pieces in different big cities all over the world (e.g. Paris, London and Berlin). Especially in Berlin you can find a lot of these. The artist depicts people of the nightlife and surrounds them with glitter and confetti. I really like about this picture that it shows everyday people who just feeling the moment and forget their environment while dancing.
 
