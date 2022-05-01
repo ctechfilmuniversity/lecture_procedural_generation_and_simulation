@@ -43,6 +43,7 @@ Take at least three pictures of natural patterns and at least three pictures of 
 
 <img src="https://user-images.githubusercontent.com/66121204/166156452-e7fc0aee-7172-4387-a8bf-a6bde93fa0eb.jpg" alt="" width="90%"/>
 <img src="https://user-images.githubusercontent.com/66121204/166156205-23d90f03-33d8-42aa-9638-53d6d2963810.jpg" alt="" width="45%"/>
+<img src="https://user-images.githubusercontent.com/66121204/166163558-4a77289e-b644-4f24-955f-1b1a56dbb299.jpeg" alt="" width="45%"/>
 
  ### Human-made Patterns
  <img src="https://user-images.githubusercontent.com/66121204/166156339-b3ed767d-526b-48b7-98b7-0a75c74f8af1.png" style="float: left;" alt="" width="45%"/>
