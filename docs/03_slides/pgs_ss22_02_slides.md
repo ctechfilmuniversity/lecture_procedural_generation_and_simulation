@@ -299,7 +299,7 @@ This is a very different approach in comparison to the other 3D programs, which 
 
 ## Why Houdini?
 
-Houdini supports a deep integration of Houdini and its procedural workflow within the larger pipelines. 
+Houdini supports a deep integration of Houdini and its procedural workflow within larger pipelines. 
 
 --
 
@@ -407,6 +407,20 @@ template:inverse
 ## The Mandelbrot Set
 
 # 🤓
+
+---
+## The Mandelbrot Set
+
+.center[<img src="img/01/mandelbrot.png" alt="mandelbrot" style="width:100%;">]  
+
+.center[<img src="img/01/mandelbrot.gif" alt="mandelbrot" style="width:40%;">]  
+[[Wiki]](https://en.wikipedia.org/wiki/Mandelbrot_set)  
+
+???
+.task[COMMENT:]  
+
+* https://www.skytopia.com/project/fractal/2mandelbulb.html
+
 
 <!-- Board:
 

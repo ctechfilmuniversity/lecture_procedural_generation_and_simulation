@@ -11,6 +11,8 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 # Chapter 02 - Houdini
 
+<!-- TODO: include addition content from slides -->
+
 
 * [Procedural Generation and Simulation](#procedural-generation-and-simulation)
 * [Chapter 02 - Houdini](#chapter-02---houdini)
