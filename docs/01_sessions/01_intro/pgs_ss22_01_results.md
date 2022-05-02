@@ -1,4 +1,13 @@
-**Procedural Generation and Simulation**
+---
+layout: default
+title: Session
+nav_exclude: true
+---
+
+# Procedural Generation and Simulation
+
+Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
+
 
 # Results Session 01
 

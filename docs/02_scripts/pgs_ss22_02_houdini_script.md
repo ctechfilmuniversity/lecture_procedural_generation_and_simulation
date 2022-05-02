@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Exercise
+title: Script
 nav_exclude: true
 ---
 

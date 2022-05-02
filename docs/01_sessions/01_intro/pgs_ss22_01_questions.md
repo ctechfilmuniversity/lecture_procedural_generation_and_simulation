@@ -1,3 +1,9 @@
+---
+layout: default
+title: Session
+nav_exclude: true
+---
+
 **Procedural Generation and Simulation**
 
 # Questions Session 01
