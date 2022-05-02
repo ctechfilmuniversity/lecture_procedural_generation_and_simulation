@@ -1148,7 +1148,7 @@ template:inverse
 ---
 ## Praxis Examples
 
-Outside of academia, the trocedural generation* it not clearly defined. 
+Outside of academia, *procedural generation* it not clearly defined. 
 
 --
 
@@ -1289,7 +1289,7 @@ For our context of creating visual represenations, abstractions, pattern and cre
 ---
 ## Simulation
 
-These systems can be so-called *context-driven*, meaning they can be influenced by an eviornment for example and simulate:
+These systems can be so-called *context-driven*, meaning they can be influenced by an environment for example and simulate:
 
 --
 
