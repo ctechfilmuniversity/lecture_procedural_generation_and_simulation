@@ -22,9 +22,6 @@ layout: false
 * Re-Cap & Homework
 
 --
-* Procedural Generation
-
---
 * Intro Houdini
 
 --
