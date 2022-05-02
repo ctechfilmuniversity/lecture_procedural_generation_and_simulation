@@ -31,8 +31,6 @@ Briefly in your own words: how would you explain your nanny what *procedural gen
 #### Andreea
 #### Anna
 
-
-
 #### Jannis
 
 > Procedural generation is a way of creating things – say, a chair – based on simple rules. Instead of manually building a chair, which leaves you with a single chair, you develop a recipe that lets a machine create a chair without you having to do anything. So in the beginning, it might be a little harder to come up with that recipe, but then you are left with as much chairs as you can acquire resources for.
@@ -79,7 +77,7 @@ Write for one of your pattern images a generating algorithm in pseudo-code or co
 #### Andreea
 #### Anna
 
- ### Natural Patterns
+Natural Patterns  
  <img src="https://user-images.githubusercontent.com/66121204/166156193-07106967-0606-43b6-9d28-ad39f4fdfae2.jpg" alt="" width="90%"/>
 
 <img src="https://user-images.githubusercontent.com/66121204/166156199-dda6d1da-66c1-4039-87f8-faa0fb0f706e.jpg" alt="" width="90%"/>
@@ -88,8 +86,9 @@ Write for one of your pattern images a generating algorithm in pseudo-code or co
 <img src="https://user-images.githubusercontent.com/66121204/166156205-23d90f03-33d8-42aa-9638-53d6d2963810.jpg" alt="" width="45%"/>
 <img src="https://user-images.githubusercontent.com/66121204/166163558-4a77289e-b644-4f24-955f-1b1a56dbb299.jpeg" alt="" width="45%"/>
 
- ### Human-made Patterns
- <img src="https://user-images.githubusercontent.com/66121204/166156339-b3ed767d-526b-48b7-98b7-0a75c74f8af1.png" style="float: left;" alt="" width="45%"/>
+Human-made Patterns  
+
+<img src="https://user-images.githubusercontent.com/66121204/166156339-b3ed767d-526b-48b7-98b7-0a75c74f8af1.png" style="float: left;" alt="" width="45%"/>
 <img src="https://user-images.githubusercontent.com/66121204/166156374-15148983-97f0-4672-9e0f-65e413059764.png" style="float: right;" alt="" width="45%"/>
 <img src="https://user-images.githubusercontent.com/66121204/166156382-0d8a8233-45bb-4499-b4c3-ed01090f5dc6.jpg" style="float: left;" alt="" width="45%"/>
 <img src="https://user-images.githubusercontent.com/66121204/166156433-9d9fd7dc-c632-4e53-90a8-465bed66f966.jpg" style="float: right;" alt="" width="90%"/>
@@ -97,7 +96,6 @@ Write for one of your pattern images a generating algorithm in pseudo-code or co
 
 
 #### Jannis
-
 
 
 Natural     
@@ -123,6 +121,7 @@ Self-similar glass patterns with three layers: larger outlines of irregalur shap
 
 ---
 
+```
 draw:
     int x, z = 0
     while(endOfFrameNotReached)
@@ -133,7 +132,7 @@ draw:
     while(endOfFrameNotReached)
         drawCylinder(diameter, height, -rotation, x, z)
         x+= 30
-
+```
 
 #### Jonathan
 
@@ -192,7 +191,7 @@ draw:
 
 > p5.js Code for man-made pattern 2 - *Tiles*:
 
-```
+````
 let tileX = 50;
 let tileY = 25;
 let space = 2;
@@ -216,7 +215,7 @@ function draw() {
     }
   }
 }
-```
+````
 ![](img/results/braune/sketch.png)
 
 
@@ -224,7 +223,7 @@ function draw() {
 
 #### Marco W.
 
-**From natural- to human-made patterns in ascending order. For some of them, I find it hard to say!**
+From natural- to human-made patterns in ascending order. For some of them, I find it hard to say!
 
 <img src="img/results/winter/01.jpg" width="250">
 <img src="img/results/winter/02.jpg" width="250">

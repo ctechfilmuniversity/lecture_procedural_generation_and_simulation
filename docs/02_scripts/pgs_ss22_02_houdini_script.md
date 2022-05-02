@@ -108,9 +108,9 @@ Some of my favorite resources are:
 
 VEX is a small and efficient general purpose language for writing code in Houdini. It is loosely based on the C land C++ as well as the RenderMan shading language.
 
-* http://www.sidefx.com/docs/houdini/vex/
-* http://www.sidefx.com/docs/houdini/vex/lang.html
-* http://www.sidefx.com/docs/houdini/vex/snippets.html
+* [http://www.sidefx.com/docs/houdini/vex/](http://www.sidefx.com/docs/houdini/vex/)
+* [http://www.sidefx.com/docs/houdini/vex/lang.html](http://www.sidefx.com/docs/houdini/vex/lang.html)
+* [http://www.sidefx.com/docs/houdini/vex/snippets.html](http://www.sidefx.com/docs/houdini/vex/snippets.html)
 
 The usage of VEX ranges from writing short VEX expressions or snippets of VEX code in nodes to creating your own shaders and nodes. In this class, we will focus on expressions and simple scripts within given nodes. For example, the `Attribute Wrangle` geometry node runs a VEX snippet to modify any attribute values. Similarly, the `Point Wrangle` geometry node runs a VEX snippet to modify point attributes specifically, including the points' position for example.
 
