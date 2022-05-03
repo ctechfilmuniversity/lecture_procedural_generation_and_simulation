@@ -106,11 +106,10 @@ I love this - I always collect faces and shapes around me :))
 ![faces_everywhere](img/faces_around/5.png)
 ![faces_everywhere](img/faces_around/6.png)
 ![faces_everywhere](img/faces_around/7.png)
+
+
+I will add also this photo with a funny crying house I saw last summer
 ![faces_everywhere](img/faces_around/8.png)
-
-
-
-I will add also a photo with a funny crying house I saw last summer: ![crying_house](img/4.jpg)
 
 
 ## Questions 4 - Abstraction
