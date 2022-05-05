@@ -124,7 +124,7 @@ One painting that I am fascinated about is from Matías de Arteaga: El origen de
 Portraying the story of a young man that before leaving to the army had his silhouette painted, in order for his loved one to not forget him. In that moment, painting would have been invented, by making something present through representation. 
 Portraying the story of a young man who, before leaving to the army, had his silhouette painted in order for his loved one to not forget him. In that moment, painting would have been invented by making something present through representation. 
 The image of the shadow/silhouette creates the illusion of the body, without which it wouldn’t exist. In  one frame with warm but dark colours and a nostalgic atmosphere, Matias de Arteaga captures not only various concepts like the duality between illusion vs. reality, presence vs. absence or the foundation of painting but also, eventually, some of the deepest human emotions, love and longing. 
-[origin_of_painting] (img/painting_1.png)
+[origin_of_painting](img/painting_1.png)
 
 ### 4.2 Abstracted Artistic Expression in CGI
 
