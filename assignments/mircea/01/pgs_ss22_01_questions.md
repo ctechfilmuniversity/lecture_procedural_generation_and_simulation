@@ -124,11 +124,11 @@ One painting that I am fascinated about is from Matías de Arteaga: El origen de
 Portraying the story of a young man that before leaving to the army had his silhouette painted, in order for his loved one to not forget him. In that moment, painting would have been invented, by making something present through representation. 
 Portraying the story of a young man who, before leaving to the army, had his silhouette painted in order for his loved one to not forget him. In that moment, painting would have been invented by making something present through representation. 
 The image of the shadow/silhouette creates the illusion of the body, without which it wouldn’t exist. In  one frame with warm but dark colours and a nostalgic atmosphere, Matias de Arteaga captures not only various concepts like the duality between illusion vs. reality, presence vs. absence or the foundation of painting but also, eventually, some of the deepest human emotions, love and longing. 
-[origin_of_painting](img/painting_1.jpg)
+![origin_of_painting](img/painting_1.jpg)
 
 ### 4.2 Abstracted Artistic Expression in CGI
 
-Chose one CG image, which you like and of which you think that it has an artistic quality to it. The image doesn't need to be from the script, again you can chose any CGI image you like (it should use 3D graphics). You can find more examples in the [Summary of Artists](../../02_scripts/pgs_ss22_01_intro_script.md#summary-of-artists) section.  
+Chose one CG image, which you like and of which you think that it has an artistic quality to it. The image doesn't need to be from the script, again you can chose any CGI image you like (it should use 3D graphics). You can find more examples in the ![Summary of Artists](../../02_scripts/pgs_ss22_01_intro_script.md#summary-of-artists) section.  
 
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
 
