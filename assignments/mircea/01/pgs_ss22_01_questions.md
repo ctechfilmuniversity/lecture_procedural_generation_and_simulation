@@ -132,10 +132,10 @@ Chose one CG image, which you like and of which you think that it has an artisti
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
 
 The piece I selected was [Forms](https://omoss.io/work/forms) by Albert Omoss. I chose it because, beside the fact that it is technically very impressive, above everyhting I felt like Forms challenges the borders of perception and self-perception. Playing with the illusion of reality in a surreal scenario, it feels very immersive. The short scenes are like blinks of an eye, fragments of experiences while the apparently "real" individuals twist into some sort of hyperrealistic melted Barbie dolls graveyard.
-![forms1](img/forms_1.jpg)
-![forms2](img/forms_2.jpg)
+![forms1](img/forms_1.png)
+![forms2](img/forms_2.png)
 My favourite moment is the one with the hands: for an instance, it felt like real hands which then blended very peacefully and weirdly together.
-![forms3](img/forms_3.jpg)
+![forms3](img/forms_3.png)
 
 
 
