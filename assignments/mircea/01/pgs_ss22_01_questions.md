@@ -129,7 +129,14 @@ The image of the shadow/silhouette creates the illusion of the body, without whi
 ### 4.2 Abstracted Artistic Expression in CGI
 
 Chose one CG image, which you like and of which you think that it has an artistic quality to it. The image doesn't need to be from the script, again you can chose any CGI image you like (it should use 3D graphics). You can find more examples in the ![Summary of Artists](../../02_scripts/pgs_ss22_01_intro_script.md#summary-of-artists) section.  
-
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
+
+The piece I selected was [Forms](https://omoss.io/work/forms) by Albert Omoss. I chose it because, beside the fact that it is technically very impressive, above everyhting I felt like Forms challenges the borders of perception and self-perception. Playing with the illusion of reality in a surreal scenario, it feels very immersive. The short scenes are like blinks of an eye, fragments of experiences while the apparently "real" individuals twist into some sort of hyperrealistic melted Barbie dolls graveyard.
+![forms1](img/forms_1.jpg)
+![forms2](img/forms_2.jpg)
+My favourite moment is the one with the hands: for an instance, it felt like real hands which then blended very peacefully and weirdly together.
+![forms3](img/forms_3.jpg)
+
+
 
 
