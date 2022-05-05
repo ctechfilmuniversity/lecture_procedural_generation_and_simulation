@@ -45,16 +45,69 @@ Take at least three pictures of natural patterns and at least three pictures of 
 ![brick_pattern](imgs/brickPattern.jpeg)
 ![stone_pattern](imgs/stonePattern1.jpeg)
 ![stone_pattern](imgs/stonePattern2.jpeg)
+![waterPattern](imgs/waterPattern.jpeg)
 ![treePattern](imgs/treePattern1.jpeg)
 ![treePattern2](imgs/treePattern2.jpeg)
-![treePattern3](imgs/treePattern3.jpeg)
 ![treePattern4](imgs/treePattern4.jpeg)
+![treePattern3](imgs/treePattern3.jpeg)
 
 ### 3.2 Understanding and Implementing Patterns
 
 Write for one of your pattern images a generating algorithm in pseudo-code or code. Submit the code below.
 
-//TO DO
+![leafPatternCodeThump](imgs/leafPatternCode.png)
+
+This is an abstract implementation of the leaf pattern in the last photo in P5.js. It uses a formula I found in TBAG last semester to procedurally generate the leaf shapes from a few parameters, and randomly fills the canvas with the resulting shape. Each parameter can be changed, which would result in different leaf shapes. I've also colored the leaves based on a randomly assigned depth layer, so that leaves further down have a lower maximum green brightness.
+
+```let canvasWidth = 800
+let canvasHeight = 800
+let maxLeafDepth = 3;
+let numLeaves = 150;
+
+//Superformula parameters for leaf shape
+let a = 12;
+let b = 12;
+let m = 25;
+let n1 = 5;
+let n2 = 8;
+let n3 = 8;
+
+function setup() 
+{
+	createCanvas(canvasWidth, canvasHeight, WEBGL);
+    translate((-1 * canvasWidth / 2), (-1 * canvasHeight / 2))
+
+    for (let i = 0; i < numLeaves; i++) {
+        push();
+        let depthLayer = random(1, maxLeafDepth);
+        translate(random(0, canvasWidth), random(0, canvasHeight));
+        rotateZ(random(0, PI))
+        beginShape();
+            stroke(0)
+            fill(0, random(10, 50 * depthLayer), 0);
+            strokeWeight(2);
+            for (let theta = 0; theta < TWO_PI; theta+=TWO_PI/30) {
+                radius = superFormula(theta, a, b, m, n1, n2, n3);
+                let x = cos(theta) * radius;
+                let y = sin(theta) * radius;
+                let z = depthLayer * -1;
+                vertex(x, y, z);
+            }
+        endShape(CLOSE);
+        pop();
+    }
+
+}
+
+function draw()
+{
+
+}
+
+function superFormula(theta, a, b, m, n1, n2, n3){
+    return Math.pow(((Math.pow(abs((cos((m * theta) / 4.0)) / a), n2)) + (Math.pow(abs(sin((m * theta) / 4.0) / b), n3))), (-1.0 / n1))
+}
+```
 
 ### 3.3 Seeing Faces
 
@@ -72,8 +125,9 @@ Chose one "traditional" painting, which is inspirational to you. The image can c
 
 Explain briefly what you like about the painting and how it might inspire you for your own work.
 
-//TODO
+![JosephRebell-painting](imgs/josephRebell_ship.jpeg)
 
+This painting by Joseph Rebell which I saw in a gallery in Vienna inspires me because of its use of volumentric light and atmosphere, as well as the interaction between the lighting and the complex 'fluid simulations' of the clouds and turbulent water. I am very impressed with the realistic way that Rebell pictured these phenomena by hand.
 
 ### 4.2 Abstracted Artistic Expression in CGI
 
@@ -81,4 +135,6 @@ Chose one CG image, which you like and of which you think that it has an artisti
 
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
 
-//TODO
+![longing-for-wilderness](imgs/Longing-for-Wilderness-360.jpg)
+
+This is a still from a 360 video created in Cinema4D by the VR artist Marc Zimmermann called "Longing For Wilderness". In it, the viewer is transported from a busy city environment at night to a beautiful mountain landscape, and it evokes a feeling of scale and awe that I haven't seen in too many other 360 pieces.
