@@ -12,3 +12,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ## Scripts
 
 * [Chapter 01 - Introduction](pgs_ss22_01_intro_script.md)
+* [Chapter 02 - Houdini](pgs_ss22_02_houdini_script.md)
