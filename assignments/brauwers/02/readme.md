@@ -1,4 +1,4 @@
-### Tutorial Results
+# Tutorial Results
 
 ![gs_ss22_tutorial_01_brauwers_02](https://user-images.githubusercontent.com/66121204/166953509-210e7394-8da2-4e14-b191-f436003969e6.png)
 ![gs_ss22_tutorial_01_brauwers_03](https://user-images.githubusercontent.com/66121204/166953519-7b8b8196-0e1f-46b3-b1ea-88cdb1a90596.png)
