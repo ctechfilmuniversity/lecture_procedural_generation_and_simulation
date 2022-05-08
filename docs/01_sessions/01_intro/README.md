@@ -38,9 +38,6 @@ Submit your copy as `pgs_ss22_XX_questions_lastname.md` in your assignments fold
 For example: `assignments/gieseke/01/pgs_ss22_01_questions_gieseke.md`
 
 
-
-
-
 ---
 
 **Happy Abstracing!**
