@@ -187,41 +187,6 @@ I also recommend Mandelbrot's [TED Talk - Fractals and the art of roughness](htt
 
 Even though mathematical sets such as the Mandelbrot set are stunningly beautiful, they are very limited in their designs, meaning, you can't really adjust them flexibly. They look how they look and that is that. This is the reason why we are not spending more time on these beautiful but limited structures.
 
-<!-- Board:
-
-This happens in the world of complex numbers
-Numbers of the form a + bi plotted on a complex plane
-a, and b are real numbers, i^2 = -1
-
-Mandelbrot: we have complex number c and function f_c(z) = z^2 + c
-Look at the behavior of 0 under the iteration of f_c (what happens if I take 0 and plug it into the function?) and I keep doing that to the result
-
-f_1(z) = z^2 + 1
-
-f_1(0) = 0^2 + 1 -> 1
-f_1(1) = 1^2 + 1 -> 2
-f_1(2) = 2^2 + 1 -> 5
-f_1(5) = 5^2 + 1 -> 26
-
-What happens to the size of the result? The magnitude (the distances of a and b on the plane). Do they blow up or stay bounded?
-
-The above is the “blowing up” case
-
-The bounded case, e.g. happens for c = -1
-
-f_-1(0) = 0^2 + -1 -> -1
-f_-1(-1) = -1^2 + -1 -> 0
-f_-1(0) = 0^2 + -1 -> -1
-
-
-
-The Mandelbrot set defines only numbers that are bounded (never larger than 2)
-
-For the pretty pictures you color complex number on the complex plane depending in this behavior
-
-The boundaries are where it gets interesting: when you move c a little you can’t predict what happens
-
-https://www.youtube.com/watch?v=NGMRB4O922I -->
 
 
 ### Abstracted Pattern
