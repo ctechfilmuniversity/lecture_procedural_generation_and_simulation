@@ -65,6 +65,7 @@ Take at least three pictures of natural patterns and at least three pictures of 
 
 Write for one of your pattern images a generating algorithm in pseudo-code or code. Submit the code below.
 
+<img width="50%" alt="bricks" src="https://user-images.githubusercontent.com/66121204/167304762-dbd21035-7027-4eaa-a0f3-87828db49ef0.png">
 
 
 ```Java
