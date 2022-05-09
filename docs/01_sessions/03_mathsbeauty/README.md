@@ -20,6 +20,10 @@ These tasks should take take < 4h. I recommend not to do all tutorial parts in o
 
 *On a side note:* This script includes formulas and GitHub's markdown preview will not display them. To read the script with properly set formulas, you have the following options:
 
+```diff
+- not yet setup, will follow soon...
+```
+
 * Read the script [online](https://ctechfilmuniversity.github.io/lecture_procedural_generation_and_simulation/02_scripts/pgs_ss22_03_mathsbeauty_script.html) (this is a special link to an online `.html` version of the script)
 * Download the script folder and open [pgs_ss22_03_mathsbeauty_script.html](../../02_scripts/pgs_ss22_03_mathsbeauty_script.html) locally in your browser.
 * Download the script folder and open [pgs_ss22_03_mathsbeauty_script.md](../../02_scripts/pgs_ss22_03_mathsbeauty_script.md) in Visual Studio Code with the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin installed. Then the preview of the `.md` within VSCode will render the formulas nicely.
