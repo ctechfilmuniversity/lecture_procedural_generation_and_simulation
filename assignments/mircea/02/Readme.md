@@ -1,7 +1,7 @@
 
 ## Tutorial Results
 
-![tutorial_result] (tutorialresult_andreea.png)
+![tutorial_result](tutorialresult_andreea.png)
 
 Experimenting with the parameters and materials - process:
 
