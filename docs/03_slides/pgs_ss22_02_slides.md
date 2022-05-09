@@ -421,7 +421,7 @@ template:inverse
 
 * https://www.skytopia.com/project/fractal/2mandelbulb.html
 
-
+    
 <!-- Board:
 
 This happens in the world of complex numbers
