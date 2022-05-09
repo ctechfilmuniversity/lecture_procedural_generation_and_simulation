@@ -2,23 +2,30 @@
 
 # Questions Session 01
 
-* [Questions Session 01](#questions-session-01)
-    * [Questions 1 - Topics & Syllabus](#questions-1---topics--syllabus)
-    * [Questions 2 - Procedural Generation](#questions-2---procedural-generation)
-    * [Questions 3 - Patterns](#questions-3---patterns)
-        * [3.1 Seeing Patterns](#31-seeing-patterns)
-        * [3.2 Understanding and Implementing Patterns](#32-understanding-and-implementing-patterns)
-        * [3.3 Seeing Faces](#33-seeing-faces)
-    * [Questions 4 - Abstraction](#questions-4---abstraction)
-        * [4.1 Abstraction in Art](#41-abstraction-in-art)
-        * [4.2 Abstracted Artistic Expression in CGI](#42-abstracted-artistic-expression-in-cgi)
+- [Questions Session 01](#questions-session-01)
+  - [Questions 1 - Topics & Syllabus](#questions-1---topics--syllabus)
+  - [Questions 2 - Procedural Generation](#questions-2---procedural-generation)
+  - [Questions 3 - Patterns](#questions-3---patterns)
+    - [3.1 Seeing Patterns](#31-seeing-patterns)
+    - [Natural Patterns](#natural-patterns)
+    - [Human-made Patterns](#human-made-patterns)
+    - [3.2 Understanding and Implementing Patterns](#32-understanding-and-implementing-patterns)
+    - [3.3 Seeing Faces](#33-seeing-faces)
+  - [Questions 4 - Abstraction](#questions-4---abstraction)
+    - [4.1 Abstraction in Art](#41-abstraction-in-art)
+    - [4.2 Abstracted Artistic Expression in CGI](#42-abstracted-artistic-expression-in-cgi)
 
 ## Questions 1 - Topics & Syllabus
 
 * Which of the chapter topics given in the syllabus are of most interest to you? Why?
+  >Particles, Fluids & Forces, because I think they are visually interesting to me because they're nature-like and that is fascinating to me.
+
 
 * Are there any further topics in regard to procedural generation and simulation that would interest you?
+  >/
 * Which tool would you personally prefer to use for the practical tasks (e.g. Houdini, Unreal, Unity, Maya, Blender, JavaScript, p5, GLSL, ...)?
+  > I would like to use JavaScript & GLSL but Houdini is also interesting to me, because I don't know anything about it and I would like to learn it.
+
 * How would you rate your level of experience with SideFX's Houdini?
     * [x] I have never used it
     * [ ] Novice
@@ -29,6 +36,7 @@
 ## Questions 2 - Procedural Generation
 
 Briefly in your own words: how would you explain your granny what *procedural generation* means? 
+> If you create a recipe for a cake, procedural generation would make as many cakes according to the recipe as you want as long as you have the ingredients.
     
    
 ## Questions 3 - Patterns
@@ -56,6 +64,53 @@ Take at least three pictures of natural patterns and at least three pictures of 
 ### 3.2 Understanding and Implementing Patterns
 
 Write for one of your pattern images a generating algorithm in pseudo-code or code. Submit the code below.
+
+<img width="50%" alt="bricks" src="https://user-images.githubusercontent.com/66121204/167304762-dbd21035-7027-4eaa-a0f3-87828db49ef0.png">
+
+
+```Java
+int[] brickW = new int[100000];
+int w, nw, h, offset;
+int size = 35;
+int count = 0;
+void setup() {
+  size(600, 900);
+  colorMode(HSB, 360, 100, 100);
+  nw= 0;
+  h = size/2;
+  offset = size/4;
+  for (int i = 0; i < 100000; i++) {
+    brickW[i] = int(random(size/2, size));
+  }
+
+  for (int y = 0; y < height/h+20; y++) {
+    for (int x = 0; x < width; x++) {
+      count++;
+      w = brickW[count];
+      int ranCol = int(random(25));
+      if (ranCol<=4) {
+        fill(22, 13, random(17, 91));
+      } else {
+        fill(random(15, 25), random(47, 65), random(59, 70));
+      }
+      stroke(200);
+      if (y%2!=0) {
+        rect(nw-offset, y*h, w, h, 2);
+      } else {
+        rect(nw, y*h, w, h, 2);
+      }
+      nw = nw+w;
+    }
+    nw=0;
+  }
+  colorMode(RGB, 255);
+  for (int i = 0; i<=50000; i++) {
+    stroke(random(0, 200), 100);
+    point(random(width), random(height));
+  }
+}
+
+```
 
 ### 3.3 Seeing Faces
 
