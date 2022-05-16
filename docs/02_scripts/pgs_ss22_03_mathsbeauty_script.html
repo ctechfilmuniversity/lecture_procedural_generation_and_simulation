@@ -1,372 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>pgs_ss22_03_mathsbeauty_script.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-</style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
 <h1 id="procedural-generation-and-simulation">Procedural Generation and Simulation</h1>
-<p>Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsberg KONRAD WOLF</p>
+<p>Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsberg KONRAD WOLF</p>
 <h1 id="chapter-03---beauty-in-maths">Chapter 03 - Beauty in Maths</h1>
 <ul>
 <li><a href="#procedural-generation-and-simulation">Procedural Generation and Simulation</a></li>
@@ -375,17 +8,15 @@ code {
 <li><a href="#topics">Topics</a></li>
 <li><a href="#learning-objectives">Learning Objectives</a>
 <ul>
-<li><a href="#eulers-identity">Euler's Identity</a></li>
-</ul>
-</li>
+<li><a href="#eulers-identity">Euler’s Identity</a></li>
+</ul></li>
 <li><a href="#numbers">Numbers</a>
 <ul>
 <li><a href="#the-golden-ratio">The Golden Ratio</a></li>
 <li><a href="#famous-irrational-numbers">Famous Irrational Numbers</a></li>
 <li><a href="#pi">Pi</a></li>
 <li><a href="#fibonacci-sequence">Fibonacci Sequence</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="#spirals">Spirals</a>
 <ul>
 <li><a href="#polar-coordinates">Polar Coordinates</a></li>
@@ -395,8 +26,7 @@ code {
 <li><a href="#hyperbolic-spiral">Hyperbolic Spiral</a></li>
 <li><a href="#lituus-spiral">Lituus Spiral</a></li>
 <li><a href="#cornu-spiral">Cornu Spiral</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="#golden-spiral">Golden Spiral</a></li>
 <li><a href="#curves">Curves</a>
 <ul>
@@ -407,22 +37,19 @@ code {
 <li><a href="#parameter-k">Parameter k</a></li>
 <li><a href="#number-of-loops">Number of Loops</a></li>
 <li><a href="#parameter-offset-c">Parameter Offset c</a></li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><a href="#next">Next</a></li>
 <li><a href="#references">References</a></li>
-</ul>
-</li>
+</ul></li>
 </ul>
 <h2 id="topics">Topics</h2>
 <ul>
 <li>Beautiful Numbers</li>
 <li>Beautiful Curves</li>
 </ul>
-<p>$\pi:$<br>
-<img src="img/03/pi_01.png" alt="pi_01"><br>
+<p><span class="math inline"><em>π</em>:</span><br />
+<img src="img/03/pi_01.png" alt="pi_01" /><br />
 <a href="http://www.lacim.uqam.ca/~plouffe/distributions%20modulo%201/imagepages/image10.html">[Lacim]</a></p>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
@@ -430,609 +57,602 @@ code {
 <li>Get an intuition on how to use formulas in regard to their design space and their implementation</li>
 <li>Learn how to grow leaves like a plant</li>
 </ul>
-<h3 id="eulers-identity">Euler's Identity</h3>
-<p>Mathematicians assign to formulas aesthetic qualities. Let's have a look into the formula that is considered to be the most beautiful as of today:</p>
-<p>$e^{i\pi} + 1 = 0$</p>
+<h3 id="eulers-identity">Euler’s Identity</h3>
+<p>Mathematicians assign to formulas aesthetic qualities. Let’s have a look into the formula that is considered to be the most beautiful as of today:</p>
+<p><span class="math inline"><em>e</em><sup><em>i</em><em>π</em></sup> + 1 = 0</span></p>
 <p>where</p>
 <ul>
-<li>$e$ is Euler's number, the base of natural logarithms,</li>
-<li>$i$ is the imaginary unit, which by definition satisfies $i^{2} = −1$, and</li>
-<li>$\pi$ is pi, the ratio of the circumference of a circle to its diameter.</li>
+<li><span class="math inline"><em>e</em></span> is Euler’s number, the base of natural logarithms,</li>
+<li><span class="math inline"><em>i</em></span> is the imaginary unit, which by definition satisfies <span class="math inline"><em>i</em><sup>2</sup> =  − 1</span>, and</li>
+<li><span class="math inline"><em>π</em></span> is pi, the ratio of the circumference of a circle to its diameter.</li>
 </ul>
-<p><a href="https://en.wikipedia.org/wiki/Euler%27s_identity">Euler's identity</a> is named after the Swiss mathematician <a href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</a>. It is considered to be an exemplar of deep mathematical beauty, if not the most beautiful formula currently known as already mentioned. Its beauty arises from its simplicity while expressing highly complex behavior and its profound connection between the most fundamental numbers in mathematics.</p>
-<p>Three of the basic arithmetic operations occur exactly once each: addition, multiplication, and exponentiation. The identity also links five fundamental mathematical constants. [2] A mathematical constant is a number whose value is fixed by an unambiguous definition, often referred to by a symbol or by mathematicians' names to facilitate using it across multiple mathematical problems. [3] Constants arise in many areas of mathematics, with constants such as $e$ and $\pi$ occurring in such diverse contexts as geometry, number theory, and calculus.</p>
-<p>The five fundamental mathematical constants in Euler's identity are</p>
+<p><a href="https://en.wikipedia.org/wiki/Euler%27s_identity">Euler’s identity</a> is named after the Swiss mathematician <a href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</a>. It is considered to be an exemplar of deep mathematical beauty, if not the most beautiful formula currently known as already mentioned. Its beauty arises from its simplicity while expressing highly complex behavior and its profound connection between the most fundamental numbers in mathematics.</p>
+<p>Three of the basic arithmetic operations occur exactly once each: addition, multiplication, and exponentiation. The identity also links five fundamental mathematical constants. [2] A mathematical constant is a number whose value is fixed by an unambiguous definition, often referred to by a symbol or by mathematicians’ names to facilitate using it across multiple mathematical problems. [3] Constants arise in many areas of mathematics, with constants such as <span class="math inline"><em>e</em></span> and <span class="math inline"><em>π</em></span> occurring in such diverse contexts as geometry, number theory, and calculus.</p>
+<p>The five fundamental mathematical constants in Euler’s identity are</p>
 <ul>
-<li>The number $0$, the additive identity.</li>
-<li>The number $1$, the multiplicative identity.</li>
-<li>The number $\pi$ ($\pi = 3.141...$).</li>
-<li>The number $e$ ($e = 2.718...$), which occurs widely in mathematical analysis.</li>
-<li>The number $i$, the imaginary unit of the complex numbers.</li>
+<li>The number <span class="math inline">0</span>, the additive identity.</li>
+<li>The number <span class="math inline">1</span>, the multiplicative identity.</li>
+<li>The number <span class="math inline"><em>π</em></span> (<span class="math inline"><em>π</em> = 3.141...</span>).</li>
+<li>The number <span class="math inline"><em>e</em></span> (<span class="math inline"><em>e</em> = 2.718...</span>), which occurs widely in mathematical analysis.</li>
+<li>The number <span class="math inline"><em>i</em></span>, the imaginary unit of the complex numbers.</li>
 </ul>
 <p>Furthermore, the equation is given in the form of an expression set equal to zero, which is common practice in several areas of mathematics.</p>
 <p>Stanford University mathematics professor Keith Devlin has said,</p>
 <blockquote>
-<p>...like a Shakespearean sonnet that captures the very essence of love, or a painting that brings out the beauty of the human form that is far more than just skin deep, Euler's equation reaches down into the very depths of existence. [4]</p>
+<p>…like a Shakespearean sonnet that captures the very essence of love, or a painting that brings out the beauty of the human form that is far more than just skin deep, Euler’s equation reaches down into the very depths of existence. [4]</p>
 </blockquote>
-<p>And Paul Nahin, a professor emeritus at the University of New Hampshire, who has written a book dedicated to Euler's formula and its applications in Fourier analysis, describes Euler's identity as being</p>
+<p>And Paul Nahin, a professor emeritus at the University of New Hampshire, who has written a book dedicated to Euler’s formula and its applications in Fourier analysis, describes Euler’s identity as being</p>
 <blockquote>
-<p>...of exquisite beauty. [4]</p>
+<p>…of exquisite beauty. [4]</p>
 </blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Euler's_identity">[1]</a></p>
-<p>This inherent beauty <em>on a mathematical level</em> is <em>not</em> our topic (did I scare you with Euler's identity for a second here? 😎). We are more interested in the <em>visual representations and characteristics</em> of numbers and equations and with that potential visual beauty.</p>
+<p><a href="https://en.wikipedia.org/wiki/Euler&#39;s_identity">[1]</a></p>
+<p>This inherent beauty <em>on a mathematical level</em> is <em>not</em> our topic (did I scare you with Euler’s identity for a second here? 😎). We are more interested in the <em>visual representations and characteristics</em> of numbers and equations and with that potential visual beauty.</p>
 <p>There are studies that shows a connection between inherent mathematical beauty - what mathematicians consider beautiful maths and generally accepted visual beauty. But we would need a much deeper understanding of maths to go that route.</p>
 <h2 id="numbers">Numbers</h2>
 <h3 id="the-golden-ratio">The Golden Ratio</h3>
-<p>A ratio describes one quantity in relationship to another one, e.g. how long the width of an image is in relationship to its height.</p>
+<p>A ratio describes one quantity in relationship to another one, e.g. how long the width of an image is in relationship to its height.</p>
 <p>We have a <em>golden</em> ratio if the ratio of two quantities is the same as the ratio of their sum to the larger of the two quantities.</p>
-<p>$\frac{a+b}{a} = \frac{a}{b}$</p>
+<p><span class="math inline">$\frac{a+b}{a} = \frac{a}{b}$</span></p>
 <p>Line segments in the golden ratio:</p>
-<p><img src="img/03/goldenratio_01.png" alt="goldenratio_01"><br>
+<p><img src="img/03/goldenratio_01.png" alt="goldenratio_01" /><br />
 <a href="https://en.wikipedia.org/wiki/Golden_ratio">[wiki]</a></p>
 <p>A golden rectangle:</p>
-<p><img src="img/03/goldenratio_02.png" alt="goldenratio_02"><br>
+<p><img src="img/03/goldenratio_02.png" alt="goldenratio_02" /><br />
 <a href="https://en.wikipedia.org/wiki/Golden_ratio">[wiki]</a></p>
-<p>This ratio is defined as $\varphi$:</p>
-<p>(1) $\frac{a+b}{a} = \frac{a}{b} \stackrel{\mathrm{def}}{=} \varphi$</p>
-<p>One method for finding the value of $\varphi$ is to start with the left fraction.</p>
-<p>(2) $\frac{a+b}{a}=\frac{a}{a}+\frac{b}{a} = 1+\frac{b}{a}$</p>
-<p>We can derive from (1) $\frac{a}{b} = \varphi$ that $\frac{b}{a} = \frac{1}{\varphi}$ and put that into (2)</p>
-<p>(3) $1+\frac{b}{a}=1+\frac{1}{\varphi}$</p>
+<p>This ratio is defined as <span class="math inline"><em>φ</em></span>:</p>
+<ol type="1">
+<li><span class="math inline">$\frac{a+b}{a} = \frac{a}{b} \stackrel{\mathrm{def}}{=} \varphi$</span></li>
+</ol>
+<p>One method for finding the value of <span class="math inline"><em>φ</em></span> is to start with the left fraction.</p>
+<ol start="2" type="1">
+<li><span class="math inline">$\frac{a+b}{a}=\frac{a}{a}+\frac{b}{a} = 1+\frac{b}{a}$</span></li>
+</ol>
+<p>We can derive from (1) <span class="math inline">$\frac{a}{b} = \varphi$</span> that <span class="math inline">$\frac{b}{a} = \frac{1}{\varphi}$</span> and put that into (2)</p>
+<ol start="3" type="1">
+<li><span class="math inline">$1+\frac{b}{a}=1+\frac{1}{\varphi}$</span></li>
+</ol>
 <p>Setting that equal to the right side of (1), we get</p>
-<p>$1+\frac{1}{\varphi}=\varphi$.</p>
-<p>One of the special properties of the Golden Ratio is that <em>it can be defined in terms of itself</em>, as shown above. This leads to a <em>continued fraction</em>, which just can't be expressed as a regular fraction not matter what.</p>
-<p>$1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+\ddots }}}}}}}}$</p>
+<p><span class="math inline">$1+\frac{1}{\varphi}=\varphi$</span>.</p>
+<p>One of the special properties of the Golden Ratio is that <em>it can be defined in terms of itself</em>, as shown above. This leads to a <em>continued fraction</em>, which just can’t be expressed as a regular fraction not matter what.</p>
+<p><span class="math inline">$1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+\ddots }}}}}}}}$</span></p>
 <p>A number which can not be constructed from ratios (or fractions) of integers is an <em>irrational number</em>. Their decimal expansions neither terminate nor become periodic.</p>
-<p><img src="img/03/irrational_01.png" alt="irrational_01"></p>
+<figure>
+<img src="img/03/irrational_01.png" alt="irrational_01" /><figcaption>irrational_01</figcaption>
+</figure>
 <p><a href="https://www.mathsisfun.com/irrational-numbers.html">[Maths is Fun]</a></p>
-<p>Now, let's solve $1+\frac{1}{\varphi}=\varphi$ for $\varphi$.</p>
-<p>Multiplying by $\varphi$ gives</p>
-<p>$\varphi +1 = \varphi ^{2}$</p>
+<p>Now, let’s solve <span class="math inline">$1+\frac{1}{\varphi}=\varphi$</span> for <span class="math inline"><em>φ</em></span>.</p>
+<p>Multiplying by <span class="math inline"><em>φ</em></span> gives</p>
+<p><span class="math inline"><em>φ</em> + 1 = <em>φ</em><sup>2</sup></span></p>
 <p>which can be rearranged to</p>
-<p>$\varphi^{2}-\varphi -1=0$.</p>
+<p><span class="math inline"><em>φ</em><sup>2</sup> − <em>φ</em> − 1 = 0</span>.</p>
 <p>Using the <a href="https://en.wikipedia.org/wiki/Quadratic_formula">quadratic formula</a>, two solutions are obtained:</p>
-<p>$\frac{1+{\sqrt{5}}}{2} = 1.618,033,988,7\dots$</p>
+<p><span class="math inline">$\frac{1+{\sqrt{5}}}{2} = 1.618\,033\,988\,7\dots$</span></p>
 <p>and</p>
-<p>$\frac{1-{\sqrt{5}}}{2} = -0.618,033,988,7\dots$</p>
-<p>Because $\varphi$ is the ratio between positive quantities, $\varphi$ is necessarily positive:</p>
-<p>$\frac{1+{\sqrt{5}}}{2} = 1.618,033,988,7\dots$</p>
+<p><span class="math inline">$\frac{1-{\sqrt{5}}}{2} = -0.618\,033\,988\,7\dots$</span></p>
+<p>Because <span class="math inline"><em>φ</em></span> is the ratio between positive quantities, <span class="math inline"><em>φ</em></span> is necessarily positive:</p>
+<p><span class="math inline">$\frac{1+{\sqrt{5}}}{2} = 1.618\,033\,988\,7\dots$</span></p>
 <p>In summary:</p>
 <table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
-<th style="text-align:center">$\varphi$</th>
+<th style="text-align: center;"><span class="math inline"><em>φ</em></span></th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Decimal</td>
-<td style="text-align:center">1.6180339887498948482...</td>
+<td style="text-align: center;">1.6180339887498948482…</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Continued fraction</td>
-<td style="text-align:center">$1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+\ddots }}}}}}}}$</td>
+<td style="text-align: center;"><span class="math inline">$1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+{\cfrac {1}{1+\ddots }}}}}}}}$</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Algebraic form</td>
-<td style="text-align:center">$\frac{1+{\sqrt{5}}}{2}$</td>
+<td style="text-align: center;"><span class="math inline">$\frac{1+{\sqrt{5}}}{2}$</span></td>
 </tr>
 </tbody>
 </table>
 <p><a href="https://en.wikipedia.org/wiki/Golden_ratio">[13]</a></p>
 <p>Next to the genuine maths behind the ratio itself and its fascinating mathematical properties, some believe that the Golden Ratio makes the most pleasing and beautiful shapes:</p>
-<p><img src="img/03/goldenratio_03.png" alt=""></p>
-<p>Whether this is a <em>beautiful</em> ratio or not is up to personal taste. Be careful though to believe the widespread understanding that the golden ratio is the <em>natural blueprint</em> for beauty. There is very little <em>scientific</em> evidence for that. You can find ratios similar to the golden ratio in the world, such as in human faces, the Parthenon, etc. but the emphasis is on <em>similar</em> and also there are various other prominent ratios out there. With the golden ratio we might have a case of <em>you find what you are looking for</em>. <a href="https://www.independent.co.uk/news/science/mathematicians-dispute-claims-that-the-golden-ratio-is-a-natural-blueprint-for-beauty-10204354.html">[14]</a>
-<a href="https://www.businessinsider.com/the-golden-ratio-fibonacci-numbers-mathematics-zeising-beauty-2015-9?r=DE&amp;IR=T">[15]</a></p>
-<p>What we indeed find in regard to $\varphi$ prominently in nature is an approximation of the <em>golden angle</em>.</p>
+<p><img src="img/03/goldenratio_03.png" /></p>
+<p>Whether this is a <em>beautiful</em> ratio or not is up to personal taste. Be careful though to believe the widespread understanding that the golden ratio is the <em>natural blueprint</em> for beauty. There is very little <em>scientific</em> evidence for that. You can find ratios similar to the golden ratio in the world, such as in human faces, the Parthenon, etc. but the emphasis is on <em>similar</em> and also there are various other prominent ratios out there. With the golden ratio we might have a case of <em>you find what you are looking for</em>. <a href="https://www.independent.co.uk/news/science/mathematicians-dispute-claims-that-the-golden-ratio-is-a-natural-blueprint-for-beauty-10204354.html">[14]</a> <a href="https://www.businessinsider.com/the-golden-ratio-fibonacci-numbers-mathematics-zeising-beauty-2015-9?r=DE&amp;IR=T">[15]</a></p>
+<p>What we indeed find in regard to <span class="math inline"><em>φ</em></span> prominently in nature is an approximation of the <em>golden angle</em>.</p>
 <p>Imagine you are a plant and you can spread leaves all around your stem. Now, being a plant, needing Photosynthese and such, you want all of your leaves to soak up as much sun (and rain) as possible. So when you sprout a new leaf, you don’t want it to block your other leaves.</p>
-<p><img src="img/03/goldenangle_09.png" alt="goldenangle_09"><br>
+<p><img src="img/03/goldenangle_09.png" alt="goldenangle_09" /><br />
 <a href="http://gofiguremath.org/natures-favorite-math/the-golden-ratio/the-golden-angle/">[gofiguremath]</a></p>
 <p>What you want is to turn for every new leaf a certain degree as the following (the numbers indicate the order in which the leaf grew).</p>
-<p><img src="img/03/goldenangle_01.png" alt="goldenangle_01"><br>
+<p><img src="img/03/goldenangle_01.png" alt="goldenangle_01" /><br />
 <a href="https://en.wikipedia.org/wiki/Golden_angle">[wiki]</a></p>
 <p>The same problem applies if you imagine to be a sunflower and you want to pack as many seeds as possible, while all of them getting as much sun as possible.</p>
-<p><img src="img/03/goldenangle_07.png" alt="goldenangle_07"><br>
+<p><img src="img/03/goldenangle_07.png" alt="goldenangle_07" /><br />
 <a href="https://wsimag.com/science-and-technology/34023-the-fascination-with-the-golden-ratio">[wsimag]</a></p>
 <p>Being a plant and all, you already know what you have to do. Each turn you make to grow a new leaf or place a new seed you have to turn with the <em>golden angle</em>. And now, back to being a CTech student you know what makes that angle <em>golden</em>.</p>
 <p>In geometry, the golden angle is the smaller of the two angles created by sectioning the circumference of a circle according to the golden ratio; that is, into two arcs such that the ratio of the length of the smaller arc to the length of the larger arc is the same as the ratio of the length of the larger arc to the full circumference of the circle: <a href="https://en.wikipedia.org/wiki/Golden_angle">[23]</a></p>
-<p><img src="img/03/goldenangle_05.png" alt="goldenangle_05"><br>
+<p><img src="img/03/goldenangle_05.png" alt="goldenangle_05" /><br />
 <a href="http://gofiguremath.org/natures-favorite-math/the-golden-ratio/the-golden-angle/">[gofiguremath]</a></p>
-<p>The best solution to <em>how far to turn from the last leaf</em> in degree is therefore $~137.5°$, and that is what all kinds of plants do:</p>
-<p><img src="img/03/goldenangle_03.png" alt="goldenangle_03"><br>
-<img src="img/03/goldenangle_04.png" alt="goldenangle_04"><br>
+<p>The best solution to <em>how far to turn from the last leaf</em> in degree is therefore <span class="math inline"> 137.5°</span>, and that is what all kinds of plants do:</p>
+<p><img src="img/03/goldenangle_03.png" alt="goldenangle_03" /><br />
+<img src="img/03/goldenangle_04.png" alt="goldenangle_04" /><br />
 <a href="https://leerzelfbeleggen.com/wp-content/uploads/2018/08/Fibonacci-trading-leren-traden-met-de-geheime-formule-voorbeelden.jpeg">[LeerZelfBeleggen]</a></p>
-<p><img src="img/03/goldenangle_06.png" alt="goldenangle_06"><br>
+<p><img src="img/03/goldenangle_06.png" alt="goldenangle_06" /><br />
 <a href="https://fineartamerica.com/featured/1-golden-angle-thomas-festerscience-photo-library.html">[fineartamerica]</a></p>
 <p>Such an arrangement of leaves, which applies the golden angle, is also called <em>phyllotaxis</em> (<em>leaf arrangement</em> in Greek) in botany. Helmut Vogel specified an easy generation model for phyllotaxis patterns in</p>
 <p>Vogel, H (1979). <strong>A better way to construct the sunflower head</strong>. Mathematical Biosciences 44 (44): 179–189.</p>
 <p>Again in polar coordinates, it comes down to</p>
-<p>$r = c\sqrt{n}$</p>
-<p>$\theta = n \times 137.508^\circ$</p>
+<p><span class="math inline">$r = c\sqrt{n}$</span></p>
+<p><span class="math inline"><em>θ</em> = <em>n</em> × 137.508<sup>∘</sup></span></p>
 <p>with</p>
 <ul>
-<li>angle $\theta$,</li>
-<li>radius $r$,</li>
-<li>index number of the current element $n$, and</li>
-<li>a constant scaling factor $c$.</li>
+<li>angle <span class="math inline"><em>θ</em></span>,</li>
+<li>radius <span class="math inline"><em>r</em></span>,</li>
+<li>index number of the current element <span class="math inline"><em>n</em></span>, and</li>
+<li>a constant scaling factor <span class="math inline"><em>c</em></span>.</li>
 </ul>
 <p>Implemented in p5:</p>
-<pre class="hljs"><code><div><span class="hljs-keyword">let</span> n = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">let</span> c = <span class="hljs-number">20</span>; 
-<span class="hljs-keyword">let</span> color_ramp = <span class="hljs-number">100</span>;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>)
-</span>{
-    createCanvas(<span class="hljs-number">1024</span> , <span class="hljs-number">1024</span>);
-    angleMode(DEGREES);
-    color_ramp = width * <span class="hljs-number">0.4</span>;
-    colorMode(HSB, color_ramp, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>);
-    background(<span class="hljs-number">1</span>);
-    noStroke();
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-</span>{
-    <span class="hljs-comment">// Place drawing in the middle</span>
-    translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-
-    <span class="hljs-comment">// Vogel's algorithm (in polar coordinates)</span>
-    <span class="hljs-keyword">let</span> r = c * sqrt(n);
-    <span class="hljs-keyword">let</span> theta = n * <span class="hljs-number">137.5</span>;
-
-    <span class="hljs-comment">// Polar to Cartesian coordinates</span>
-    <span class="hljs-keyword">let</span> x = r * cos(theta);
-    <span class="hljs-keyword">let</span> y = r * sin(theta);
-
-    fill(n % color_ramp, <span class="hljs-number">1</span> , <span class="hljs-number">1</span>);
-    ellipse(x , y , c * <span class="hljs-number">1.25</span> , c * <span class="hljs-number">1.25</span>);
-
-    n++
-}
-</div></code></pre>
-<p><img src="img/03/phyllotaxis.gif" alt=""></p>
-<p>But the fascination doesn't stop here. If we change the angle from the golden angle to an arbitrary angle between 0..360 we get vastly different designs for only very small changes. The following code maps the angle to turn to the mouse position in x. Try the code for yourself!</p>
-<pre class="hljs"><code><div><span class="hljs-keyword">let</span> ELEMENT_COUNT = <span class="hljs-number">1000</span>;
-<span class="hljs-keyword">let</span> c = <span class="hljs-number">20</span>; 
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>)
-</span>{
-    createCanvas(<span class="hljs-number">1024</span> , <span class="hljs-number">1024</span>);
-    angleMode(DEGREES);
-    colorMode(HSB, ELEMENT_COUNT, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>);
-    background(<span class="hljs-number">1</span>);
-    noStroke();
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-</span>{
-    background(<span class="hljs-number">1</span>);
-    translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-  
-    <span class="hljs-keyword">let</span> ratio = map(mouseX, <span class="hljs-number">0</span>, width, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
-    text(ratio, -width * <span class="hljs-number">0.49</span>, -height * <span class="hljs-number">0.48</span>);
-  
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> n=<span class="hljs-number">0</span>; n &lt; ELEMENT_COUNT; n++) 
-    {
-      <span class="hljs-keyword">let</span> r = c * sqrt(n);
-      <span class="hljs-keyword">let</span> theta = n * ratio * <span class="hljs-number">360</span>;
-
-
-      <span class="hljs-keyword">let</span> x = r * cos(theta);
-      <span class="hljs-keyword">let</span> y = r * sin(theta);
-
-      fill(n, <span class="hljs-number">1</span> , <span class="hljs-number">1</span>);
-      ellipse(x , y , c * <span class="hljs-number">1.25</span> , c * <span class="hljs-number">1.25</span>);
-    }
-}
-</div></code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">let</span> n <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">let</span> c <span class="op">=</span> <span class="dv">20</span><span class="op">;</span> </a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">let</span> color_ramp <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">function</span> <span class="at">setup</span>()</a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">{</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="at">createCanvas</span>(<span class="dv">1024</span> <span class="op">,</span> <span class="dv">1024</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="at">angleMode</span>(DEGREES)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    color_ramp <span class="op">=</span> width <span class="op">*</span> <span class="fl">0.4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="at">colorMode</span>(HSB<span class="op">,</span> color_ramp<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="at">background</span>(<span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="at">noStroke</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="op">{</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="co">// Place drawing in the middle</span></a>
+<a class="sourceLine" id="cb1-18" title="18">    <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20">    <span class="co">// Vogel&#39;s algorithm (in polar coordinates)</span></a>
+<a class="sourceLine" id="cb1-21" title="21">    <span class="kw">let</span> r <span class="op">=</span> c <span class="op">*</span> <span class="at">sqrt</span>(n)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="kw">let</span> theta <span class="op">=</span> n <span class="op">*</span> <span class="fl">137.5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-23" title="23"></a>
+<a class="sourceLine" id="cb1-24" title="24">    <span class="co">// Polar to Cartesian coordinates</span></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="kw">let</span> x <span class="op">=</span> r <span class="op">*</span> <span class="at">cos</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-26" title="26">    <span class="kw">let</span> y <span class="op">=</span> r <span class="op">*</span> <span class="at">sin</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-27" title="27"></a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="at">fill</span>(n <span class="op">%</span> color_ramp<span class="op">,</span> <span class="dv">1</span> <span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-29" title="29">    <span class="at">ellipse</span>(x <span class="op">,</span> y <span class="op">,</span> c <span class="op">*</span> <span class="fl">1.25</span> <span class="op">,</span> c <span class="op">*</span> <span class="fl">1.25</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31">    n<span class="op">++</span></a>
+<a class="sourceLine" id="cb1-32" title="32"><span class="op">}</span></a></code></pre></div>
+<p><img src="img/03/phyllotaxis.gif" /></p>
+<p>But the fascination doesn’t stop here. If we change the angle from the golden angle to an arbitrary angle between 0..360 we get vastly different designs for only very small changes. The following code maps the angle to turn to the mouse position in x. Try the code for yourself!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">let</span> ELEMENT_COUNT <span class="op">=</span> <span class="dv">1000</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">let</span> c <span class="op">=</span> <span class="dv">20</span><span class="op">;</span> </a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">function</span> <span class="at">setup</span>()</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="at">createCanvas</span>(<span class="dv">1024</span> <span class="op">,</span> <span class="dv">1024</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="at">angleMode</span>(DEGREES)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="at">colorMode</span>(HSB<span class="op">,</span> ELEMENT_COUNT<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="at">background</span>(<span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="at">noStroke</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="op">{</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="at">background</span>(<span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-16" title="16">    <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-17" title="17">  </a>
+<a class="sourceLine" id="cb2-18" title="18">    <span class="kw">let</span> ratio <span class="op">=</span> <span class="at">map</span>(mouseX<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-19" title="19">    <span class="at">text</span>(ratio<span class="op">,</span> <span class="op">-</span>width <span class="op">*</span> <span class="fl">0.49</span><span class="op">,</span> <span class="op">-</span>height <span class="op">*</span> <span class="fl">0.48</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-20" title="20">  </a>
+<a class="sourceLine" id="cb2-21" title="21">    <span class="cf">for</span> (<span class="kw">let</span> n<span class="op">=</span><span class="dv">0</span><span class="op">;</span> n <span class="op">&lt;</span> ELEMENT_COUNT<span class="op">;</span> n<span class="op">++</span>) </a>
+<a class="sourceLine" id="cb2-22" title="22">    <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-23" title="23">      <span class="kw">let</span> r <span class="op">=</span> c <span class="op">*</span> <span class="at">sqrt</span>(n)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-24" title="24">      <span class="kw">let</span> theta <span class="op">=</span> n <span class="op">*</span> ratio <span class="op">*</span> <span class="dv">360</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-25" title="25"></a>
+<a class="sourceLine" id="cb2-26" title="26"></a>
+<a class="sourceLine" id="cb2-27" title="27">      <span class="kw">let</span> x <span class="op">=</span> r <span class="op">*</span> <span class="at">cos</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-28" title="28">      <span class="kw">let</span> y <span class="op">=</span> r <span class="op">*</span> <span class="at">sin</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-29" title="29"></a>
+<a class="sourceLine" id="cb2-30" title="30">      <span class="at">fill</span>(n<span class="op">,</span> <span class="dv">1</span> <span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-31" title="31">      <span class="at">ellipse</span>(x <span class="op">,</span> y <span class="op">,</span> c <span class="op">*</span> <span class="fl">1.25</span> <span class="op">,</span> c <span class="op">*</span> <span class="fl">1.25</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-32" title="32">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-33" title="33"><span class="op">}</span></a></code></pre></div>
 <p>Fractions for the <code>ratio</code> value lead to spikes, while getting closer to an irrational number produces dense distributions:</p>
-<p><img src="img/03/phyllotaxis_interactive.gif" alt=""></p>
-<p>If you would like to understand better which values lead to which design (and how to be a flower...), I highly recommend this video the Numberphile's video <a href="https://www.youtube.com/watch?v=sj8Sg8qnjOg">The Golden Ratio (why it is so irrational)</a>.</p>
+<p><img src="img/03/phyllotaxis_interactive.gif" /></p>
+<p>If you would like to understand better which values lead to which design (and how to be a flower…), I highly recommend this video the Numberphile’s video <a href="https://www.youtube.com/watch?v=sj8Sg8qnjOg">The Golden Ratio (why it is so irrational)</a>.</p>
 <p>What to do with this? Well, now it is up to being creative. Just connecting the element by lines already give interesting designs:</p>
-<p><img src="img/03/phyllotaxis_01.png" alt="">
-<img src="img/03/phyllotaxis_02.png" alt="">
-<img src="img/03/phyllotaxis_03.png" alt=""><br>
+<p><img src="img/03/phyllotaxis_01.png" /> <img src="img/03/phyllotaxis_02.png" /> <img src="img/03/phyllotaxis_03.png" /><br />
 <a href="https://www.codeproject.com/Articles/1221341/The-Vogel-Spiral-Phenomenon">[codeproject]</a></p>
-<p><img src="img/03/phyllotaxis_04.png" alt=""><br>
+<p><img src="img/03/phyllotaxis_04.png" /><br />
 <a href="https://dribbble.com/shots/5873691-Arranging-Dots">[Chisato den Engelsen]</a></p>
-<p><img src="img/03/phyllotaxis_05.png" alt="phyllotaxis_05"><br>
+<p><img src="img/03/phyllotaxis_05.png" alt="phyllotaxis_05" /><br />
 <a href="https://editor.p5js.org/willgeary/sketches/0koqjcxEk">[p5 sketch by willgeary]</a></p>
-<p>Of course forumlas such as the phyllotaxis one above have been used over and over,... and over again. We have seen these visuals. That doesn't mean that there aren't plenty of options left to work with these fascinating structures. What I am trying to say is that by just simply plotting the base examples, you will not get a creativity medal. You will have to really think about a visualization / application to make them interesting anew.</p>
-<p>$\varphi$ is not the only irrational number, as you might know.</p>
+<p>Of course forumlas such as the phyllotaxis one above have been used over and over,… and over again. We have seen these visuals. That doesn’t mean that there aren’t plenty of options left to work with these fascinating structures. What I am trying to say is that by just simply plotting the base examples, you will not get a creativity medal. You will have to really think about a visualization / application to make them interesting anew.</p>
+<p><span class="math inline"><em>φ</em></span> is not the only irrational number, as you might know.</p>
 <h3 id="famous-irrational-numbers">Famous Irrational Numbers</h3>
-<p>$\varphi = 1.61803398874989484820...$</p>
+<p><span class="math inline"><em>φ</em> = 1.61803398874989484820...</span></p>
 <ul>
 <li>The most irrational of them all</li>
 </ul>
-<p>$\pi = 3.1415926535897932384626433832795..$</p>
+<p><span class="math inline"><em>π</em> = 3.1415926535897932384626433832795..</span></p>
 <ul>
 <li>The rockstar of the irrational numbers</li>
-<li>The popular approximation of $\frac{22}{7} = 3.1428571428571$ is close but not accurate</li>
+<li>The popular approximation of <span class="math inline">$\frac{22}{7} = 3.1428571428571$</span> is close but not accurate</li>
 <li>Over a quadrillion decimal places have been calculated and <em>still there is no pattern!!!</em></li>
 </ul>
-<p>$e = 2.7182818284590452353602874713527$</p>
+<p><span class="math inline"><em>e</em> = 2.7182818284590452353602874713527</span></p>
 <ul>
-<li>Euler's Number</li>
+<li>Euler’s Number</li>
 <li>Base of the Natural Logarithms</li>
 </ul>
 <p>Many square roots, cube roots, etc. are also irrational numbers.</p>
 <ul>
-<li>$\sqrt{3} = 1.7320508075688772935274463415059...$</li>
-<li>$\sqrt{99} = 9.9498743710661995473447982100121...$</li>
-<li>But e.g. $\sqrt{4} = 2$ (rational), and $\sqrt{9} = 3$ (rational), so not all roots are irrational.</li>
+<li><span class="math inline">$\sqrt{3} = 1.7320508075688772935274463415059...$</span></li>
+<li><span class="math inline">$\sqrt{99} = 9.9498743710661995473447982100121...$</span></li>
+<li>But e.g. <span class="math inline">$\sqrt{4} = 2$</span> (rational), and <span class="math inline">$\sqrt{9} = 3$</span> (rational), so not all roots are irrational.</li>
 </ul>
 <p><a href="https://www.mathsisfun.com/irrational-numbers.html">[16]</a></p>
 <h3 id="pi">Pi</h3>
-<p>$\pi$ is a real crowd-pleaser. Why is that?</p>
-<p>$\pi = 3.14159 26535 89793 23846 26433 83279 50288 41971 ...$</p>
-<p>$\pi$ appears in formulae for areas and volumes of geometrical shapes based on circles, such as ellipses, spheres, cones, and tori. Below are some of the more common formulae that involve $\pi$.[18]</p>
-<p><img src="img/03/pi_02.png" alt="pi_02"><br>
+<p><span class="math inline"><em>π</em></span> is a real crowd-pleaser. Why is that?</p>
+<p><span class="math inline"><em>π</em> = 3.1415926535897932384626433832795028841971...</span></p>
+<p><span class="math inline"><em>π</em></span> appears in formulae for areas and volumes of geometrical shapes based on circles, such as ellipses, spheres, cones, and tori. Below are some of the more common formulae that involve <span class="math inline"><em>π</em></span>.[18]</p>
+<p><img src="img/03/pi_02.png" alt="pi_02" /><br />
 <a href="https://en.wikipedia.org/wiki/Pi#/media/File:Pi_eq_C_over_d.svg">[wiki]</a></p>
 <ul>
-<li>The circumference of a circle with radius r is $2\pi r$.</li>
-<li>The area of a circle with radius r is $\pi r^2$.</li>
-<li>The volume of a sphere with radius r is $\frac{4}{3}\pi r^3$</li>
-<li>The surface area of a sphere with radius r is $4\pi r^2$.</li>
+<li>The circumference of a circle with radius r is <span class="math inline">2<em>π</em><em>r</em></span>.</li>
+<li>The area of a circle with radius r is <span class="math inline"><em>π</em><em>r</em><sup>2</sup></span>.</li>
+<li>The volume of a sphere with radius r is <span class="math inline">$\frac{4}{3}\pi r^3$</span></li>
+<li>The surface area of a sphere with radius r is <span class="math inline">4<em>π</em><em>r</em><sup>2</sup></span>.</li>
 </ul>
-<p>The trigonometric functions rely on angles, and mathematicians generally use radians as units of measurement. $\pi$ plays an important role in angles measured in radians, which are defined so that a complete circle spans an angle of $2\pi$ radians. The angle measure of $180^\circ$ is equal to $\pi$ radians, and $1^\circ = \frac{\pi}{180}$ radians.[19]</p>
-<p>Common trigonometric functions have periods that are multiples of $\pi$; for example, sine and cosine have period $2\pi$:</p>
-<p><img src="img/03/pi_03.png" alt="pi_03"><br>
+<p>The trigonometric functions rely on angles, and mathematicians generally use radians as units of measurement. <span class="math inline"><em>π</em></span> plays an important role in angles measured in radians, which are defined so that a complete circle spans an angle of <span class="math inline">2<em>π</em></span> radians. The angle measure of <span class="math inline">180<sup>∘</sup></span> is equal to <span class="math inline"><em>π</em></span> radians, and <span class="math inline">$1^\circ = \frac{\pi}{180}$</span> radians.[19]</p>
+<p>Common trigonometric functions have periods that are multiples of <span class="math inline"><em>π</em></span>; for example, sine and cosine have period <span class="math inline">2<em>π</em></span>:</p>
+<p><img src="img/03/pi_03.png" alt="pi_03" /><br />
 <a href="https://en.wikipedia.org/wiki/Pi#/media/File:Sine_cosine_one_period.svg">[wiki]</a></p>
-<p>$\pi$ appears in many, many other formulas in all areas of mathematics and physics. Its omnipresence and usefulness plays a big role for $\pi$'s popularity. But its inherent characteristic are also truly captivating.</p>
+<p><span class="math inline"><em>π</em></span> appears in many, many other formulas in all areas of mathematics and physics. Its omnipresence and usefulness plays a big role for <span class="math inline"><em>π</em></span>’s popularity. But its inherent characteristic are also truly captivating.</p>
 <p><a href="https://en.wikipedia.org/wiki/Pi">[17]</a></p>
-<p>The digits of $\pi$ are uniformly randomly distributed, meaning that its digits 0 through 9 appear equally often, as do pairs of digits, trios of digits, and so forth. If you don't believe it you can count digits in its first <a href="https://introcs.cs.princeton.edu/java/data/pi-10million.txt">10 million decimal places</a>.</p>
-<p><img src="img/03/pi_04.png" alt="pi_04"><br>
+<p>The digits of <span class="math inline"><em>π</em></span> are uniformly randomly distributed, meaning that its digits 0 through 9 appear equally often, as do pairs of digits, trios of digits, and so forth. If you don’t believe it you can count digits in its first <a href="https://introcs.cs.princeton.edu/java/data/pi-10million.txt">10 million decimal places</a>.</p>
+<p><img src="img/03/pi_04.png" alt="pi_04" /><br />
 <a href="https://blogs.sas.com/content/iml/2015/03/12/digits-of-pi.html#prettyPhoto">[sas blogs]</a></p>
-<p>The digits of $\pi$ pass every test for randomness, yet $\pi$ is a precise mathematical value that describes the relationship between the circumference of a circle and its diameter. This dichotomy between <em>very random</em> and <em>very structured</em> blows my mind. <a href="https://blogs.sas.com/content/iml/2015/03/12/digits-of-pi.html#prettyPhoto">[20]</a></p>
-<p>In honor of $\pi$ day, which is on March, 14th according to the north american date formating of 03.14., several artists visually represent $\pi$ each year anew in a creative and beautiful manner.</p>
-<p><img src="img/03/pi_05.png" alt="pi_05"><br>
+<p>The digits of <span class="math inline"><em>π</em></span> pass every test for randomness, yet <span class="math inline"><em>π</em></span> is a precise mathematical value that describes the relationship between the circumference of a circle and its diameter. This dichotomy between <em>very random</em> and <em>very structured</em> blows my mind. <a href="https://blogs.sas.com/content/iml/2015/03/12/digits-of-pi.html#prettyPhoto">[20]</a></p>
+<p>In honor of <span class="math inline"><em>π</em></span> day, which is on March, 14th according to the north american date formating of 03.14., several artists visually represent <span class="math inline"><em>π</em></span> each year anew in a creative and beautiful manner.</p>
+<p><img src="img/03/pi_05.png" alt="pi_05" /><br />
 <a href="https://fineartamerica.com/featured/flow-of-life-flow-of-pi-cristian-ilies-vasile.html">[fineartamerica]</a></p>
-<p>Here, the digits of $\pi$ are represented as a path traced by links between successive digits. Each digit is assigned a segment around the circle and a link between segment $i$ and $j$ corresponds to the appearance of $ij$ in $\pi$. For example, the $14$ in $3.14...$ is drawn as a link between segment $1$ and segment $4$. <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21]</a></p>
-<p><img src="img/03/pi_06.png" alt="pi_06"><br>
+<p>Here, the digits of <span class="math inline"><em>π</em></span> are represented as a path traced by links between successive digits. Each digit is assigned a segment around the circle and a link between segment <span class="math inline"><em>i</em></span> and <span class="math inline"><em>j</em></span> corresponds to the appearance of <span class="math inline"><em>i</em><em>j</em></span> in <span class="math inline"><em>π</em></span>. For example, the <span class="math inline">14</span> in <span class="math inline">3.14...</span> is drawn as a link between segment <span class="math inline">1</span> and segment <span class="math inline">4</span>. <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21]</a></p>
+<p><img src="img/03/pi_06.png" alt="pi_06" /><br />
 <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[mkweb]</a></p>
 <p>As more digits are added to the path, the image becomes a weaving mandala.</p>
 <p>Here the same idea with a different mapping of the colors:</p>
-<p><img src="img/03/pi_01.png" alt="pi_01"><br>
+<p><img src="img/03/pi_01.png" alt="pi_01" /><br />
 <a href="http://www.lacim.uqam.ca/~plouffe/distributions%20modulo%201/imagepages/image10.html">[lacim]</a></p>
-<p>The digits of $\pi$ are, as we already know, randomly distributed. Art based on its digits therefore has a quality that is influenced by this random distribution. To provide a reference of what such a random pattern looks like, below are 16 random numbers represented in the same way. They're all different, yet strangely the same. <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21]</a></p>
-<p><img src="img/03/pi_07.png" alt="pi_07"><br>
+<p>The digits of <span class="math inline"><em>π</em></span> are, as we already know, randomly distributed. Art based on its digits therefore has a quality that is influenced by this random distribution. To provide a reference of what such a random pattern looks like, below are 16 random numbers represented in the same way. They’re all different, yet strangely the same. <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21]</a></p>
+<p><img src="img/03/pi_07.png" alt="pi_07" /><br />
 <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[mkweb]</a></p>
 <p><a href="http://plouffe.fr/Simon%20Plouffe.htm">Simon Plouffe</a> offers <a href="http://plouffe.fr/distributions%20modulo%201/">a whole collection</a> of similarly visualized equations.</p>
-<p>The following visualization of $\pi$ is generated by running a simulation of gravity in which digits of $\pi$ are each assigned a mass and allowed to collide and orbit each other.</p>
-<p><img src="img/03/pi_08.png" alt="pi_08"><img src="img/03/pi_09.png" alt="pi_09"><br>
+<p>The following visualization of <span class="math inline"><em>π</em></span> is generated by running a simulation of gravity in which digits of <span class="math inline"><em>π</em></span> are each assigned a mass and allowed to collide and orbit each other.</p>
+<p><img src="img/03/pi_08.png" alt="pi_08" /><img src="img/03/pi_09.png" alt="pi_09" /><br />
 <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[mkweb]</a></p>
-<p>Visualizing the <a href="http://mkweb.bcgsc.ca/pi/pi.approximation.day/">accuracy of 10,000 rational approximations</a> of $\pi$:</p>
-<p><img src="img/03/pi_10.png" alt="pi_10"><br>
+<p>Visualizing the <a href="http://mkweb.bcgsc.ca/pi/pi.approximation.day/">accuracy of 10,000 rational approximations</a> of <span class="math inline"><em>π</em></span>:</p>
+<p><img src="img/03/pi_10.png" alt="pi_10" /><br />
 <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[mkweb]</a></p>
-<p>Or 351 digits of $\pi$ <a href="http://mkweb.bcgsc.ca/pi/piday2019/">in 54 different alphabets</a> (left) and spelling out the digits  in a variety of languages and alphabets. The artists leaves it up to us to work out the rule for the red highlights.</p>
-<p><img src="img/03/pi_11.png" alt="pi_11"><img src="img/03/pi_12.png" alt="pi_12"><br>
+<p>Or 351 digits of <span class="math inline"><em>π</em></span> <a href="http://mkweb.bcgsc.ca/pi/piday2019/">in 54 different alphabets</a> (left) and spelling out the digits in a variety of languages and alphabets. The artists leaves it up to us to work out the rule for the red highlights.</p>
+<p><img src="img/03/pi_11.png" alt="pi_11" /><img src="img/03/pi_12.png" alt="pi_12" /><br />
 <a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[mkweb]</a></p>
 <p>As you can see certain numbers alone come with a vast range of interesting properties and it is up us to use them in a visually interesting and creative manner.</p>
 <p><em>Do you recognize the following sequence of numbers? How is the sequence constructed?</em></p>
-<p>$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...$</p>
-<p>Yes, you are right, it is the...</p>
+<p><span class="math inline">0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...</span></p>
+<p>Yes, you are right, it is the…</p>
 <h3 id="fibonacci-sequence">Fibonacci Sequence</h3>
-<p>In mathematics, the Fibonacci numbers, commonly denoted $F_n$, form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from $0$ and $1$. That is, [6]</p>
-<p>$F_{0}=0,  F_{1}=1,$</p>
+<p>In mathematics, the Fibonacci numbers, commonly denoted <span class="math inline"><em>F</em><sub><em>n</em></sub></span>, form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from <span class="math inline">0</span> and <span class="math inline">1</span>. That is, [6]</p>
+<p><span class="math inline"><em>F</em><sub>0</sub> = 0, <em>F</em><sub>1</sub> = 1,</span></p>
 <p>and</p>
-<p>$F_{n}=F_{n-1}+F_{n-2}$,</p>
-<p>for $n &gt; 1$.</p>
-<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">nthFibonacci</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> 
-</span>{
-    <span class="hljs-keyword">if</span> (n &lt;= <span class="hljs-number">1</span>) 
-        <span class="hljs-keyword">return</span> n; 
-
-    <span class="hljs-keyword">return</span> nthFibonacci(n-<span class="hljs-number">1</span>) + nthFibonacci(n-<span class="hljs-number">2</span>);
-}
-</div></code></pre>
+<p><span class="math inline"><em>F</em><sub><em>n</em></sub> = <em>F</em><sub><em>n</em> − 1</sub> + <em>F</em><sub><em>n</em> − 2</sub></span>,</p>
+<p>for <span class="math inline"><em>n</em> &gt; 1</span>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">int</span> <span class="fu">nthFibonacci</span>(<span class="dt">int</span> n) </a>
+<a class="sourceLine" id="cb3-2" title="2">{</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="kw">if</span> (n &lt;= <span class="dv">1</span>) </a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="kw">return</span> n; </a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="kw">return</span> <span class="fu">nthFibonacci</span>(n-<span class="dv">1</span>) + <span class="fu">nthFibonacci</span>(n-<span class="dv">2</span>);</a>
+<a class="sourceLine" id="cb3-7" title="7">}</a></code></pre></div>
 <p>Knowledge of the Fibonacci sequence was expressed from the Indian mathematician <a href="https://en.wikipedia.org/wiki/Pingala">Acharya Pingala</a> in connection with a study of poetic metres and verse in Sanskrit as early c. 450 BC–200 BC. Outside India, the Fibonacci sequence first appears in the book <a href="https://en.wikipedia.org/wiki/Liber_Abaci">Liber Abaci</a> (1202) by <a href="https://en.wikipedia.org/wiki/Fibonacci">Fibonacci</a> using it to calculate the growth of rabbit populations. [7][8][9][10]</p>
 <p>There is a special relationship between the Golden Ratio and Fibonacci Numbers in that the ratio of two successive Fibonacci numbers is close to the golden ratio:</p>
-<p><img src="img/03/goldenratio_04.png" alt="goldenratio_04"><br>
+<p><img src="img/03/goldenratio_04.png" alt="goldenratio_04" /><br />
 <a href="https://hydrogen2oxygen.net/en/2012/06/21/the-fibonacci-sequence-is-the-mathematical-first-cousin-of-the-golden-ratio/">[hydrogen2oxygen]</a></p>
 <p>Geometrically the Fibonacci Sequence can be expressed as follows.</p>
-<p><img src="img/03/fibonacci_01.png" alt="fibonacci_01"><br>
+<p><img src="img/03/fibonacci_01.png" alt="fibonacci_01" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:34*21-FibonacciBlocks.png">[wiki]</a></p>
 <p>The above segmentation of an rectangle approximates the <em>golden spiral</em>.</p>
-<p><img src="img/03/fibonacci_02.png" alt="fibonacci_02"><br>
+<p><img src="img/03/fibonacci_02.png" alt="fibonacci_02" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:FibonacciSpiral.svg">[wiki]</a></p>
 <p>This is easily constructed by placing a quarter of a circle in each segment</p>
-<p><img src="img/03/fibonacci_03.png" alt="fibonacci_03"><br>
+<p><img src="img/03/fibonacci_03.png" alt="fibonacci_03" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:FibonacciSpiral.svg">[wiki]</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Fibonacci_number">[5]</a></p>
-<p>But wait. What is a <em>spiral</em> and why is it <em>golden</em>? Don't we need $\varphi$ for anything to be golden?</p>
+<p>But wait. What is a <em>spiral</em> and why is it <em>golden</em>? Don’t we need <span class="math inline"><em>φ</em></span> for anything to be golden?</p>
 <h2 id="spirals">Spirals</h2>
 <p>In mathematics, a spiral is a curve which starts from a point and when moving farther away, it revolves around the startpoint. The phyllotaxis code we have seen above is actually also creating spirals.</p>
-<p>Spirals are usually represented in polar coordinates $(r, \theta)$.</p>
+<p>Spirals are usually represented in polar coordinates <span class="math inline">(<em>r</em>, <em>θ</em>)</span>.</p>
 <h3 id="polar-coordinates">Polar Coordinates</h3>
 <p>Quick reminder, what is the Polar Coordinate System? In mathematics, the polar coordinate system is a two-dimensional coordinate system in which each point on a plane is determined by a distance from a reference point and an angle from a reference direction.</p>
-<p><img src="img/03/polar_01.png" alt="polar_01"><br>
+<p><img src="img/03/polar_01.png" alt="polar_01" /><br />
 <a href="https://de.wikipedia.org/wiki/Datei:Ebene_polarkoordinaten.svg">[wiki]</a></p>
-<p>(here with $\phi$ as name for the angular coordinate, often called the polar angle)</p>
+<p>(here with <span class="math inline"><em>ϕ</em></span> as name for the angular coordinate, often called the polar angle)</p>
 <p>Hence,</p>
-<p>$x = r \cos{\phi}$<br>
-$y = r \sin{\phi}$</p>
+<p><span class="math inline"><em>x</em> = <em>r</em>cos <em>ϕ</em></span><br />
+<span class="math inline"><em>y</em> = <em>r</em>sin <em>ϕ</em></span></p>
 <p>and</p>
-<p>$r = \sqrt{{x^2 + y^2}}$<br>
-$\phi = \tan^{-1}{\left (\frac{y}{x}\right )}$</p>
+<p><span class="math inline">$r = \sqrt{{x^2 + y^2}}$</span><br />
+<span class="math inline">$\phi = \tan^{-1}{\left (\frac{y}{x}\right )}$</span></p>
 <p>Polar coordinates are most appropriate in any context where the phenomenon being considered is inherently tied to <em>direction</em> and <em>length</em> from a <em>center point</em>, such as with spirals. Please make sure that you know what polar coordinates are and how to use them. We are going to need them all the time.</p>
-<p><img src="img/03/polar_02.png" alt="polar_02"><br>
+<p><img src="img/03/polar_02.png" alt="polar_02" /><br />
 <a href="https://theedge.com.hk/decomplexifying-complex-numbers/">[theedge]</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">[11]</a></p>
 <p>In polar coordinates different spiral designs can be compactly expressed with</p>
 <ul>
-<li>$r$ as the distance from the origin,</li>
-<li>$\theta$ as the angle (in radians) from the horizontal axis, and</li>
-<li>$a$ and $b$ as constants that allow for shaping the different designs.</li>
+<li><span class="math inline"><em>r</em></span> as the distance from the origin,</li>
+<li><span class="math inline"><em>θ</em></span> as the angle (in radians) from the horizontal axis, and</li>
+<li><span class="math inline"><em>a</em></span> and <span class="math inline"><em>b</em></span> as constants that allow for shaping the different designs.</li>
 </ul>
 <h3 id="archimedes-spiral">Archimedes Spiral</h3>
-<p>$r = a \theta$</p>
-<p><img src="img/03/spiral_01.gif" alt="spiral_01"><br>
+<p><span class="math inline"><em>r</em> = <em>a</em><em>θ</em></span></p>
+<p><img src="img/03/spiral_01.gif" alt="spiral_01" /><br />
 <a href="https://mathworld.wolfram.com/ArchimedesSpiral.html">[Wolfram]</a></p>
-<pre class="hljs"><code><div><span class="hljs-keyword">let</span> a = <span class="hljs-number">2</span>;
-<span class="hljs-keyword">let</span> r = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>)
-</span>{
-    createCanvas(<span class="hljs-number">512</span>, <span class="hljs-number">512</span>);
-    fill(<span class="hljs-number">100</span>);
-    background(<span class="hljs-number">255</span>);
-    noStroke();
-} 
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-</span>{
-    translate(width * <span class="hljs-number">0.5</span>, height  * <span class="hljs-number">0.5</span>);
-
-    r = a*theta;
-    <span class="hljs-keyword">let</span> x = r * cos(theta);
-    <span class="hljs-keyword">let</span> y = r * sin(theta);
-
-    ellipse(x, y, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>);
-
-    theta += <span class="hljs-number">0.1</span>;
-}
-</div></code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">let</span> a <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">let</span> r <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="kw">function</span> <span class="at">setup</span>()</a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="op">{</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="at">createCanvas</span>(<span class="dv">512</span><span class="op">,</span> <span class="dv">512</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="at">fill</span>(<span class="dv">100</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="at">background</span>(<span class="dv">255</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="at">noStroke</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="op">}</span> </a>
+<a class="sourceLine" id="cb4-12" title="12"></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb4-14" title="14"><span class="op">{</span></a>
+<a class="sourceLine" id="cb4-15" title="15">    <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height  <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-16" title="16"></a>
+<a class="sourceLine" id="cb4-17" title="17">    r <span class="op">=</span> a<span class="op">*</span>theta<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-18" title="18">    <span class="kw">let</span> x <span class="op">=</span> r <span class="op">*</span> <span class="at">cos</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-19" title="19">    <span class="kw">let</span> y <span class="op">=</span> r <span class="op">*</span> <span class="at">sin</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-20" title="20"></a>
+<a class="sourceLine" id="cb4-21" title="21">    <span class="at">ellipse</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-22" title="22"></a>
+<a class="sourceLine" id="cb4-23" title="23">    theta <span class="op">+=</span> <span class="fl">0.1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-24" title="24"><span class="op">}</span></a></code></pre></div>
 <h3 id="fermat-spiral">Fermat Spiral</h3>
-<p>$r^2 = a^2 \theta$</p>
-<p><img src="img/03/spiral_02.gif" alt="spiral_02"><br>
+<p><span class="math inline"><em>r</em><sup>2</sup> = <em>a</em><sup>2</sup><em>θ</em></span></p>
+<p><img src="img/03/spiral_02.gif" alt="spiral_02" /><br />
 <a href="https://mathworld.wolfram.com/FermatsSpiral.html">[Wolfram]</a></p>
 <h3 id="logarithmic-spiral">Logarithmic Spiral</h3>
-<p>$r = ae^{b\theta}$
-<img src="img/03/spiral_03.gif" alt="spiral_03"><br>
+<p><span class="math inline"><em>r</em> = <em>a</em><em>e</em><sup><em>b</em><em>θ</em></sup></span> <img src="img/03/spiral_03.gif" alt="spiral_03" /><br />
 <a href="https://mathworld.wolfram.com/LogarithmicSpiral.html">[Wolfram]</a></p>
 <h3 id="hyperbolic-spiral">Hyperbolic Spiral</h3>
-<p>$r = \frac{a}{\theta}$
-<img src="img/03/spiral_04.gif" alt="spiral_04"><br>
+<p><span class="math inline">$r = \frac{a}{\theta}$</span> <img src="img/03/spiral_04.gif" alt="spiral_04" /><br />
 <a href="https://mathworld.wolfram.com/HyperbolicSpiral.html">[Wolfram]</a></p>
 <h3 id="lituus-spiral">Lituus Spiral</h3>
-<p>$r^2 = \frac{a^2}{\theta}$
-<img src="img/03/spiral_05.gif" alt="spiral_05"><br>
+<p><span class="math inline">$r^2 = \frac{a^2}{\theta}$</span> <img src="img/03/spiral_05.gif" alt="spiral_05" /><br />
 <a href="https://mathworld.wolfram.com/Lituus.html">[Wolfram]</a></p>
 <h3 id="cornu-spiral">Cornu Spiral</h3>
 <p>This spiral is also known as <a href="https://en.wikipedia.org/wiki/Euler_spiral">Euler’s spiral</a> and its curvature changes linearly with its curve length. Mathematically it is quite complex. If interested, ask <a href="https://mathworld.wolfram.com/CornuSpiral.html">Wolfram</a>.</p>
-<p><img src="img/03/spiral_06.gif" alt="spiral_06"><br>
+<p><img src="img/03/spiral_06.gif" alt="spiral_06" /><br />
 <a href="https://mathworld.wolfram.com/CornuSpiral.html">[Wolfram]</a></p>
 <h2 id="golden-spiral">Golden Spiral</h2>
-<p>The <a href="https://en.wikipedia.org/wiki/Golden_spiral#Mathematics">formal description</a> of the golden spiral, which above, we have approximated geometrically, is based on a logarithmic spiral with a special value of the growth factor $b$. Guess what the special value is! Remember we want to be golden again...</p>
-<p>$r = ae^{b\theta}$</p>
-<p><img src="img/03/spiral_07.gif" alt="spiral_07"><br>
+<p>The <a href="https://en.wikipedia.org/wiki/Golden_spiral#Mathematics">formal description</a> of the golden spiral, which above, we have approximated geometrically, is based on a logarithmic spiral with a special value of the growth factor <span class="math inline"><em>b</em></span>. Guess what the special value is! Remember we want to be golden again…</p>
+<p><span class="math inline"><em>r</em> = <em>a</em><em>e</em><sup><em>b</em><em>θ</em></sup></span></p>
+<p><img src="img/03/spiral_07.gif" alt="spiral_07" /><br />
 <a href="https://mathworld.wolfram.com/GoldenSpiral.html">[Wolfram]</a></p>
-<p>The special value for the growth factor $b$ is based on $\varphi$, the golden ratio. The golden spiral gets wider (or further from its origin) by a factor of $\varphi$ for every quarter turn it makes.</p>
-<p><img src="img/03/spiral_08.png" alt="spiral_08"><br>
+<p>The special value for the growth factor <span class="math inline"><em>b</em></span> is based on <span class="math inline"><em>φ</em></span>, the golden ratio. The golden spiral gets wider (or further from its origin) by a factor of <span class="math inline"><em>φ</em></span> for every quarter turn it makes.</p>
+<p><img src="img/03/spiral_08.png" alt="spiral_08" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:FakeRealLogSpiral.svg">[wiki]</a></p>
 <p>Golden spirals are self-similar. The shape is infinitely repeated when magnified.</p>
-<p><img src="img/03/spiral_09.gif" alt="spiral_09"><br>
+<p><img src="img/03/spiral_09.gif" alt="spiral_09" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:GoldenSpiralLogarithmic_color_in.gif">[wiki]</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Golden_spiral">[12]</a></p>
 <h2 id="curves">Curves</h2>
 <p>Next to spirals as curve designs, there are several similarly simple functions that create aesthetically pleasing curves. At first sight, the Wikipedia and Wolfram pages of these functions can appear a bit intimidating. But I would like to show you that it is actually not that hard to get a grip on these functions.</p>
-<p>Let's have a look into the rose curve.</p>
-<p><img src="img/03/rose_01.png" alt="rose_01"><br>
+<p>Let’s have a look into the rose curve.</p>
+<p><img src="img/03/rose_01.png" alt="rose_01" /><br />
 <a href="https://en.wikipedia.org/wiki/Rose_(mathematics)">[wiki]</a></p>
 <h3 id="the-rose-curve">The Rose Curve</h3>
 <p>First, check <a href="https://en.wikipedia.org/wiki/Rose_(mathematics)">its wikipedia</a> page. This page is still somewhat simple and well-arranged. Sometimes these pages overflow with explanations, different representations, history and proofs, etc.. Fear not! What you always want to look out for is the <em>coordinates</em> you can plot, be it polar or cartesian coordinates (we know how to go from one to the other so it does not really matter what we get).</p>
 <p>For the rose curve, the parametric equations are right under <em>General overview</em> ready for us to use (how convenient!):</p>
 <p>The polar equation:</p>
-<p>$r=\cos(k\theta )$</p>
+<p><span class="math inline"><em>r</em> = cos (<em>k</em><em>θ</em>)</span></p>
 <p>The Cartesian parametric equations of the form</p>
-<p>$x=\cos(k\theta )\cos(\theta )$<br>
-$y=\cos(k\theta )\sin(\theta )$</p>
+<p><span class="math inline"><em>x</em> = cos (<em>k</em><em>θ</em>)cos (<em>θ</em>)</span><br />
+<span class="math inline"><em>y</em> = cos (<em>k</em><em>θ</em>)sin (<em>θ</em>)</span></p>
 <h4 id="parameter-r">Parameter r</h4>
-<p>But <em>wait</em>, you will say, <em>where is $r$</em> you will ask! Well, often times these formulas assume a radius of 1 and drop the variable altogether. If you would like to include $r$ as a scaling factor to your rose implementation, it would look as follows</p>
-<p>$x=r \cos(k\theta )\cos(\theta )$<br>
-$y=r \cos(k\theta )\sin(\theta )$</p>
-<p>So, we have also $\theta$ and $k$ as parameters here. Let's try to understand what they do.</p>
+<p>But <em>wait</em>, you will say, <em>where is <span class="math inline"><em>r</em></span></em> you will ask! Well, often times these formulas assume a radius of 1 and drop the variable altogether. If you would like to include <span class="math inline"><em>r</em></span> as a scaling factor to your rose implementation, it would look as follows</p>
+<p><span class="math inline"><em>x</em> = <em>r</em>cos (<em>k</em><em>θ</em>)cos (<em>θ</em>)</span><br />
+<span class="math inline"><em>y</em> = <em>r</em>cos (<em>k</em><em>θ</em>)sin (<em>θ</em>)</span></p>
+<p>So, we have also <span class="math inline"><em>θ</em></span> and <span class="math inline"><em>k</em></span> as parameters here. Let’s try to understand what they do.</p>
 <h4 id="parameter-theta">Parameter Theta</h4>
-<p>$\theta$ is once again the angular coordinate or polar angle:</p>
-<p><img src="img/03/polar_03.png" alt="polar_03"><br>
+<p><span class="math inline"><em>θ</em></span> is once again the angular coordinate or polar angle:</p>
+<p><img src="img/03/polar_03.png" alt="polar_03" /><br />
 <a href="https://mathworld.wolfram.com/PolarAngle.html">[wolfram]</a></p>
-<p><em>What do we need to do with $\theta$ in order to draw for example this version of the rose?</em></p>
-<p><img src="img/03/rose_03.png" alt="rose_03"><br>
+<p><em>What do we need to do with <span class="math inline"><em>θ</em></span> in order to draw for example this version of the rose?</em></p>
+<p><img src="img/03/rose_03.png" alt="rose_03" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:7_Petal_rose.svg">[wikimedia]</a></p>
-<p>Yes, you are right, in order to draw the whole rose and not only one point, we need to iterate $\theta$ over the circumference of a circle, hence $2\pi$ in radians or $360^\circ$ in degree. The diligent reader would have known that by simply reading the wiki text:</p>
+<p>Yes, you are right, in order to draw the whole rose and not only one point, we need to iterate <span class="math inline"><em>θ</em></span> over the circumference of a circle, hence <span class="math inline">2<em>π</em></span> in radians or <span class="math inline">360<sup>∘</sup></span> in degree. The diligent reader would have known that by simply reading the wiki text:</p>
 <blockquote>
-<p>...the entire graph of the rose will be traced out exactly once when the value of $\theta$ changes from $0$ to $2\pi$.</p>
+<p>…the entire graph of the rose will be traced out exactly once when the value of <span class="math inline"><em>θ</em></span> changes from <span class="math inline">0</span> to <span class="math inline">2<em>π</em></span>.</p>
 </blockquote>
 <p>Therefore, a code basis for drawing the rose in p5 could look as follows (feel free to follow along with the code in p5):</p>
-<pre class="hljs"><code><div>    <span class="hljs-comment">// The usual p5 setup code</span>
-
-    <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-    </span>{
-        background(<span class="hljs-number">255</span>);
-
-        <span class="hljs-comment">// Moving whatever we are drawing to the center</span>
-        <span class="hljs-comment">// of the canvas to have the center as origin</span>
-        translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-
-        <span class="hljs-comment">// Defining r in reference to the canvas size</span>
-        <span class="hljs-keyword">let</span> r = width * <span class="hljs-number">0.4</span>;
-
-        beginShape();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>; theta &lt; TWO_PI; theta+= <span class="hljs-number">0.01</span>)
-        {
-            <span class="hljs-keyword">let</span> x = ...
-            let y = ...
-            vertex(x, y);
-        }
-
-        endShape(CLOSE);
-    }
-</div></code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1">    <span class="co">// The usual p5 setup code</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-7" title="7">        <span class="at">background</span>(<span class="dv">255</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8"></a>
+<a class="sourceLine" id="cb5-9" title="9">        <span class="co">// Moving whatever we are drawing to the center</span></a>
+<a class="sourceLine" id="cb5-10" title="10">        <span class="co">// of the canvas to have the center as origin</span></a>
+<a class="sourceLine" id="cb5-11" title="11">        <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12"></a>
+<a class="sourceLine" id="cb5-13" title="13">        <span class="co">// Defining r in reference to the canvas size</span></a>
+<a class="sourceLine" id="cb5-14" title="14">        <span class="kw">let</span> r <span class="op">=</span> width <span class="op">*</span> <span class="fl">0.4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16">        <span class="at">beginShape</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-17" title="17">        <span class="cf">for</span> (<span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> theta <span class="op">&lt;</span> TWO_PI<span class="op">;</span> theta<span class="op">+=</span> <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb5-18" title="18">        <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-19" title="19">            <span class="kw">let</span> x <span class="op">=</span> ...</a>
+<a class="sourceLine" id="cb5-20" title="20">            <span class="kw">let</span> y <span class="op">=</span> ...</a>
+<a class="sourceLine" id="cb5-21" title="21">            <span class="at">vertex</span>(x<span class="op">,</span> y)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-22" title="22">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-23" title="23"></a>
+<a class="sourceLine" id="cb5-24" title="24">        <span class="at">endShape</span>(CLOSE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-25" title="25">    <span class="op">}</span></a></code></pre></div>
 <h4 id="parameter-k">Parameter k</h4>
-<p>Wiki also gives us some more information about $k$.</p>
+<p>Wiki also gives us some more information about <span class="math inline"><em>k</em></span>.</p>
 <p>If k is an integer, the curve will be rose-shaped with</p>
 <ul>
 <li>2k petals if k is even, and</li>
 <li>k petals if k is odd.</li>
 </ul>
-<p>Nice, we want that controllability for our rose, so let's add that to the code and compute the (cartesian) coordinates. All code snippets here are optimized for readability and understanding - some things could be implemented more efficiently, e.g. computing <code>cos(k*theta)</code> twice...</p>
-<pre class="hljs"><code><div>    <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-    </span>{
-        background(<span class="hljs-number">255</span>);
-        translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-
-        <span class="hljs-keyword">let</span> r = width * <span class="hljs-number">0.4</span>;
-        <span class="hljs-comment">//2k petals if k is even, and</span>
-        <span class="hljs-comment">//k petals if k is odd</span>
-        <span class="hljs-keyword">let</span> k = <span class="hljs-number">6</span>;
-
-        beginShape();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>; theta &lt; TWO_PI; theta+= <span class="hljs-number">0.01</span>)
-        {
-            <span class="hljs-keyword">let</span> x = r * (cos(k*theta) * cos(theta));
-            <span class="hljs-keyword">let</span> y = r * (cos(k*theta) * sin(theta));
-            vertex(x, y);
-        }
-
-        endShape(CLOSE);
-    }
-</div></code></pre>
-<p><img src="img/03/rose_04.png" alt=""></p>
-<p>What shall I say? So easy... 👩🏼‍🎨</p>
-<p>Let's map k to the with position of the mouse to explore the design space:</p>
-<pre class="hljs"><code><div><span class="hljs-keyword">let</span> k = floor(map(mouseX, <span class="hljs-number">0</span>, width, <span class="hljs-number">1</span>, <span class="hljs-number">20</span>));
-</div></code></pre>
-<p>But <em>wait</em>, you will say. <em>Why don't we see all the designs from the wiki preview image</em>?</p>
-<p><img src="img/03/rose_02.png" alt="rose_02"><br>
+<p>Nice, we want that controllability for our rose, so let’s add that to the code and compute the (cartesian) coordinates. All code snippets here are optimized for readability and understanding - some things could be implemented more efficiently, e.g. computing <code>cos(k*theta)</code> twice…</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1">    <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-5" title="5">        <span class="at">background</span>(<span class="dv">255</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-6" title="6">        <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-7" title="7"></a>
+<a class="sourceLine" id="cb6-8" title="8">        <span class="kw">let</span> r <span class="op">=</span> width <span class="op">*</span> <span class="fl">0.4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-9" title="9">        <span class="co">//2k petals if k is even, and</span></a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="co">//k petals if k is odd</span></a>
+<a class="sourceLine" id="cb6-11" title="11">        <span class="kw">let</span> k <span class="op">=</span> <span class="dv">6</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13">        <span class="at">beginShape</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-14" title="14">        <span class="cf">for</span> (<span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> theta <span class="op">&lt;</span> TWO_PI<span class="op">;</span> theta<span class="op">+=</span> <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb6-15" title="15">        <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-16" title="16">            <span class="kw">let</span> x <span class="op">=</span> r <span class="op">*</span> (<span class="at">cos</span>(k<span class="op">*</span>theta) <span class="op">*</span> <span class="at">cos</span>(theta))<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-17" title="17">            <span class="kw">let</span> y <span class="op">=</span> r <span class="op">*</span> (<span class="at">cos</span>(k<span class="op">*</span>theta) <span class="op">*</span> <span class="at">sin</span>(theta))<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-18" title="18">            <span class="at">vertex</span>(x<span class="op">,</span> y)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-19" title="19">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-20" title="20"></a>
+<a class="sourceLine" id="cb6-21" title="21">        <span class="at">endShape</span>(CLOSE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-22" title="22">    <span class="op">}</span></a></code></pre></div>
+<p><img src="img/03/rose_04.png" /></p>
+<p>What shall I say? So easy… 👩🏼‍🎨</p>
+<p>Let’s map k to the with position of the mouse to explore the design space:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">let</span> k <span class="op">=</span> <span class="at">floor</span>(<span class="at">map</span>(mouseX<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">20</span>))<span class="op">;</span></a></code></pre></div>
+<p>But <em>wait</em>, you will say. <em>Why don’t we see all the designs from the wiki preview image</em>?</p>
+<p><img src="img/03/rose_02.png" alt="rose_02" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:7_Petal_rose.svg">[wiki]</a></p>
-<p>Because, dear student, look at the parameterization. For the image above, not $k$ is used but $k = \frac{n}{d}$.</p>
-<p>Let's add that</p>
-<pre class="hljs"><code><div>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-    </span>{
-        background(<span class="hljs-number">255</span>);
-        translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-
-        <span class="hljs-keyword">let</span> r = width * <span class="hljs-number">0.4</span>;
-        <span class="hljs-keyword">let</span> n = floor(map(mouseX, <span class="hljs-number">0</span>, width, <span class="hljs-number">1</span>, <span class="hljs-number">10</span>));
-        <span class="hljs-keyword">let</span> d = floor(map(mouseY, <span class="hljs-number">0</span>, height, <span class="hljs-number">1</span>, <span class="hljs-number">10</span>));  
-        <span class="hljs-keyword">let</span> k = n / d;
-
-        beginShape();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>; theta &lt; TWO_PI; theta+= <span class="hljs-number">0.01</span>)
-        {
-            <span class="hljs-keyword">let</span> x = r * (cos(k*theta) * cos(theta));
-            <span class="hljs-keyword">let</span> y = r * (cos(k*theta) * sin(theta));
-            vertex(x, y);
-        }
-        endShape(CLOSE);
-    }
-</div></code></pre>
+<p>Because, dear student, look at the parameterization. For the image above, not <span class="math inline"><em>k</em></span> is used but <span class="math inline">$k = \frac{n}{d}$</span>.</p>
+<p>Let’s add that</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1">    <span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-3" title="3">        <span class="at">background</span>(<span class="dv">255</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-4" title="4">        <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-5" title="5"></a>
+<a class="sourceLine" id="cb8-6" title="6">        <span class="kw">let</span> r <span class="op">=</span> width <span class="op">*</span> <span class="fl">0.4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-7" title="7">        <span class="kw">let</span> n <span class="op">=</span> <span class="at">floor</span>(<span class="at">map</span>(mouseX<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">10</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-8" title="8">        <span class="kw">let</span> d <span class="op">=</span> <span class="at">floor</span>(<span class="at">map</span>(mouseY<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> height<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">10</span>))<span class="op">;</span>  </a>
+<a class="sourceLine" id="cb8-9" title="9">        <span class="kw">let</span> k <span class="op">=</span> n / d<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-10" title="10"></a>
+<a class="sourceLine" id="cb8-11" title="11">        <span class="at">beginShape</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-12" title="12">        <span class="cf">for</span> (<span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> theta <span class="op">&lt;</span> TWO_PI<span class="op">;</span> theta<span class="op">+=</span> <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb8-13" title="13">        <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-14" title="14">            <span class="kw">let</span> x <span class="op">=</span> r <span class="op">*</span> (<span class="at">cos</span>(k<span class="op">*</span>theta) <span class="op">*</span> <span class="at">cos</span>(theta))<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-15" title="15">            <span class="kw">let</span> y <span class="op">=</span> r <span class="op">*</span> (<span class="at">cos</span>(k<span class="op">*</span>theta) <span class="op">*</span> <span class="at">sin</span>(theta))<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-16" title="16">            <span class="at">vertex</span>(x<span class="op">,</span> y)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-17" title="17">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-18" title="18">        <span class="at">endShape</span>(CLOSE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-19" title="19">    <span class="op">}</span></a></code></pre></div>
 <p>Uhhh, what is happening? Why do we see something like this:</p>
-<p><img src="img/03/rose_05.png" alt=""></p>
+<p><img src="img/03/rose_05.png" /></p>
 <h4 id="number-of-loops">Number of Loops</h4>
-<p>Well, if we skim the wiki page, there is an animation that gives us an intuition that we need $\theta$ to go around a circle more than once, meaning we need more <em>loops</em>, to draw the whole shape.</p>
-<p><img src="img/03/rose_06.gif" alt="rose_06"><br>
+<p>Well, if we skim the wiki page, there is an animation that gives us an intuition that we need <span class="math inline"><em>θ</em></span> to go around a circle more than once, meaning we need more <em>loops</em>, to draw the whole shape.</p>
+<p><img src="img/03/rose_06.gif" alt="rose_06" /><br />
 <a href="https://commons.wikimedia.org/wiki/File:Rose_Curve_animation_with_Gears_n4_d5.gif">[wiki]</a></p>
 <p>But wiki is not really clear about how many loops we need. Now we have two options: 1. read the wiki page in detail to gain a better understanding or 2. find another resource which gives us the infos we are looking for more directly. As I am lazy, I go for option 2 and my second place to look at for maths is usually Wolfram.</p>
 <p>And, we are successful! <a href="https://mathworld.wolfram.com/Rose.html">Wolfram</a> says on first sight something about <em>closing the curve</em>:</p>
 <blockquote>
-<p>If $n=r/s$ is a rational number, then the curve closes at a polar angle of $\theta=\pi s p$, where $p=1$ if $rs$ is odd and $p=2$ if rs is even.</p>
+<p>If <span class="math inline"><em>n</em> = <em>r</em>/<em>s</em></span> is a rational number, then the curve closes at a polar angle of <span class="math inline"><em>θ</em> = <em>π</em><em>s</em><em>p</em></span>, where <span class="math inline"><em>p</em> = 1</span> if <span class="math inline"><em>r</em><em>s</em></span> is odd and <span class="math inline"><em>p</em> = 2</span> if rs is even.</p>
 </blockquote>
 <p>Unfortunately, and this happens usually when you use multiple resources, the parameter are named differently. But, we can easily translate them by setting n = k, r = n, s = d</p>
 <blockquote>
-<p>If k = n / d is a rational number, then the curve closes at a polar angle of  $\theta=\pi d p$, where $p=1$ if $nd$ is odd and $p = 2$ if $nd$ is even.</p>
+<p>If k = n / d is a rational number, then the curve closes at a polar angle of <span class="math inline"><em>θ</em> = <em>π</em><em>d</em><em>p</em></span>, where <span class="math inline"><em>p</em> = 1</span> if <span class="math inline"><em>n</em><em>d</em></span> is odd and <span class="math inline"><em>p</em> = 2</span> if <span class="math inline"><em>n</em><em>d</em></span> is even.</p>
 </blockquote>
-<p>Meaning, we need $\theta=2d\pi$ loops!</p>
-<p>That was easy - now we know without having used our brain too much. And we will go again the easy route with the code and draw the rose $\theta=2d\pi$ times, independently of $k$ being rational or not.</p>
-<pre class="hljs"><code><div>...
-
-for (<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>; theta &lt; TWO_PI * d; theta+= <span class="hljs-number">0.01</span>)
-{
-    ...
-}
-...
-</div></code></pre>
+<p>Meaning, we need <span class="math inline"><em>θ</em> = 2<em>d</em><em>π</em></span> loops!</p>
+<p>That was easy - now we know without having used our brain too much. And we will go again the easy route with the code and draw the rose <span class="math inline"><em>θ</em> = 2<em>d</em><em>π</em></span> times, independently of <span class="math inline"><em>k</em></span> being rational or not.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1">...</a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="cf">for</span> (<span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> theta <span class="op">&lt;</span> TWO_PI <span class="op">*</span> d<span class="op">;</span> theta<span class="op">+=</span> <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="op">{</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    ...</a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="op">}</span></a>
+<a class="sourceLine" id="cb9-7" title="7">...</a></code></pre></div>
 <h4 id="parameter-offset-c">Parameter Offset c</h4>
 <p>As last thing we could add an offset, which wiki mentions:</p>
-<p>$r=\cos(k\theta) + c$</p>
+<p><span class="math inline"><em>r</em> = cos (<em>k</em><em>θ</em>) + <em>c</em></span></p>
 <p>Integrating this, could look as follows (but then again, which parameter to control with the mouse is up to you):</p>
-<pre class="hljs"><code><div>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)
-    </span>{
-        background(<span class="hljs-number">255</span>);
-        translate(width * <span class="hljs-number">0.5</span>, height * <span class="hljs-number">0.5</span>);
-
-        <span class="hljs-keyword">let</span> r = width * <span class="hljs-number">0.4</span>;
-        <span class="hljs-keyword">let</span> n = floor(map(mouseX, <span class="hljs-number">0</span>, width, <span class="hljs-number">1</span>, <span class="hljs-number">20</span>));
-        <span class="hljs-keyword">let</span> d = <span class="hljs-number">5</span>;
-        <span class="hljs-keyword">let</span> k = n / d;
-        <span class="hljs-keyword">let</span> c = floor(map(mouseY, <span class="hljs-number">0</span>, height, <span class="hljs-number">1</span>, <span class="hljs-number">200</span>));
-
-        beginShape();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> theta = <span class="hljs-number">0</span>; theta &lt; TWO_PI * d; theta+= <span class="hljs-number">0.01</span>)
-        {
-            <span class="hljs-keyword">let</span> radius = r * cos(theta * k) + c;
-            <span class="hljs-keyword">let</span> x = radius * cos(theta);
-            <span class="hljs-keyword">let</span> y = radius * sin(theta);
-            vertex(x, y);
-        }
-
-        endShape(CLOSE);
-    }
-</div></code></pre>
-<p>Now, have fun exploring the design space. If you couldn't follow the above explanation, feel free to ask <a href="https://www.youtube.com/watch?v=f5QBExMNB1I">Dan</a>.</p>
-<p>E.g. the <a href="https://en.wikipedia.org/wiki/Maurer_rose">maurer rose</a> and the <a href="https://mathworld.wolfram.com/StarrRose.html">starr rose</a> are versions of the basic rose algorithm (even though the starr rose will take some more figuring out...)</p>
-<p><img src="img/03/rose_07.png" alt="rose_07"><br>
-<a href="https://mathworld.wolfram.com/MaurerRose.html">[wolfram]</a><br>
-<img src="img/03/rose_08.png" alt="rose_08"><br>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">function</span> <span class="at">draw</span>()</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-3" title="3">        <span class="at">background</span>(<span class="dv">255</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-4" title="4">        <span class="at">translate</span>(width <span class="op">*</span> <span class="fl">0.5</span><span class="op">,</span> height <span class="op">*</span> <span class="fl">0.5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-5" title="5"></a>
+<a class="sourceLine" id="cb10-6" title="6">        <span class="kw">let</span> r <span class="op">=</span> width <span class="op">*</span> <span class="fl">0.4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-7" title="7">        <span class="kw">let</span> n <span class="op">=</span> <span class="at">floor</span>(<span class="at">map</span>(mouseX<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">20</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-8" title="8">        <span class="kw">let</span> d <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-9" title="9">        <span class="kw">let</span> k <span class="op">=</span> n / d<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-10" title="10">        <span class="kw">let</span> c <span class="op">=</span> <span class="at">floor</span>(<span class="at">map</span>(mouseY<span class="op">,</span> <span class="dv">0</span><span class="op">,</span> height<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">200</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-11" title="11"></a>
+<a class="sourceLine" id="cb10-12" title="12">        <span class="at">beginShape</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-13" title="13">        <span class="cf">for</span> (<span class="kw">let</span> theta <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> theta <span class="op">&lt;</span> TWO_PI <span class="op">*</span> d<span class="op">;</span> theta<span class="op">+=</span> <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb10-14" title="14">        <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-15" title="15">            <span class="kw">let</span> radius <span class="op">=</span> r <span class="op">*</span> <span class="at">cos</span>(theta <span class="op">*</span> k) <span class="op">+</span> c<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-16" title="16">            <span class="kw">let</span> x <span class="op">=</span> radius <span class="op">*</span> <span class="at">cos</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-17" title="17">            <span class="kw">let</span> y <span class="op">=</span> radius <span class="op">*</span> <span class="at">sin</span>(theta)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-18" title="18">            <span class="at">vertex</span>(x<span class="op">,</span> y)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-19" title="19">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-20" title="20"></a>
+<a class="sourceLine" id="cb10-21" title="21">        <span class="at">endShape</span>(CLOSE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-22" title="22">    <span class="op">}</span></a></code></pre></div>
+<p>Now, have fun exploring the design space. If you couldn’t follow the above explanation, feel free to ask <a href="https://www.youtube.com/watch?v=f5QBExMNB1I">Dan</a>.</p>
+<p>E.g. the <a href="https://en.wikipedia.org/wiki/Maurer_rose">maurer rose</a> and the <a href="https://mathworld.wolfram.com/StarrRose.html">starr rose</a> are versions of the basic rose algorithm (even though the starr rose will take some more figuring out…)</p>
+<p><img src="img/03/rose_07.png" alt="rose_07" /><br />
+<a href="https://mathworld.wolfram.com/MaurerRose.html">[wolfram]</a><br />
+<img src="img/03/rose_08.png" alt="rose_08" /><br />
 <a href="https://mathworld.wolfram.com/MaurerRose.html">[wolfram]</a></p>
 <p>If you feel adventourus, for example implement the heart curve: <a href="https://en.wikipedia.org/wiki/Heart_symbol#Parametrisation">wiki</a>, <a href="https://mathworld.wolfram.com/HeartCurve.html">wolfram</a>, <a href="https://www.youtube.com/watch?v=oUBAi9xQ2X4">shiffman</a></p>
-<p><img src="img/03/heart_01.png" alt="heart_01"><br>
+<p><img src="img/03/heart_01.png" alt="heart_01" /><br />
 <a href="https://mathworld.wolfram.com/HeartCurve.html">[wolfram]</a></p>
 <h2 id="next">Next</h2>
 <p>Next we are going to have a look into how to design and put together functions ourselves.</p>
 <h2 id="references">References</h2>
-<p><a href="https://en.wikipedia.org/wiki/Euler's_identity">[1] Wiki - Euler's identity</a><br>
-[2] Paulos, John Allen (1992), Beyond Numeracy: An Uncommon Dictionary of Mathematics, Penguin Books.<br>
-[3] Dunham, William (1999), Euler: The Master of Us All, Mathematical Association of America.<br>
-[4] Nahin, Paul J. (2006), Dr. Euler's Fabulous Formula: Cures Many Mathematical Ills, Princeton University Press.<br>
-<a href="https://en.wikipedia.org/wiki/Fibonacci_number">[5] Wiki - Fibonacci Number</a><br>
-<a href="https://en.wikipedia.org/wiki/Fibonacci_number">[6] Lucas, Édouard (1891), Théorie des nombres (in French), 1, Paris.</a><br>
-[7] Pisano, Leonardo (2002), Fibonacci's Liber Abaci: A Translation into Modern English of the Book of Calculation, Sources and Studies in the History of Mathematics and Physical Sciences, Sigler, Laurence E, trans, Springer.<br>
-<a href="https://www.math.utah.edu/~beebe/software/java/fibonacci/liber-abaci.html">[8] Fibonacci's Liber Abaci (Book of Calculation). The University of Utah. 2009.</a><br>
-[9]  Hemenway, Priya (2005). Divine Proportion: Phi In Art, Nature, and Science. New York: Sterling. pp. 20–21..<br>
-<a href="http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibnat.html#Rabbits">[10] Knott, Dr. Ron (2016). The Fibonacci Numbers and Golden section in Nature – 1. University of Surrey.</a><br>
-<a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">[11] Wiki - Polar Coordinate System</a><br>
-<a href="https://en.wikipedia.org/wiki/Golden_spiral">[12] Wiki - Golden Spirals</a><br>
-<a href="https://en.wikipedia.org/wiki/Golden_ratio">[13] Wiki - Golden Ratio</a><br>
-<a href="https://www.independent.co.uk/news/science/mathematicians-dispute-claims-that-the-golden-ratio-is-a-natural-blueprint-for-beauty-10204354.html">[14] Independent - Mathematicians dispute claims that the 'golden ratio' is a natural blueprint for beauty</a><br>
-<a href="https://www.businessinsider.com/the-golden-ratio-fibonacci-numbers-mathematics-zeising-beauty-2015-9?r=DE&amp;IR=T">[15] Business Insider - The one formula that's supposed to 'prove beauty' is fundamentally wrong</a><br>
-<a href="https://www.mathsisfun.com/irrational-numbers.html">[16] Math is Fun - Irrational Numbers</a><br>
-<a href="https://en.wikipedia.org/wiki/Pi">[17] Wiki - Pi</a><br>
-[18] Bronshteĭn, Ilia; Semendiaev, K.A. (1971). A Guide Book to Mathematics.<br>
-[19] Ayers, Frank (1964). Calculus. McGraw-Hill.<br>
-<a href="https://blogs.sas.com/content/iml/2015/03/12/digits-of-pi.html#prettyPhoto">[20] Sas Blogs - Analyzing the first 10 million digits of pi</a><br>
-<a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21] Martin Krzywinski - The art of Pi, Phi and e</a><br>
-<a href="https://journals.sagepub.com/doi/10.1068/p240937">[22] All That Glitters: A Review of Psychological Research on the Aesthetics of the Golden Section</a><br>
+<p><a href="https://en.wikipedia.org/wiki/Euler&#39;s_identity">[1] Wiki - Euler’s identity</a><br />
+[2] Paulos, John Allen (1992), Beyond Numeracy: An Uncommon Dictionary of Mathematics, Penguin Books.<br />
+[3] Dunham, William (1999), Euler: The Master of Us All, Mathematical Association of America.<br />
+[4] Nahin, Paul J. (2006), Dr. Euler’s Fabulous Formula: Cures Many Mathematical Ills, Princeton University Press.<br />
+<a href="https://en.wikipedia.org/wiki/Fibonacci_number">[5] Wiki - Fibonacci Number</a><br />
+<a href="https://en.wikipedia.org/wiki/Fibonacci_number">[6] Lucas, Édouard (1891), Théorie des nombres (in French), 1, Paris.</a><br />
+[7] Pisano, Leonardo (2002), Fibonacci’s Liber Abaci: A Translation into Modern English of the Book of Calculation, Sources and Studies in the History of Mathematics and Physical Sciences, Sigler, Laurence E, trans, Springer.<br />
+<a href="https://www.math.utah.edu/~beebe/software/java/fibonacci/liber-abaci.html">[8] Fibonacci’s Liber Abaci (Book of Calculation). The University of Utah. 2009.</a><br />
+[9] Hemenway, Priya (2005). Divine Proportion: Phi In Art, Nature, and Science. New York: Sterling. pp. 20–21..<br />
+<a href="http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibnat.html#Rabbits">[10] Knott, Dr. Ron (2016). The Fibonacci Numbers and Golden section in Nature – 1. University of Surrey.</a><br />
+<a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">[11] Wiki - Polar Coordinate System</a><br />
+<a href="https://en.wikipedia.org/wiki/Golden_spiral">[12] Wiki - Golden Spirals</a><br />
+<a href="https://en.wikipedia.org/wiki/Golden_ratio">[13] Wiki - Golden Ratio</a><br />
+<a href="https://www.independent.co.uk/news/science/mathematicians-dispute-claims-that-the-golden-ratio-is-a-natural-blueprint-for-beauty-10204354.html">[14] Independent - Mathematicians dispute claims that the ‘golden ratio’ is a natural blueprint for beauty</a><br />
+<a href="https://www.businessinsider.com/the-golden-ratio-fibonacci-numbers-mathematics-zeising-beauty-2015-9?r=DE&amp;IR=T">[15] Business Insider - The one formula that’s supposed to ‘prove beauty’ is fundamentally wrong</a><br />
+<a href="https://www.mathsisfun.com/irrational-numbers.html">[16] Math is Fun - Irrational Numbers</a><br />
+<a href="https://en.wikipedia.org/wiki/Pi">[17] Wiki - Pi</a><br />
+[18] Bronshteĭn, Ilia; Semendiaev, K.A. (1971). A Guide Book to Mathematics.<br />
+[19] Ayers, Frank (1964). Calculus. McGraw-Hill.<br />
+<a href="https://blogs.sas.com/content/iml/2015/03/12/digits-of-pi.html#prettyPhoto">[20] Sas Blogs - Analyzing the first 10 million digits of pi</a><br />
+<a href="http://mkweb.bcgsc.ca/pi/art/method.mhtml">[21] Martin Krzywinski - The art of Pi, Phi and e</a><br />
+<a href="https://journals.sagepub.com/doi/10.1068/p240937">[22] All That Glitters: A Review of Psychological Research on the Aesthetics of the Golden Section</a><br />
 <a href="https://en.wikipedia.org/wiki/Golden_angle">[23] Wiki - Golden Angle</a></p>
-<hr>
+<hr />
 <p>The End</p>
 <p>🌻 🥧 ➰</p>
-
-</body>
-</html>
