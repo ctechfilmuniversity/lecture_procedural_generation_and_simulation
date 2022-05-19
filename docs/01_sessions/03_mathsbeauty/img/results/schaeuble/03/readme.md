@@ -1,3 +1,9 @@
+---
+layout: default
+title: Session
+nav_exclude: true
+---
+
 
 ## Samples of the Devil / The Devil Wears Houdini
 ### The 666 samples series
