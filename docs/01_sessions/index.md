@@ -15,3 +15,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
     * [Results](01_intro/pgs_ss22_01_results.md)
 * [Sessions 02](02_houdini/README.md)
 * [Sessions 03](03_mathsbeauty/README.md)
+* [Sessions 04](04_functions/README.md)
