@@ -1,3 +1,9 @@
+---
+layout: default
+title: Session
+nav_exclude: true
+---
+
 # Beauty in Math Renders
 
 ![render1](imgs/modularMult_01.png)
