@@ -10,7 +10,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 # Session 03
 
-We will discuss this session on **Monday, May 23th**. 
+We will discuss this session on **Thursday, May 19th**. 
 
 These tasks should take take < 4h. I recommend not to do all tutorial parts in one session but to take a break in between.
 
