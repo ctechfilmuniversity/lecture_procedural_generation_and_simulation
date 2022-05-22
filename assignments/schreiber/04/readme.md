@@ -31,10 +31,10 @@ The time we should spent on this assignment: <3h
 I have started to precisely log the time I spent on homework assignments with a stop watch. I am strictly excluding coffee breaks etc, as well as the time it takes me to write these annotations. I log worked minutes from opening the readmes to closing all work related tabs/applications.
 
 Task 1: Setup - This took me **8 minutes**.  
-Why: I included the setup/starting of applications and clicked on the shadertoy link.
+Why:  I had already done the setup during class. I included the setup/starting of applications.
 
 Task 2: Read Chapter 04 - Function Design - This took my **34 minutes**.  
-Why: We have already discussed this in class. I also checked out Unity's functions for vector interpolation, as I have never really understood, but only used them :D Unity also has a [spherical lerp function](https://docs.unity3d.com/ScriptReference/Vector3.Slerp.html), which I still don't fully understand... (What does spherical mean *exactly*?)
+Why: We have already discussed most of this in class. I also checked out Unity's functions for vector interpolation, as I have never really understood, but only used them :D Unity also has a [spherical lerp function](https://docs.unity3d.com/ScriptReference/Vector3.Slerp.html), which I still don't fully understand... (What does spherical mean *exactly*?)
 
 Task 3: Brick Pattern - This took me **37 minutes**.  
 Why: It takes a while to look through the concepts behind the code. I also had to look up [GL_FragCoord](https://docs.gl/sl4/gl_FragCoord) again, because coordinates are confusing (to me)...
