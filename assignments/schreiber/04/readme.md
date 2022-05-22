@@ -45,4 +45,6 @@ Why:
 Task 5: Inspiration - This took me **24 minutes**.  
 Why: I had one example saved from another lecture and wanted to look for a new one as well. I also included the time taken for writing the readme.
 
+Other: git etc - This took me **5 minutes**
+
 **= in total it took me X hours and X minutes to complete this homework.**
