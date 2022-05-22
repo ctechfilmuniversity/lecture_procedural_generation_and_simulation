@@ -28,23 +28,7 @@ This one has different buffers and a lot of code. I really don't feel ready yet 
 
 The time we should spent on this assignment: <3h
 
-I have started to precisely log the time I spent on homework assignments with a stop watch. I am strictly excluding coffee breaks etc, as well as the time it takes me to write these annotations. I log worked minutes from opening the readmes to closing all work related tabs/applications.
+I have started to log the time I spent on homework assignments.
+I have made more detailed notes on the time spent per task and the reasons - if you're interested we can talk about them.
 
-Task 1: Setup - This took me **8 minutes**.  
-Why:  I had already done the setup during class. I included the setup/starting of applications.
-
-Task 2: Read Chapter 04 - Function Design - This took my **34 minutes**.  
-Why: We have already discussed most of this in class. I also checked out Unity's functions for vector interpolation, as I have never really understood, but only used them :D Unity also has a [spherical lerp function](https://docs.unity3d.com/ScriptReference/Vector3.Slerp.html), which I still don't fully understand... (What does spherical mean *exactly*?)
-
-Task 3: Brick Pattern - This took me **37 minutes**.  
-Why: It takes a while to look through the concepts behind the code. I also had to look up [GL_FragCoord](https://docs.gl/sl4/gl_FragCoord) again, because coordinates are confusing (to me)...
-
-Task 4: Experiments - This took me **x minutes**.  
-Why:
-
-Task 5: Inspiration - This took me **24 minutes**.  
-Why: I had one example saved from another lecture and wanted to look for a new one as well. I also included the time taken for writing the readme.
-
-Other: git etc - This took me **5 minutes**
-
-**= in total it took me X hours and X minutes to complete this homework.**
+**= in total it took me about 2 hours to get this far. (to be continued)**
