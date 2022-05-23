@@ -7,7 +7,9 @@ Cream County:
 
 https://user-images.githubusercontent.com/93442123/169892295-55431239-f57f-48b1-b563-9f1c12623632.mp4
 
-> I tried to make my own abstract landscape inspired by some of the examples from the first session.
+> I tried to make my own abstract landscape inspired by some of the examples from the first session. The cutesy look wasn't intended, but I'm very happy with this first attempt. It also reminds me of the backgrounds from the old Patapon game:
+
+![Patapon](https://i.pinimg.com/originals/09/2b/0e/092b0e804054078ae4469548cb28ce5c.png)
 
 ## Task 5: Inspiration
 
