@@ -5,8 +5,9 @@ Cream County:
 
 ![picc](cream_county.png)
 
-> I tried to make my own abstract landscape inspired by some of the examples from the first session.
+https://user-images.githubusercontent.com/93442123/169892295-55431239-f57f-48b1-b563-9f1c12623632.mp4
 
+> I tried to make my own abstract landscape inspired by some of the examples from the first session.
 
 ## Task 5: Inspiration
 
