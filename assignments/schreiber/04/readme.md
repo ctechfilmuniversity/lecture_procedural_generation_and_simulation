@@ -2,7 +2,11 @@
 
 ## Experiment Results
 
-X
+I combined some features from the script pattern with the brick pattern and played around with the primitive functions:
+
+![screenshot of my ugly little shader](./imgs/screenshot_shader.png)
+
+I don't feel like I've changed "enough" - but this is as far as I got.
 
 ## My Inspirational Shader
 
@@ -31,4 +35,4 @@ The time we should spent on this assignment: <3h
 I have started to log the time I spent on homework assignments.
 I have made more detailed notes on the time spent per task and the reasons - if you're interested we can talk about them.
 
-**= in total it took me about 2 hours to get this far. (to be continued)**
+**= in total it took me about 3 hours to complete this homework**
