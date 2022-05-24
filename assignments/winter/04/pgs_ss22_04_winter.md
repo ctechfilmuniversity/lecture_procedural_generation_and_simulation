@@ -5,7 +5,9 @@ Cream County:
 
 ![picc](cream_county.png)
 
-https://user-images.githubusercontent.com/93442123/170021794-e3374387-0385-45c7-a48e-c5a94346acc5.mp4
+
+https://user-images.githubusercontent.com/93442123/170022029-41e96a5d-e460-407d-a38f-37f093949121.mp4
+
 
 > I tried to make my own abstract landscape inspired by the Holger Lippmann examples from the first session. The cutesy look wasn't intended, but I'm very happy with this first attempt. It also reminds me of the backgrounds from the old Patapon game:
 
