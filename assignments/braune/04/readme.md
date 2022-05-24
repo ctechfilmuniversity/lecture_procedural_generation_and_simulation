@@ -1,6 +1,6 @@
 # Experimental shader (animated):
 
-very simple to get a better understanding oin what is going on in shaders. Idea: mix between hypnotic circles and rippling water.
+very simple to get a better understanding on what is going on in shaders. Idea: mix between hypnotic circles and rippling water.
 
 ![](img/capture01.png)
 
