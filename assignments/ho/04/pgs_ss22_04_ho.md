@@ -57,6 +57,20 @@ Understand the given brick pattern code in the [`brick.frag`](brick.frag) file a
 
 Come up with your own experimental pattern. You do not need to follow a design goal with this task and the result does not need to look good. The goal of this task is that you experiment with the different functions components. Submit your fragment shader as `experiments_lastname.frag`
 
+[experiments_ho.frag](./experiments_ho.frag)
+
+![experiments_01.gif](./imgs/experiments_01.gif)
+
+Some other variations along the way:
+
+![experiments_02.gif](./imgs/experiments_02.gif)
+
+![experiments_04.gif](./imgs/experiments_04.gif)
+
+![experiments_03.gif](./imgs/experiments_03.gif)
+
+I started off with the basic brick shader, and played around with the values of parameters until I found some interesting emergent behavior. I also added a lot of sin(u_time) parameters into different values to add some motion into the shader.
+
 You can also start with the given brick pattern and change that. For example:
 
 ![brick_variation_02](img/brick_02.png)
