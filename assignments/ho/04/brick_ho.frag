@@ -29,7 +29,7 @@ float MORTAR =  0.02;
 // (no need to comment these)
 
 
-//I'm not sure how these affect the
+//
 float getBias(float t, float bias)
 {
   return (t / ((((1.0 / bias) - 2.0) * (1.0 - t)) + 1.0));
