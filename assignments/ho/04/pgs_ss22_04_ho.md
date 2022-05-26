@@ -51,6 +51,8 @@ Read [Chapter 04 - Function Design](../../02_scripts/pgs_ss22_04_functions_scrip
 
 Understand the given brick pattern code in the [`brick.frag`](brick.frag) file and insert comments explaining for each code line of the brick pattern what it does and submit your copy as `brick_lastname.frag` in your assignments folder.
 
+[brick_ho.frag](./brick_ho.frag)
+
 ## Task 4: Experiments
 
 Come up with your own experimental pattern. You do not need to follow a design goal with this task and the result does not need to look good. The goal of this task is that you experiment with the different functions components. Submit your fragment shader as `experiments_lastname.frag`
