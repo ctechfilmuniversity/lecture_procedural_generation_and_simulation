@@ -79,6 +79,10 @@ You can also start with the given brick pattern and change that. For example:
 
 Go to the [shadertoy](https://www.shadertoy.com/) site and browse the examples a bit. Submit the link to one example you like (you don't have to understand the code). Add that link to a file `pgs_ss22_04_lastname.md` and submit it in your folder.
 
+[waves_glsl](https://www.shadertoy.com/view/4dBcRD)
+
+![waves](./imgs/waves.gif)
+
 ---
 
 **Happy Functioning!**
