@@ -1,9 +1,15 @@
-**Procedural Generation and Simulation - Summer Term 2020**
+---
+layout: default
+title: Session
+nav_exclude: true
+---
+
+**Procedural Generation and Simulation**
 
 # Questions Session 02
 
-- [Questions Session 02](#questions-session-02)
-  - [Chapter 03 - Beauty in Maths - Creative Project Development](#chapter-03---beauty-in-maths---creative-project-development)
+* [Questions Session 02](#questions-session-02)
+    * [Chapter 03 - Beauty in Maths - Creative Project Development](#chapter-03---beauty-in-maths---creative-project-development)
 
 ## Chapter 03 - Beauty in Maths - Creative Project Development
 
