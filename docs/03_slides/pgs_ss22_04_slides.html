@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Procedural Generation and Simulation</title>
+    <style>
+        /* Local files */
+        @import url("remark/fonts.css");
+        @import url("remark/style.css"); 
+    </style>
+</head>
+
+<body>
+    
+    
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                macros: {
+                    underscore: "{_ \\us}"
+                }
+            },
+            svg: {
+                fontCache: 'global',
+                displayAlign: 'left'
+            }
+        };
+    </script>
+    
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    
+    <!-- Local copy -->
+    <script src="remark/remark-latest.min.js"></script>
+    <script>
+        var hljs = remark.highlighter.engine;
+    </script>
+    
+    <!-- Local copy -->
+    <script src="remark/remark.language.js"></script>
+    <script>
+        var slideshow = remark.create({
+            highlightStyle: 'monokai',
+            highlightLanguage: 'remark',
+            highlightLines: true,
+            sourceUrl: './pgs_ss22_04_slides.md'
+        });
+    </script>
+    <!-- removed the google analytics script -->
+</body>
+
+</html>
