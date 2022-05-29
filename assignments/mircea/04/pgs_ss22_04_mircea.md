@@ -71,7 +71,7 @@ Go to the [shadertoy](https://www.shadertoy.com/) site and browse the examples a
 THIS IS INCREDIBLE - it's a bit glitchy and due to the fact that it also moves with the mouse its sometimes weird but SOMETIMES it looks incredibly natural.
 [seascape](https://www.shadertoy.com/view/Ms2SD1)
 
-![seascape](./img/seascapee.gif)
+![seascape](./img/seascape.gif)
 
 ---
 
