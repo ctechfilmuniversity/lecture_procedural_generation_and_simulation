@@ -54,6 +54,7 @@ Understand the given brick pattern code in the [`brick.frag`](brick.frag) file a
 ## Task 4: Experiments
 
 Come up with your own experimental pattern. You do not need to follow a design goal with this task and the result does not need to look good. The goal of this task is that you experiment with the different functions components. Submit your fragment shader as `experiments_lastname.frag`
+Based on Lewis Leptons tutorials (commented at the beginning of each example):
 
 [experiments_mircea_01.frag](./experiments_mircea_01.frag)
 
@@ -62,4 +63,15 @@ Come up with your own experimental pattern. You do not need to follow a design g
 [experiments_mircea_02.frag](./experiments_mircea_02.frag)
 
 ![experiment_2.gif](./img/experiment_2.gif)
+
+## Task 5: Inspiration
+
+Go to the [shadertoy](https://www.shadertoy.com/) site and browse the examples a bit. Submit the link to one example you like (you don't have to understand the code). Add that link to a file `pgs_ss22_04_lastname.md` and submit it in your folder.
+
+THIS IS INCREDIBLE - it's a bit glitchy and due to the fact that it also moves with the mouse its sometimes weird but SOMETIMES it looks incredibly natural.
+[seascape](https://www.shadertoy.com/view/Ms2SD1)
+
+![seascape](./img/seascapee.gif)
+
+---
 
