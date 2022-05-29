@@ -8,7 +8,7 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
-float CELLSIZE = 0.95;
+float CELLSIZE = 0.2;
 vec2 OFFSET = vec2(0.3);
 
 float timeSin (float value, float range){
@@ -26,26 +26,32 @@ void main() {
     float x = st.x / CELLSIZE;
     float y = st.y / CELLSIZE;
 
-    x = abs(mod(x, cos(u_time)));
-    y = abs(mod(y, cos(u_time)));
+    // modulate the x,y value representations of gl_FragCoord to create geometric movement
+    // How do I get a linear wave of lines.. No oscillation?
+    x = abs(mod(x, sin(u_time)));
+    y = abs(mod(x, sin(u_time)));
+  
 
+    // center the horizonal line movement
+    float xDist = distance(x, 0.5);
+    float yDist = distance(y, 0.5);
+    
 
+    // center the circles
     float d = distance(st, vec2(0.5));
-    d *= 200.0;
-    d -= floor(x);
+    d *= 5.0;
+  
+    
+    float xTime = abs(sin(u_time)) + (d + PI);
+    float yTime = mix((abs(sin(u_time)) + x), (abs(sin(u_time)) + xDist), 0.5);
+    float zebra = sin(xDist);
+
+    vec3 colorA = vec3(zebra, xDist, d);
 
 
-    float yTime = min(cos(u_time) + (x), 0.9);
-    float xTime = sin(u_time / 2.0) + (d * PI);
-    float zebra = sin((abs( xTime ) * fract( yTime )));
+    vec3 colorB = vec3(d, d, 1.0);
 
-    vec3 colorA = vec3(zebra, min(zebra * yTime, 0.3), 0.5);
-
-
-
-    vec3 colorB = vec3(x, y, 0.3);
-
-    vec3 finalColor = mix(colorA, colorB, 0.0);
+    vec3 finalColor = mix(colorA, colorB, 0.5);
 
     gl_FragColor = vec4(finalColor, 1.0);
 }
