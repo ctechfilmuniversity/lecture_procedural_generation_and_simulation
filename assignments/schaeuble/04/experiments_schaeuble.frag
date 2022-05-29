@@ -8,7 +8,7 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
-float CELLSIZE = 0.4;
+float CELLSIZE = 0.95;
 vec2 OFFSET = vec2(0.3);
 
 float timeSin (float value, float range){
@@ -26,28 +26,26 @@ void main() {
     float x = st.x / CELLSIZE;
     float y = st.y / CELLSIZE;
 
-    x -= abs(cos(u_time) + 0.5);
-    y -= abs(cos(u_time) + 0.5);
+    x = abs(mod(x, cos(u_time)));
+    y = abs(mod(y, cos(u_time)));
 
 
-    float d = distance(st, vec2(x, y));
-    d *= 8.0;
-    d -= floor(d);
+    float d = distance(st, vec2(0.5));
+    d *= 200.0;
+    d -= floor(x);
 
 
-    float ax = min(cos(-u_time) + (d * PI), 0.1);
-    float ay = cos(u_time / 2.0) + (d * PI);
-    float aComb = sin((abs( ax ) * fract( ay )));
+    float yTime = min(cos(u_time) + (x), 0.9);
+    float xTime = sin(u_time / 2.0) + (d * PI);
+    float zebra = sin((abs( xTime ) * fract( yTime )));
 
-    vec3 colorA = vec3(aComb, min(aComb * ay, 0.5), 0.5);
+    vec3 colorA = vec3(zebra, min(zebra * yTime, 0.3), 0.5);
 
-    float bx = min(cos(-u_time) + (x * PI), 0.5);
-    float by = cos(u_time / 2.0) + (y * PI);
-    float bComb = sin((abs( bx ) * fract( by )));
 
-    vec3 colorB = vec3(bx + x, by + y, 0.3);
 
-    vec3 finalColor = mix(colorA, colorB, 0.5);
+    vec3 colorB = vec3(x, y, 0.3);
+
+    vec3 finalColor = mix(colorA, colorB, 0.0);
 
     gl_FragColor = vec4(finalColor, 1.0);
 }
