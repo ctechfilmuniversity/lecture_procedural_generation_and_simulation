@@ -57,9 +57,9 @@ Come up with your own experimental pattern. You do not need to follow a design g
 
 [experiments_mircea_01.frag](./experiments_mircea_01.frag)
 
-![experiment_1.gif](./imgs/experiment_1.gif)
+![experiment_1.gif](./img/experiment_1.gif)
 
 [experiments_mircea_02.frag](./experiments_mircea_02.frag)
 
-![experiment_2.gif](./imgs/experiment_2.gif)
+![experiment_2.gif](./img/experiment_2.gif)
 
