@@ -17,3 +17,5 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 * [Session 03](03_mathsbeauty/README.md)
      * [Results](03_mathsbeauty/pgs_ss22_03_results.md)
 * [Session 04](04_functions/README.md)
+* [Session 05](05_tilings/README.md)
+* [Session 06](06_noise/README.md)

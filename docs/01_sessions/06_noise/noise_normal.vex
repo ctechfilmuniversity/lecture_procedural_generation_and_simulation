@@ -1,0 +1,4 @@
+vector offset = chv('offset');
+
+// The noise might need some additional scaling factors, taking the absolute, clamping, etc.
+v@N = normalize(curlnoise(v@P) + offset);

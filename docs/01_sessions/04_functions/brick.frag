@@ -90,8 +90,7 @@ void main()
 
     vec3 color = vec3(w * h);
 
-    //
-    // vec3 color = mvec4(0.3059, 0.1529, 0.1529, 1.0)15), vec3(0.5, 0.25, 0.2), getBias(w * h, 0.2));
+    // vec3 color = mix(vec3(0.2, 0.15, 0.15), vec3(0.5, 0.25, 0.2), getBias(w * h, 0.2));
 
     gl_FragColor = vec4(color, 1.0);
 }
