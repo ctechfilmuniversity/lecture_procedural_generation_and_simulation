@@ -81,8 +81,8 @@ void main()
         x += 0.5;
     }
 
-    //Here we repeat the bricks over the x and y axis. We use a Floor() function to set the 
-    //placement of the mortar in the X axis, and the row index (y_index) to set the row mortar positions
+    //Here we repeat the bricks over the x and y axis. We normalize each brick to use a coordinate system between 0 and 1.
+    //We use a Floor() function to normalize the coordinate system.
     x -= floor(x);
     y -= y_index;
 
@@ -95,7 +95,8 @@ void main()
 
 
     //smoothstep add a bit of a blur to the brick textures (a gradient on both sides of the line). Changing
-    //values in the getBias function can make the edges sharper
+    //values in the getBias function can make the edges sharper. The subtraction operation combines the functions 
+    //defining the left and right edges and top and bottom edges respectively.
     float w = getBias(smoothstep(0.0, mortar_half_norm_w, x), 0.3) - getBias(smoothstep(1.0 - mortar_half_norm_w, 1.0, x), 0.7);
     float h = getBias(smoothstep(0.0, mortar_half_norm_h, y), 0.3) - getBias(smoothstep(1.0 - mortar_half_norm_h, 1.0, y), 0.7);
     
