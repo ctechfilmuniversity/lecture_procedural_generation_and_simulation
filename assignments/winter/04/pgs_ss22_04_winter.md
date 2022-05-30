@@ -7,8 +7,7 @@ Cream County:
 
 
 
-Video with some audio:
-
+Video with some audio. The sounds were made the same method aß the waves.
 
 
 https://user-images.githubusercontent.com/93442123/170897057-93fcb9d7-e312-47c7-8590-78c40a359343.mp4
