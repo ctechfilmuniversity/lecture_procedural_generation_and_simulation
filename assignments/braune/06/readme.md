@@ -6,7 +6,7 @@ Image:
 
 Flipbook:
 
-![](img/session06_video.gif)
+![](img/Session06_video.gif)
 
 ## Seeing Noise
 
