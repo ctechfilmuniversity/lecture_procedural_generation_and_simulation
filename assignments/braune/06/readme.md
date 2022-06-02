@@ -2,7 +2,7 @@
 
 Image:
 
-![](img/session06_img.png)
+![](img/Session06_img.png)
 
 Flipbook:
 
