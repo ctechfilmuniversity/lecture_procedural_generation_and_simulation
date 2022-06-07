@@ -10,7 +10,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 # Session 05
 
-We will discuss this session on **Monday, June 20th**.   
+We will discuss this session some time in the future.   
 
 This session should take less than X h.
 
