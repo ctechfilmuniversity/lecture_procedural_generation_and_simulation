@@ -15,7 +15,7 @@ We will discuss this session on **Monday, June 20th**.
 This session should take less than X h.
 
 ```diff
-- This session is added by June 4th the latest.
+- This session is not ready yet. I will let you know once it is ready (brand-new and shiny!) and then it is optional for you to complete it or not.
 ```
 
 
