@@ -720,9 +720,9 @@ pix.color = minimum_dist;
 ```
 
 To check all points for all pixels is costly and the algorithms becomes with the naive implementation as shown above, almost 
-non-usable. As optimization we rather divide the space into tiles and have one point per tile. Then you only need to check a pixel’s tile and the neighboring ones for the closes distance.
+non-usable. As optimization we rather divide the space into tiles and have one point per tile. Then you only need to check a pixel’s tile and the neighboring ones for the closes distance. For a detailled explanations, please see [[The Book of Shaders]](https://thebookofshaders.com/12/) (highly recommended).
 
-![cellular_02](img/06/cellular_02.png)  
+![cellular_03](img/06/cellular_03.png)  
 [[thebookofshaders]](https://thebookofshaders.com/12/)
 
 
