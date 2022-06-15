@@ -1,7 +1,11 @@
 
 
 Noised-up sphere as a smoke emitter:
-https://user-images.githubusercontent.com/93442123/173731972-f17534b7-b545-4d34-806b-c91ecb49bf53.mp4
+
+
+
+https://user-images.githubusercontent.com/93442123/173732495-7480f8f5-a60a-4979-b1c1-fdf2a3bc8c7b.mp4
+
 
 ## Chapter 06 - Seeing Noise 
 
