@@ -31,4 +31,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ![](./media/style3.png)
 
 # Houdini Task 4
-![Houdini Task 4](./media/pgs_ss21_tutorial_06.gif)
+
+![Houdini Task 4](./media/pgs_ss22_tutorial_03_schaeuble.png)       
+        
+![Houdini Task 4](./media/pgs_ss22_tutorial_03_schaeuble.gif)
