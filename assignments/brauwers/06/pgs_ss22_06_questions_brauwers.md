@@ -1,8 +1,3 @@
----
-layout: default
-title: Session
-nav_exclude: true
----
 
 # Procedural Generation and Simulation
 
@@ -21,3 +16,9 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 
 Link all images in this file.
+
+![Tutorial Rendering 01](pgs_ss21_tutorial_04_01.png) 
+![Tutorial Gif 01](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/pgs_ss21_tutorial_04_01.gif)
+![Tutorial Rendering 03](pgs_ss21_tutorial_04_03.png) 
+![Tutorial Gif 03](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/pgs_ss21_tutorial_04_03.gif)
+![Tutorial Gif 02](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/pgs_ss21_tutorial_04_02.gif)
