@@ -67,3 +67,9 @@ Link all images in this file.
 ![Tutorial Rendering 03](pgs_ss21_tutorial_04_03.png) 
 ![Tutorial Gif 03](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/pgs_ss21_tutorial_04_03.gif)
 ![Tutorial Gif 02](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/pgs_ss21_tutorial_04_02.gif)
+
+It took me 7-8 hours to finish this homework because some bugs occurred and in order to finish the tutorial and have a result I needed to fix them. One error was the display of the object which from probably a wrong click looked like this:
+<img width="733" alt="Bildschirmfoto 2022-06-18 um 13 58 35" src="https://user-images.githubusercontent.com/66121204/174485100-cac3246d-1c82-485e-aa3a-7b60837e1c57.png">
+I coudn't undo it, I didn't find an option in the view that fixed it, I coudln't figure it out from googleing, nobody who I know who is better with houdini than me had the solution and I tried to redo every part of the tutorial to figure out which part messed it up and in the end I just redid the whole thing in a new file.
+I also had issues the the Flipbook because I just clicked the link and didn't see that after the link the naming of the files also inclueded a nescessary step of including a part that lets you safe more than one image. So I tried a lot of options but always ended up having one reult image until I asked Vivien who told me about the hint on the filename. 
+That's why I just did the tutorial, I couldn't spend more time on creating my own thing out of the tutorial.
