@@ -12,6 +12,12 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ## Chapter 06 - Seeing Noise 
 
 * Submit at least three pictures of natural noise patterns. You can photograph them yourself (recommended) or find them on the internet.
+ ![Natural Noise patterns](assets/noise1.PNG) 
+  ![Natural Noise patterns](assets/noise2.PNG)
+   ![Natural Noise patterns](assets/noise6.PNG) 
+    ![Natural Noise patterns](assets/noise7.PNG)
+     ![Natural Noise patterns](assets/noise8.PNG)
+      ![Natural Noise patterns](assets/noise11.jpeg) 
 * Submit one stylized / artistic image that uses noise as generating principle or design element. You can find it on the internet.
 ![Noise Shader](https://github.com/ctechfilmuniversity/lecture_procedural_generation_and_simulation/blob/main/assignments/brauwers/06/NoiseShader.png)
 https://www.shadertoy.com/view/7sVyRw
