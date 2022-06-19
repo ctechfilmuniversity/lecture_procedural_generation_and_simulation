@@ -14,7 +14,7 @@
     > When I choose the tool with which I have the most experience then it would be JavaScript. But after the explanation in the lecture and the fact that I like to learn something new, Houdini sounds really interesting. I rarely tried out Unity, so that one would be good, too.
 
 * How would you rate your level of experience with SideFX's Houdini?
-    * [x] Completly new
+    * [x] Completely new
     * [ ] I have only used it in TI
     * [ ] Novice
     * [ ] Intermediate
@@ -23,7 +23,9 @@
 
 ## Questions 2 - Procedural Generation
 
-Briefly in your own words: how would you explain your nanny what *procedural generation* means? 
+Briefly in your own words: how would you explain your nanny what *procedural generation* means?
+
+> Procedural generation means to create something mostly automatic only by specifying certain parameters/rules. For example, instead of building every single detail of a landscape, you just create some single segments of the landscape and with help of some tools it can create infinite landscapes out of the segments.
 
 ## Questions 3 - Patterns
 
@@ -46,6 +48,55 @@ Take at least three pictures of natural patterns and at least three pictures of 
 ### 3.2 Understanding and Implementing Patterns
 
 Write for one of your pattern images a generating algorithm in pseudo-code or code. Submit the code below.
+
+```
+void ofApp::createTile(float base, float offsetX, float offsetY) {
+    float hTopBaseTriangle = (sqrt(3)/2)*base;
+
+    // Top Base Triangle
+    ofSetColor(255);
+    ofDrawTriangle(offsetX, offsetY, offsetX+base, offsetY, offsetX+(base/2), offsetY+hTopBaseTriangle);
+    
+    // Bottom Base Triangle
+    ofSetColor(77);
+    float hBottomBaseTriangle = (sqrt(3)/2)*(base/2);
+    float translateBBT = offsetX+base/2;
+
+    ofDrawTriangle(offsetX, offsetY+hTopBaseTriangle, offsetX+(base/2), offsetY+hTopBaseTriangle, offsetX+(base/4), offsetY+hBottomBaseTriangle);
+
+    ofDrawTriangle(translateBBT, offsetY+hTopBaseTriangle, translateBBT+(base/2), offsetY+hTopBaseTriangle, translateBBT+(base/4), offsetY+hBottomBaseTriangle);
+
+    // Side Top and Bottom Triangle
+    ofDrawTriangle(offsetX, offsetY, offsetX+(base/4), offsetY+hBottomBaseTriangle, offsetX, offsetY+base/3);
+
+    ofDrawTriangle(offsetX+base, offsetY, translateBBT+(base/4), offsetY+hBottomBaseTriangle, offsetX+base, offsetY+base/3);
+    ofSetColor(255);
+
+    ofDrawTriangle(offsetX, offsetY+base/3, offsetX, offsetY+hTopBaseTriangle, offsetX+(base/4), offsetY+hBottomBaseTriangle);
+
+    ofDrawTriangle(offsetX+base, offsetY+base/3, translateBBT+(base/4), offsetY+hBottomBaseTriangle, offsetX+100, offsetY+hTopBaseTriangle);
+}
+
+//--------------------------------------------------------------
+void ofApp::draw(){
+    float base = 100;
+    float offsetX = 0;
+    float offsetY = 0;
+    
+    int width = 5;
+    int height = 3;
+    
+    float heightY = (sqrt(3)/2)*base;
+    
+    for (int x = 0; x <= base*width; x+=base) {
+        for (float y = 0; y <= heightY*height; y+=heightY){
+            createTile(base, x, y);
+        }
+    }
+}
+```
+
+<img src="img/tiles.png" />
 
 ### 3.3 Seeing Faces
 
@@ -75,6 +126,10 @@ Explain briefly what you like about the painting and how it might inspire you fo
 
 Chose one CG image, which you like and of which you think that it has an artistic quality to it. The image doesn't need to be from the script, again you can chose any CGI image you like (it should use 3D graphics). You can find more examples in the [Summary of Artists](../../02_scripts/pgs_ss22_01_intro_script.md#summary-of-artists) section.  
 
-Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
+Explain briefly what you like about the image and why you consider it to be somewhat a pice of art.
+
+<img src="img/arashi_nectar_339.jpeg" />
+
+> I really enjoy the animation of Alberto Moss, because it is kind of satisfying to watch. I like the texture, that he creates with the animation of the layers and the "candy-style" that he creates with the colors.
 
 
