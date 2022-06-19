@@ -9,96 +9,97 @@ nav_exclude: true
 Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babelsberg KONRAD WOLF
 
 
-# Results Session 03
+# Results Session 06 - Noise
+
+## Seeing Noise
+
+### Andreea
+### Anna
+
+![Noise Shader](img/results/brauwers/06/NoiseShader.png)
+
+### Janine
+### Jannis
+### Jonathan
+### Katja
+### Marco B.
+### Marco W.
+
+[Some Voronoi that I actually like by Ployz.](https://www.behance.net/gallery/114208311/Voronoi-Syndrome/modules/652627945)
+[She is quite the noise magician in general and maybe also a worthy entry for your list of female Berlin-based artists ;)](https://www.behance.net/gallery/105952077/Terra-Incognita/modules/608205499)
 
 
-<!-- #### Andreea -->
-<!-- #### Anna -->
-#### Janine
+### Marton
+### Tillman
 
-![](img/results/gueldner/03/snowflakes.jpg)
+![](img/results/schaeuble/06/media/img_0.png)        
+![](img/results/schaeuble/06/media/pgsnoise1.png)    
+![](img/results/schaeuble/06/media/pgsnoise2.png)    
+![](img/results/schaeuble/06/media/pgsnoise3.png)    
 
-#### Jannis
+![](img/results/schaeuble/06/media/style1.png)
+![](img/results/schaeuble/06/media/style2.png)
+![](img/results/schaeuble/06/media/style3.png)
 
+### Tim
+### Vivien
 
-![](img/results/volz/03/beautyinmath1.png)
-![](img/results/volz/03/beautyinmath2.png)
-![](img/results/volz/03/beautyinmath3.png)
-![](img/results/volz/03/beautyinmath4.png)
+![Tree](img/results/schreiber/06/imgs/noise_tree.jpg)
+![My Ceiling before renovation](img/results/schreiber/06/imgs/noise_myceiling.jpg)
+![the sky](img/results/schreiber/06/imgs/noise_sky.jpg)
 
-#### Jonathan
-
-![render1](img/results/ho/03/modularMult_01.png)
-![render2](img/results/ho/03/modularMult_02.jpg)
-![render3](img/results/ho/03/modularMult_03.jpg)
-![render4](img/results/ho/03/modularMult_04.jpg)
-![render5](img/results/ho/03/modularMult_05.jpg)
-
-
-#### Katja
-
-![](img/results/ka_schreiber/03/tutorial_result.png)
-![](img/results/ka_schreiber/03/color_flower02.png)
-
-#### Marco W.
-
-Mandel-Mountain:
-![mandel_mountain](img/results/winter/03/mandel_mountain.png)  
-![bulb](img/results/winter/03/mandelbulb.png)  
-![2dmandel](img/results/winter/03/2dMandel.png)  
-![emblem](img/results/winter/03/emblem.png)  
-  
-I also wanted to add volumetric fog, but that didn't really work out in the 15 minutes that I tried it. For the Mandelbulb, I used a combination of Lena's pseudocode from the last session, [this website](https://www.skytopia.com/project/fractal/mandelbulb.html) that Lena showed us and some of [this tutorial](https://www.youtube.com/watch?v=_mwJ7mlYRWg).
-
-#### Marton
-
-![](img/results/gasparik/03/expport1.png)
-![](img/results/gasparik/03/expport2.png)
-![](img/results/gasparik/03/expport3.png)
-![](img/results/gasparik/03/expport4.png)
-![](img/results/gasparik/03/expporthQ.png)
-
-
-#### Tillman
-
-![shape1](img/results/schaeuble/03/shape1.png)   
-
- Below: using first and second U in carve
-![shape2 - using first and second U in carve](img/results/schaeuble/03/shape2.png)   
-
-Below: using three shapes   
-![talisman - using three shapes](img/results/schaeuble/03/talisman.png)   
-
-
-Below: experimenting with raytracing bias. Looks a bit crisper.
-![talisman - experimenting with raytracing bias](img/results/schaeuble/03/talisman_raytracingbias0.5.png)   
+![Modulo Noise](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FeMfkA9I08rA%2Fmaxresdefault.jpg&f=1&nofb=1)
 
 
 
-#### Tim
+## Tutorial
 
-![Version 01](img/results/rumpf/03/LineCircles1.png)
-![Version 02](img/results/rumpf/03/LineCircles100.png)
+### Andreea
+### Anna
 
-#### Vivien
-
-I was extra safe with my own interpretation though & always saved the rendered WIP shots:
-
-![WIP 1](img/results/schreiber/03/wipender1.png)
-
-![WIP 2](img/results/schreiber/03/wipender2.png)
-
-![WIP 3](img/results/schreiber/03/wipender3.png)
-
-Also, I caught this very cool looking wireframe scene view:
-
-![scene view screenshot](img/results/schreiber/03/screenshot.png)
-
-And the final render:
-
-![my final final result](img/results/schreiber/03/finalRender.png)
+![Tutorial Rendering 01](img/results/brauwers/06/pgs_ss21_tutorial_04_01.png) 
+![Tutorial Gif 01](img/results/brauwers/06/pgs_ss21_tutorial_04_01.gif)
+![Tutorial Rendering 03](img/results/brauwers/06/pgs_ss21_tutorial_04_03.png) 
+![Tutorial Gif 03](img/results/brauwers/06/pgs_ss21_tutorial_04_03.gif)
+![Tutorial Gif 02](img/results/brauwers/06/pgs_ss21_tutorial_04_02.gif)
 
 
+### Janine
+### Jannis
+### Jonathan
+### Katja
+### Marco B.
 
+![](img/results/braune/06/img/Session06_img.png)  
+![](img/results/braune/06/img/Session06_video.gif)
+
+### Marco W.
+### Marton
+### Tillman
+
+![Houdini Task 4](img/results/schaeuble/06/media/pgs_ss22_tutorial_03_schaeuble.png)       
+        
+![Houdini Task 4](img/results/schaeuble/06/media/pgs_ss22_tutorial_03_schaeuble.gif)
+
+### Tim
+
+![noise1](img/results/rumpf/06/img/noise1.png)
+![noise2](img/results/rumpf/06/img/noise2.png)
+![noise3](img/results/rumpf/06/img/noise3.png)
+
+Flipbook:
+![noise_FlipBook_](img/results/rumpf/06/img/pgs_ss21_tutorial_04_01.gif)
+
+### Vivien
+
+First test with tinted glass material:
+
+![WIP 1](img/results/schreiber/06/imgs/tintedglass.png)
+
+Second render with iron material (to reduce render time):
+
+![WIP 2](img/results/schreiber/06/imgs/iron2.png)
+
+https://user-images.githubusercontent.com/93382434/173902502-ec1553d2-b1fe-4c83-abfc-7e24d65af5aa.mp4
 
 
