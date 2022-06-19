@@ -28,8 +28,14 @@ Flipbook:
 ## Chapter 06 - Seeing Noise 
 
 * Submit at least three pictures of natural noise patterns. You can photograph them yourself (recommended) or find them on the internet.
-* Submit one stylized / artistic image that uses noise as generating principle or design element. You can find it on the internet.
 
+<img src="./img/plaster.jpg" width="200"/> <img src="./img/power_box.jpg" width="200"/> <img src="./img/pvc_floor.jpg" width="200"/> 
+
+*Just saw that we should collect **natural** noise patterns. Will replace the pictures when I collected those.*
+
+* Submit one stylized / artistic image that uses noise as generating principle or design element. You can find it on the internet.
+* 
+[![Random Noir](./img/random_noir.png)](https://www.instagram.com/p/CAD4mulobJM/ "Random Noir")
 
 Link all images in this file.
 
