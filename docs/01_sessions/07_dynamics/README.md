@@ -31,7 +31,7 @@ There are vast possibilities to work with build-in force-based systems in Houdin
 The [Houdini Tutorial - Intro Rigid Body Dynamics](https://www.youtube.com/watch?v=I7Yxue9XAiQ) is a good introduction and fairly well explained. I recommend that you complete this tutorial. If some of the terms in the tutorial feel foreign to you, feel free to look them up in the [Houdini documentation](https://www.sidefx.com/docs/houdini/index.html). 
 
 ![](img/pgs_ss21_dynamics_rybak.gif)  
-[By Syliva Rybak]
+[Image by Syliva Rybak]
   
 If you prefer to do a different tutorial, you can. The tutorial should be somewhat connected to a dynamic system, ideally using forces (however, keep in mind that we will get into particles next week). Some options could be (I haven't completed these):
 
