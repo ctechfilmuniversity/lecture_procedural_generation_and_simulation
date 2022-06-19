@@ -1,10 +1,10 @@
 https://user-images.githubusercontent.com/93442123/173732495-7480f8f5-a60a-4979-b1c1-fdf2a3bc8c7b.mp4
 
-<img src="04.gif" height="800">
+<img src="04.gif" width="800">
 
 underlying geometry:
 
-<img src="05.png" height="800">
+<img src="05.png" width="800">
 
 
 ## Chapter 06 - Seeing Noise 
