@@ -17,3 +17,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 * [Chapter 04 - Function Design](pgs_ss22_04_functions_script.md)
 * [Chapter 05 - Tilings & The Universe](pgs_ss22_05_tilings_script.md)
 * [Chapter 06 - Noise](pgs_ss22_06_noise_script.md)
+* [Chapter 07 - Dynamics](pgs_ss22_07_dynamics_script.md)
