@@ -876,6 +876,8 @@ Engineering of the appearance of randomness.
 
 *What are the differences?*  
 
+--
+
 We want small variations locally and large variations globally.
 
 
@@ -899,6 +901,8 @@ Engineering of the appearance of randomness.
 ### Requirements For Procedural Noise
 
 For good noise functions there are overall the following requirements.
+
+--
 
 * Spatial correlation
 
