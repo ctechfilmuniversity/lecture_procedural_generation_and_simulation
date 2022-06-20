@@ -54,13 +54,11 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ![noise_example-01](img/results/ho/06/imgs/naturalNoise_01.gif)
 ![noise_example-02](img/results/ho/06/imgs/naturalNoise_02.jpg)
-![noise_example-03](img/results/ho/06/imgs/naturalNoise_03.jpg)
-![noise_example-04](img/results/ho/06/imgs/naturalNoise_04.jpg)
-![noise_example-05](img/results/ho/06/imgs/naturalNoise_05.jpg)
-![noise_example-06](img/results/ho/06/imgs/naturalNoise_06.jpg)
+![noise_example-03](img/results/ho/06/imgs/naturalNoise_03.jpeg)
+![noise_example-04](img/results/ho/06/imgs/naturalNoise_04.jpeg)
+![noise_example-05](img/results/ho/06/imgs/naturalNoise_05.jpeg)
 
-
-![noise](./imgs/FVoVOWOXsAAEw9U.jpg)
+![noise](./img/FVoVOWOXsAAEw9U.jpg)
 
 ### Katja
 ### Marco B.

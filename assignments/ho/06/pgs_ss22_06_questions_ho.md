@@ -20,10 +20,9 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ![noise_example-01](./imgs/naturalNoise_01.gif)
 ![noise_example-02](./imgs/naturalNoise_02.jpg)
-![noise_example-03](./imgs/naturalNoise_03.jpg)
-![noise_example-04](./imgs/naturalNoise_04.jpg)
-![noise_example-05](./imgs/naturalNoise_05.jpg)
-![noise_example-06](./imgs/naturalNoise_06.jpg)
+![noise_example-03](./imgs/naturalNoise_03.jpeg)
+![noise_example-04](./imgs/naturalNoise_04.jpeg)
+![noise_example-05](./imgs/naturalNoise_05.jpeg)
 
 
 * Submit one stylized / artistic image that uses noise as generating principle or design element. You can find it on the internet.
@@ -33,3 +32,6 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 [Link to Source](https://twitter.com/canvas_51/status/1538569504996958214/photo/1)
 
 Link all images in this file.
+
+
+
