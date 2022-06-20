@@ -38,7 +38,7 @@ Submit your houdini file as `pgs_ss22_tutorial_03_lastname.hipnc`, at least one 
 
 ## Renders
 
-![render01](./imgs/pgs_ss22_tutorial_03_ho.gif)
+![render01](./imgs/pgs_ss22_tutorial_03_ho_reduced.gif)
 ![render02](./imgs/pgs_ss22_tutorial_03_ho.png)
 
 Work in Progress Shots:

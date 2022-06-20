@@ -50,6 +50,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ### Janine
 ### Jannis
 ### Jonathan
+![noise](./img/FVoVOWOXsAAEw9U.jpg)
 ### Katja
 ### Marco B.
 ### Marco W.
@@ -96,6 +97,10 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ### Janine
 ### Jannis
 ### Jonathan
+
+![render01](./img/pgs_ss22_tutorial_03_ho_reduced.gif)
+![render02](./img/pgs_ss22_tutorial_03_ho.png)
+
 ### Katja
 ### Marco B.
 
