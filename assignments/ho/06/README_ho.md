@@ -43,6 +43,7 @@ Submit your houdini file as `pgs_ss22_tutorial_03_lastname.hipnc`, at least one 
 
 Work in Progress Shots:
 
+![WIP-blender](./imgs/wip01.png)
 ![WIP_01](./imgs/noise1.png)
 ![WIP_02](./imgs/noise02.png)
 ![WIP_03](./imgs/noise03.png)
