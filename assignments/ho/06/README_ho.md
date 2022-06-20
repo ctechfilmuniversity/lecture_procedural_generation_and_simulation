@@ -36,4 +36,14 @@ Submit your houdini file as `pgs_ss22_tutorial_03_lastname.hipnc`, at least one 
 
 **Happy Randomizing!**
 
+## Renders
 
+![render01](./imgs/pgs_ss22_tutorial_03_ho.gif)
+![render02](./imgs/pgs_ss22_tutorial_03_ho.png)
+
+Work in Progress Shots:
+
+![WIP_01](./imgs/noise1.png)
+![WIP_02](./imgs/noise02.png)
+![WIP_03](./imgs/noise03.png)
+![WIP_04](./imgs/noise04.png)
