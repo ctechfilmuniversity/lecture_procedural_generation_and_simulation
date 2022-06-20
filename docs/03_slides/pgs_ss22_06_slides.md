@@ -154,6 +154,9 @@ vs.
 
 ## (Lattice) Gradient Noise
 
+.center[<img src="../02_scripts/img/06/perlin_06.png" alt="perlin_06" style="width:100%;">[[scratchapixel]](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/perlin-noise-part-2)]
+
+Through the use of random vectors, the distribution of frequencies in the Perlin noise is more regular than the value noise's frequency spectrum.
 
 ???
 .task[COMMENT:]  
@@ -417,6 +420,8 @@ To create a smooth and fluent animation the remaining frames are filled with *in
 
 The *geometry of motion*.  
 
+--
+
 * Describe the geometry of the system and all initial conditions
 * Any unknown parts of the system, such as the next position, can be derived from the geometry of the system.  
 
@@ -515,6 +520,12 @@ We are moving a target handle, also called the *end effector* (e.g. a hand) and 
 * The addition of constraints, limits, collision detections, etc. play a crucial part in inverse kinematic. E.g when building a human leg system, you want to make sure that you can rotate the knee joints only about 135° in the direction of the back of the leg.
 * Now, onwards to the topic we are actually interested in: moving suff without lifting a finger. Or something like that. Well, at least without creating a zillion keyframes...
 
+
+
+---
+template:inverse
+
+# Dynamics
 
 
 ---
@@ -636,6 +647,10 @@ The symbol Δ (Delta) is an abbreviation for *change in*.
 
 * Slope is a value that describes the **steepness and direction of a line**. 
 * In variable format, it is commonly represented by the letter m. The slope of a line is also called its gradient or rate of change.
+* y = mx + b where:
+    * m is the slope or gradient of the line.
+    * b is the y-intercept of the line.
+    * x is the independent variable of the function y = f(x).
 
 ---
 .header[Mathematical Basics | Velocity]
@@ -717,6 +732,7 @@ We need to be able to compute the slope at a single point.
 
 * The first derivative of the function y = f(t) is a measure of the rate at which the value y of the function changes with respect to the change of the time t.
 * For many functions there are [differentiation rules](https://en.wikipedia.org/wiki/Differentiation_rules) to find a function's derivatives such as analytical solution in yellow shown above. If an analytical solution (meaning to calculate the exact solution by well-defined steps, such as the rules to derivate a function statement) is not possible, numerical approximations are used instead. We will come back to that.
+* y = 2(t-0.5)^3
 
 
 ---
