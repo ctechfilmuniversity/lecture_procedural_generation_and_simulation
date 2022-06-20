@@ -25,5 +25,6 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 - Submit one stylized / artistic image that uses noise as generating principle or design element. You can find it on the internet.
   ![4](./img/noise_cote.png)
+  [Link to image](https://cote.ggml.io/tag/look/)
 
 Link all images in this file.
