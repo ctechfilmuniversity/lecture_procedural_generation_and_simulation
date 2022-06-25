@@ -518,7 +518,7 @@ With the steps taken above, now
 
 reduces to
 
-![forces_09](img/07/forces_09.png)  
+![forces_09](img/07/drag_force_01.png)  
 [[10]](http://natureofcode.com/book/chapter-1-vectors/)  
 
 and a simple implementation in Processing could look like (I like this example for its clarity) the following:
