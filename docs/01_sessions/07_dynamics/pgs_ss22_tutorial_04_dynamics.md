@@ -26,8 +26,8 @@ The goal of this exercise is to have a very basic setup, which applies forces to
 
     `v@pt_force = @P;`
 
-* For iteratively, frame by frame, executing something - in our case adding the force to the particles - we need to connect a [Solver](http://www.sidefx.com/docs/houdini/nodes/sop/solver.html) node. The solver node allows to run a SOP network (= surface operator network, which is a `Geometry` network - e.g. the one inside of a geometry node) iteratively over some input geometry. The output of the network from the previous frame serves as the input for the network at the current frame.
-* To build what should be executed each frame, dive inside the solver node and connect to `Prev_Frame` an `Attribute Wrangle`, call it `particle_sim`,  put its `Run Over` property to `Points, and with code adjust the position of the incoming point by adding the point force: 
+* For iteratively, frame by frame, executing something - in our case adding the force to the particles - we need to connect a [Solver](http://www.sidefx.com/docs/houdini/nodes/sop/solver.html) node. The solver node allows us to run a SOP network (= surface operator network, which is a `Geometry` network - e.g. the one inside of a geometry node) iteratively over some input geometry. The output of the network from the previous frame serves as the input for the network at the current frame.
+* To build what should be executed each frame, dive inside the solver node and connect to `Prev_Frame` an `Attribute Wrangle`, call it `particle_sim`,  put its `Run Over` property to `Points`, and with code adjust the position of the incoming point by adding the point force: 
  
      `v@P += v@pt_force;`
 
@@ -40,7 +40,7 @@ The goal of this exercise is to have a very basic setup, which applies forces to
 For making the motion better visible, we add a trail to the moving particles
 
 * Connect a [`Trail`](https://www.sidefx.com/docs/houdini/nodes/sop/trail.html) node to the output of the solver node. The trail node creates a trail for the input point over the past several frames; adjust the `Trail Length`
-* To convert the trail to points only, connect a `Add` node and check `Delete Geometry but Keep the Points`
+* To convert the trail to points only, connect an `Add` node and check `Delete Geometry but Keep the Points`
 * Merge the solver output and the trail
 * (In my example I connected a color node as well to color everything yellow)
 
