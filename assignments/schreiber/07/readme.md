@@ -5,7 +5,7 @@ I struggled quite a bit with the tutorial, especially with the [Moving the Parti
 
 My result:
 
-**VIDEO**
+https://user-images.githubusercontent.com/93382434/175824499-e6a23470-0425-429a-86a6-39f7602b7e73.mp4
 
 This took my about 2,5 hours - without adding a freestyle force.
 
@@ -20,7 +20,7 @@ Then I tried to do some renderings and added materials:
 
 In this flipbook rendering you can see that I tried to use gravity to at least have a squishy thing. Sadly, the anemone is kindly ignoring the pretty floor I set up:
 
-**VIDEO**
+https://user-images.githubusercontent.com/93382434/175824519-6d25a1ee-fe0e-4231-bf55-32f5c59813ba.mp4
 
 It took my 2,5 to 3 hours to get to this point.
 
