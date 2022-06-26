@@ -17,7 +17,7 @@ This session should take less than 5h.
 
 ## Task 1: Chapter 07 - Particles
 
-* Read [Chapter 07 - Particles](../../02_scripts/pgs_ss22_07_particles_script.md)
+* Read [Chapter 07 - Particles](../../02_scripts/pgs_ss22_08_particles_script.md)
 
 
 ## Task 2: Boids
