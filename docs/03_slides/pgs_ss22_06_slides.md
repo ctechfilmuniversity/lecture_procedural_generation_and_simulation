@@ -1062,7 +1062,7 @@ template:inverse
 
 ## Creating Forces
 
-A force is just a vector, which is applied to an object. 
+A force is just a vector. 
 
 --
 
