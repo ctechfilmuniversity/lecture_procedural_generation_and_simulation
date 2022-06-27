@@ -24,6 +24,9 @@ This session should take less than 4h.
 
 Submit your houdini file as `pgs_ss22_tutorial_04_lastname.hipnc`, at least one image file as `pgs_ss22_tutorial_04_lastname.png` and one animation as `pgs_ss22_tutorial_04_lastname.gif`.
 
+![strange_attractors_gif](./pgs_ss22_tutorial_04_ho.gif)
+![strange_attractors_png](./pgs_ss22_tutorial_04_ho.png)
+
 ## Task 3: Intro Rigid Body Dynamics
 
 There are vast possibilities to work with build-in force-based systems in Houdini. For this task you should explore as first introduction force-based systems in Houdini.  
