@@ -18,3 +18,5 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 * [Chapter 05 - Tilings & The Universe](pgs_ss22_05_tilings_script.md)
 * [Chapter 06 - Noise](pgs_ss22_06_noise_script.md)
 * [Chapter 07 - Dynamics](pgs_ss22_07_dynamics_script.md)
+* [Chapter 08 - Particles](pgs_ss22_08_particles_script.md)
+* [Chapter 09 - Fluids](../03_slides/pgs_ss22_08_slides.html)

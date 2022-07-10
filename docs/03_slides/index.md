@@ -18,3 +18,4 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 * [Lecture 05](pgs_ss22_05_slides.html)
 * [Lecture 06](pgs_ss22_06_slides.html)
 * [Lecture 07](pgs_ss22_07_slides.html)
+* [Lecture 08](pgs_ss22_08_slides.html)

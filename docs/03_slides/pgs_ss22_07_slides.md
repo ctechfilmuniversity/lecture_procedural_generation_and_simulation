@@ -123,6 +123,8 @@ template:inverse
 
 ## Velocity
 
+--
+
 ![maths_03](../02_scripts/img/07/maths_03.png)
 
 The *velocity* vector (*Geschwindigkeit*) is telling us where to go. The velocity of an object is the *rate of change of its location* and it is a function of time.
@@ -144,6 +146,8 @@ The *velocity* vector (*Geschwindigkeit*) is telling us where to go. The velocit
 .header[Mathematical Basics]
 
 ## Acceleration
+
+--
 
 If there is a change in speed, direction or both, then the object has a changing velocity and is said to be undergoing an *acceleration* (*Beschleunigung*). 
 
@@ -217,41 +221,34 @@ Force equals acceleration.
 
 --
 
-But how do we get from the force / acceleration value to a velocity value?
 
 
----
+
+???
+.task[COMMENT:]  
+
 ## Mathematical Basics
 
 
 .center[<img src="../02_scripts/../02_scripts/img/07/dynamics_05_animation.gif" alt="dynamics_05_animation" style="width:62%;">[[6]](https://entagma.com/particles-part-03-the-principle-of-particle-simulation/)]
 
+But how do we get from the force / acceleration value to a velocity value?
 
 
-???
-.task[COMMENT:]  
 
 * *Differentiation* is a method to find an *exact value for the slope*, hence the rate of change at any given time t. 
 * The first derivative of the function *y = f(t)* is a measure of the rate at which the value *y* of the function changes with respect to the change of the time *t*.
 * This means in our context the first derivative of the function *y = f(t)* is a measure of the rate of change.
 * The inverse of derivation is integration
-
----
-## Mathematical Basics
 
 
 .center[<img src="../02_scripts/../02_scripts/img/07/dynamics_05_animation.gif" alt="dynamics_05_animation" style="width:42%;"> ![maths_09](../02_scripts/img/07/maths_09.png)]
 
-???
-.task[COMMENT:]  
 
 * *Differentiation* is a method to find an *exact value for the slope*, hence the rate of change at any given time t. 
 * The first derivative of the function *y = f(t)* is a measure of the rate at which the value *y* of the function changes with respect to the change of the time *t*.
 * This means in our context the first derivative of the function *y = f(t)* is a measure of the rate of change.
 * The inverse of derivation is integration
-
----
-## Mathematical Basics
 
 
 
@@ -260,7 +257,6 @@ But how do we get from the force / acceleration value to a velocity value?
 
 * The integral of the object’s acceleration over time tells us the velocity when that time period ends.
 
---
 * The integral of an object’s velocity over time tells us the object’s new location when that time period ends.
 
 
@@ -284,10 +280,10 @@ with
 
 > In short, in a dynamic system we define forces, these forces create acceleration, from these we compute the velocity and from that the location.
 
----
-.header[Forces]
 
-## Integration
+???
+.task[COMMENT:]  
+
 
 How to integrate really depends on the scenario. More often however, an analytical solution is not possible, but we need an approximation.
 
@@ -301,34 +297,18 @@ One way is to approximate the velocity function by following its slope in small 
 The smaller the time-steps the smoother the integration. However smaller steps might lead to performance issues.
 
 
-???
-.task[COMMENT:]  
-
 * *Differentiation* is a method to find an *exact value for the slope*, hence the rate of change at any given time t (or in these graphs at any value of *x*). 
 
 
----
-## Forces
-
 For computing a dynamic system, e.g. a particle simulation, 
 
---
+
 * we start with the forces,
-
---
 * the forces create acceleration, 
-
---
 * the acceleration is integrated to find the velocity and
-
---
-* the velocity is integrated again to find the location. 
-
---
-  
+* the velocity is integrated again to find the location.
+ 
 That location is then assigned to the moving element.
-
---
 Or:
 
 **v'** = **v** + **a** · **Δt**  

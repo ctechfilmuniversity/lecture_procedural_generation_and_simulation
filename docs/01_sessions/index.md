@@ -23,5 +23,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
     * [Results](06_noise/pgs_ss22_06_results.md)
 * [Session 07 - Dynamics](07_dynamics/README.md)
 * [Session 08 - Particles](08_particles/README.md)
+* [Session 09 - Fluids](09_fluids/README.md)
+* [Session 10 - WrapUp & Final Project](10_wrapup/README.md)
 
 
