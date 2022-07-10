@@ -31,7 +31,7 @@ Submit your code however far you got in the given as `pgs_ss22_08_lastname.xx`, 
 Chose any fluid-related Houdini tutorial. For example:
 
 * [Doxia Studio: Mix Fluids From Image](https://www.youtube.com/watch?v=aT4mZphB154&t=230s)
-* [VoxelFX: Introduction to fluid simulations #1 | FLIP fluid tools - Houdini 18](https://www.youtube.com/watch?v=UQXS12sj9IA&t=42s), [#2 | Colliders](https://www.youtube.com/watch?v=2H1EWhvMewk), [#3 | Forces](https://www.youtube.com/watch?v=tAio77ZdKos)
+* [VoxelFX: Introduction to fluid simulations #1 - FLIP fluid tools - Houdini 18](https://www.youtube.com/watch?v=UQXS12sj9IA&t=42s), [#2 - Colliders](https://www.youtube.com/watch?v=2H1EWhvMewk), [#3 - Forces](https://www.youtube.com/watch?v=tAio77ZdKos)
 * [Houdini Liquid Flow Tutorial](https://www.youtube.com/watch?v=_0QzfR-i2Os)
 * [CG Wiki - Flip Fluids](https://www.tokeru.com/cgwiki/index.php?title=HoudiniDops#Flip)
 * ...
