@@ -13,7 +13,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 This session should take less than 3h.
 
 
-## Task 1 - Learning More About Fluids
+## Task 1 - Learning More About Fluids (or Ignoring Fluids and Working with Audio in Houdini)
 
 ### Option 1
 
@@ -37,3 +37,17 @@ Chose any fluid-related Houdini tutorial. For example:
 * ...
 
 Submit your houdini file as `pgs_ss22_08_lastname.hipnc` and at least one image file as `pgs_ss22_08_lastname.png`.
+
+### Option 3
+
+If fluids are at this point not of interest to you, alternatively you can complete the following tutorial from Simon Stimberg that connects Audio to Houdini.
+
+* [Tutorial 07](tutorial_07_audio.md)
+
+Go through the tutorial and make the example your own.  
+
+Submit your houdini file as `pgs_ss22_tutorial_07_lastname.hipnc`, at least one image file as `pgs_ss22_tutorial_07_lastname.png` and one animation as `pgs_ss22_tutorial_07_lastname.xx`.
+
+---
+
+**Happy Flowing!**
