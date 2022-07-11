@@ -26,10 +26,147 @@ layout: false
     * Formula
     * Real-time simulation
 
+--
+* Wrap-Up
+
 ---
 ## Today
 
+.center[<img src="../02_scripts/img/09/turbulence_02.gif" alt="turbulence_02" style="width:80%;">]  
+[[Created with Wind Tunnel/Quanta Magazine]](https://www.quantamagazine.org/what-makes-the-hardest-equations-in-physics-so-difficult-20180116/)
 
+
+
+---
+template:inverse
+
+### Chapter 8
+
+# Particle Systems
+
+
+???
+.task[COMMENT:]  
+
+* A single particle is an independent body that moves.
+
+---
+.header[Particle Systems]
+
+## Setup
+
+--
+
+For building a system of moving particles, you define a **lifecycle** with 
+
+1. A constructor / emitter
+2. Forces
+3. The computation of acceleration, velocity and location for each particle
+4. Optional: Death / disappearance
+
+
+---
+.header[Particle Systems]
+
+## Complex Behavior   
+
+
+???
+.task[COMMENT:]  
+
+* Ok, new line of thought: so far, when working with forces only, influences e.g. on the particles came only from the outside.
+* *With which concepts could we extend a simulation for more complex behavior?*
+* There are two approaches towards more complex behavior:
+
+--
+### Autonomous Agents And Group Behaviors
+
+* Agents not only react to e.g. forces but they also take certain actions themselves
+    * This is called *agency*
+???
+.task[COMMENT:]  
+
+* which can be described as a *desire* to move. Such desires can be differentiated for example as fleeing, wandering, arriving, pursuing, evading, etc. depending how the movement is expressed. Often, with agents the goal to create live-like behavior and an impression of liveliness.
+
+--
+* Often as a group behavior  
+
+---
+.header[Particle Systems]
+
+## Complex Behavior   
+### Autonomous Agents And Group Behaviors
+
+* Agents not only react to e.g. forces but they also take certain actions themselves
+    * This is called *agency*
+* Often as a group behavior  
+    * fleeing
+    * wandering
+    * arriving
+    * pursuing
+    * evading
+    * ...
+
+--
+Often the goal is to create the impression of *liveliness*.
+
+
+---
+.header[Particle Systems | Autonomous Agents]
+
+## Agency
+
+Requires
+
+--
+* Knowledge of the environment
+
+???
+.task[COMMENT:]  
+
+* Agency requires some knowledge of the environment. This can be anything, from having an understanding of the whole scene, to just recognizing the closest neighbor. Which knowledge we need to implement depends on the system and the behavior we want to create.
+
+--
+* Interactions between the elements 
+
+???
+.task[COMMENT:]  
+
+or group behaviors we need to enable local interactions between the elements themselves.
+
+--
+* Computability
+
+???
+.task[COMMENT:]  
+
+
+Agency, or the desire to move must be a *computable action*.
+
+--
+
+Agency as the application of *forces from within*.
+
+???
+.task[COMMENT:]  
+
+Hence, we usually implement it in the same way we were working with forces and understand agency as the application of *forces from within*. 
+
+
+---
+.header[Particle Systems]
+
+## Complex Behavior   
+
+--
+
+> Combine rules for emergent behavior.
+
+
+???
+.task[COMMENT:]  
+
+* Homework
 
 
 ---
@@ -38,6 +175,12 @@ template:inverse
 ### Chapter 9
 
 # Fluid Simulation
+
+
+???
+.task[COMMENT:]  
+
+* What do you consider a fluid?
 
 
 ---
@@ -101,6 +244,12 @@ template:inverse
 * Gas
 * Any material that continuously deforms, e.g. ice
 
+
+???
+.task[COMMENT:]  
+
+* Which main properties do fluids have?
+
 --
 
 The main defining physical properties are
@@ -114,13 +263,14 @@ The main defining physical properties are
 * resisting only relative rates of deformation in a dissipative, frictional manner, and
 
 --
-* the ability to flow (also described as the ability to take on the shape of the container).
+* the ability to flow.
 
 .footnote[[[wiki]](https://www.wikiwand.com/en/Fluid)]
 
 ???
 .task[COMMENT:]  
 
+* also described as the ability to take on the shape of the container
 * In physics, a fluid is a liquid, gas, or other material that continuously deforms (flows) under an applied shear stress, or external force.[1] They have zero shear modulus, or, in simpler terms, are substances which cannot resist any shear force applied to them. 
 
 ---
@@ -256,6 +406,12 @@ In physics, fluids are usually represented as particle systems.
 
 .center[<img src="../02_scripts/img/09/water_05.png" alt="water_05" style="width:100%;">  
 [[VoxelFX]](https://www.youtube.com/watch?v=fcJSG2ooh1M)]  
+
+
+???
+.task[COMMENT:]  
+
+* What else do you see here?
 
 
 ---
@@ -789,10 +945,12 @@ You can understand the algorithm as
 Specifically, we solve for the change in
 
 --
-1. The density
+1. The velocity
 
 --
-2. The velocity
+2. The density
+
+
 
 
 
@@ -964,7 +1122,7 @@ This behavior is a general problem that plagues unstable methods.
 
 The idea for a stable method:
 
-* find the densities which when diffused **backwards** in time result in the densities we started with.
+* find the densities that when diffused **backwards** in time result in the densities we started with.
 
 .center[<img src="../02_scripts/img/09/fluid_realtime_16.png" alt="fluid_realtime_16" style="width:50%;">]  
 [[Gonkee]](https://www.youtube.com/watch?v=qsYE1wMEMPA)  
@@ -983,7 +1141,9 @@ The idea for a stable method:
 
 The idea for a stable method:
 
-* find the densities, which when diffused **backwards** in time result in the densities we started with.
+* find the densities that when diffused **backwards** in time result in the densities we started with.
+
+--
 
 .center[<img src="../02_scripts/img/09/fluid_realtime_17.png" alt="fluid_realtime_17" style="width:45%;">]  
 [[Gonkee]](https://www.youtube.com/watch?v=qsYE1wMEMPA)  
@@ -1113,6 +1273,7 @@ To move the density function through the velocity field:
 * Two grids
     * One for the density values from the previous time step 
     * An empty one that will contain the new values
+--
 * Iterate over the empty grid, for each cell
     * Trace the cell’s center position backwards through the velocity field 
     * Linearly interpolate from the grid of previous density values
@@ -1248,6 +1409,8 @@ resulting in a field that is mass-conserving.
 
 ## Boundaries
 
+--
+
 No flow should exit the walls. Set
 
 * the horizontal component of the velocity to zero on the vertical walls
@@ -1342,6 +1505,672 @@ There are many other boundary treatments possible, e.g. wrapping.
 .center[<img src="../02_scripts/img/09/papers_01.png" alt="stam_01" style="width:70%;">]  
 
 [Two Minute Papers - Fluid, Cloth and Hair Simulations](https://www.youtube.com/playlist?list=PLujxSBD-JXgnnd16wIjedAcvfQcLw0IJI)
+
+
+
+
+---
+template: inverse
+
+# Wrapping Up
+
+
+???
+.task[COMMENT:]  
+
+* Overview about techniques and their capabilities
+* Understanding of formal theories and algorithms
+* Practical implementation experiences
+* Implementation of specific design goals
+
+---
+
+## Patterns
+
+
+???
+.task[COMMENT:]  
+
+* The recognition of suitable design goals
+* An understanding of what a procedural technique is and what it is capable of
+* An broad overview of approaches
+
+---
+layout: false
+
+## Patterns
+
+.center[<img src="../02_scripts/img/01/succulents.jpg" alt="succulents" style="width:100%;">]
+[[boredpanda]](https://www.boredpanda.com/geometry-symmetry-plants-nature/?utm_source=google&utm_medium=organic&utm_campaign=organic)
+
+---
+## Patterns
+
+
+![koch_curve](../02_scripts/img/01/koch_curve.gif)  
+[[stackexchange]](https://tex.stackexchange.com/questions/404925/animated-koch-snowflake)  
+
+---
+## Abstraction
+
+--
+
+![klint_01](../02_scripts/img/01/klint_01.jpeg)  
+[[Hilma af Klint, Group V, The Seven-Pointed Star, 1908]](https://medium.com/as-mag/modern-mystic-hilma-af-klint-c4ef6c27467c)  
+
+---
+## Abstraction
+
+.center[<img src="../02_scripts/img/01/suprematist_02.jpg" alt="suprematist_02" style="width:60%;">]
+[[Francis Picabia, Quadrato rosso, Kazimir Malevich, 1915]](https://en.wikipedia.org/wiki/File:Francis_Picabia,_1912,_La_Source,_The_Spring,_oil_on_canvas,_249.6_x_249.3_cm,_Museum_of_Modern_Art,_New_York._Exhibited,_1912_Salon_d%27Automne,_Paris.jpg)
+
+---
+## Abstraction
+
+.center[<img src="../02_scripts/img/01/cgi_09.jpg" alt="cgi_09" style="width:50%;">]
+[[Albert Omoss]](https://omoss.io/)  
+
+
+---
+## Abstraction
+
+.center[<img src="../02_scripts/img/01/cgi_13.jpg" alt="cgi_13" style="width:100%;">]
+[[Lee Griggs]](https://leegriggs.com)
+
+---
+## Procedural Generation
+
+--
+
+.center[<img src="../02_scripts/img/01/10print.png" alt="10print" style="width:100%;">]
+
+---
+## Procedural Generation
+
+
+.center[<img src="../02_scripts/img/01/forms_excerpt.png" alt="forms_excerpt" style="width:100%;">]
+
+[Forms by Memo Akten and Quayola](https://vimeo.com/38017188)
+
+
+???
+.task[COMMENT:]  
+
+* Forms is a series of studies on human motion, and its reverberations through space and time. [...] Rather than focusing on observable trajectories, it explores techniques of extrapolation to sculpt abstract forms, visualizing unseen relationships – power, balance, grace and conflict – between the body and its surroundings.
+  
+* The project investigates athletes; pushing their bodies to their extreme capabilities, their movements shaped by an evolutionary process targeting a winning performance. Traditionally a form of entertainment in todays society with an overpowering competitive edge, the disciplines are deconstructed and interrogated from an exclusively mechanical and aesthetic point of view; concentrating on the invisible forces generated by and influencing the movement.
+  
+* The source for the study is footage from the Commonwealth Games. The process of transformation from live footage to abstract forms is exposed as part of the interactive multi-screen artwork, to provide insight into the evolution of the specially crafted world in which the athletes were placed.
+
+---
+template:inverse
+
+## Beauty in Maths
+
+???
+.task[COMMENT:]  
+
+* Learn about visual properties of some numbers and curves
+* Get an intuition on how to use formulas in regard to their design space and their implementation
+* Learn how to grow leaves like a plant
+
+---
+## Beauty in Maths
+
+.center[<img src="../02_scripts/img/03/fibonacci_02.png" alt="fibonacci_02" style="width:100%;">[[wiki]](https://commons.wikimedia.org/wiki/File:FibonacciSpiral.svg)]  
+
+
+
+???
+.task[COMMENT:]  
+
+* The above segmentation of an rectangle approximates the *golden spiral*. 
+* We have a *golden* ratio if the ratio of two quantities is the same as the ratio of their sum to the larger of the two quantities.
+
+$\frac{a+b}{a} = \frac{a}{b}$
+
+---
+## Beauty in Maths
+
+
+![goldenangle_05](../02_scripts/img/03/goldenangle_05.png)  
+[[gofiguremath]](http://gofiguremath.org/natures-favorite-math/the-golden-ratio/the-golden-angle/)
+
+![goldenangle_06](../02_scripts/img/03/goldenangle_06.png)  
+[[fineartamerica]](https://fineartamerica.com/featured/1-golden-angle-thomas-festerscience-photo-library.html)
+
+
+???
+.task[COMMENT:]  
+
+* 
+The best solution to *how far to turn from the last leaf* in degree is therefore $~137.5°$, and that is what all kinds of plants do.
+
+---
+## Beauty in Maths
+
+
+![](../02_scripts/img/03/phyllotaxis.gif)  
+
+
+???
+.task[COMMENT:]  
+
+* Vogel, H (1979). **A better way to construct the sunflower head**. Mathematical Biosciences 44 (44): 179–189.
+
+---
+## Beauty in Maths
+
+![](../02_scripts/img/03/phyllotaxis_interactive.gif)  
+
+
+???
+.task[COMMENT:]  
+
+* But the fascination doesn't stop here. If we change the angle from the golden angle to an arbitrary angle between 0..360 we get vastly different designs for only very small changes. The following code maps the angle to turn to the mouse position in x. Try the code for yourself!
+* Fractions for the `ratio` value lead to spikes, while getting closer to an irrational number produces dense distributions:
+
+---
+## Beauty in Maths
+
+### The Rose Curve
+
+.center[<img src="../02_scripts/img/03/rose_01.png" alt="rose_01" style="width:60%;">[[wiki]](https://en.wikipedia.org/wiki/Rose_(mathematics))]  
+  
+
+---
+template:inverse
+
+# Function Design
+
+
+???
+.task[COMMENT:]  
+
+With this chapter, you will
+
+* gain an intuitive understanding of the visual qualities of different operators and function components.
+* gain some understanding of how to put the different function components together to create a specific design goal.
+
+
+---
+## Function Design
+
+.center[<img src="../02_scripts/img/04/batman_01.png" alt="batman_01" style="width:50%;"><img src="../02_scripts/img/04/batman_02.png" alt="batman_02" style="width:50%;">[[geogebra]](https://www.geogebra.org/m/Wkjz2X92)]
+
+.center[<img src="../02_scripts/img/04/batman_03.png" alt="batman_03" style="width:60%;">[[wiki]](https://en.wikipedia.org/wiki/Rose_(mathematics)] 
+
+
+---
+## Function Design
+
+.center[<img src="../02_scripts/img/04/wave_02.png" alt="wave_02" style="width:50%;">
+<img src="../02_scripts/img/04/wave_03.png" alt="wave_03" style="width:50%;">
+<img src="../02_scripts/img/04/wave_04.png" alt="wave_04" style="width:50%;">]
+
+
+???
+.task[COMMENT:]  
+
+* Often times we want to repeat certain visual features, which can be done in its simplest form e.g. with a `sin` function. However, there are several other design options. The following functions are also often called *wave functions*.
+* Wave functions have as common properties
+    * frequency (“*how often*”), and
+    * amplitude (“*how much*”).
+
+
+---
+## Function Design
+
+### Signed Distance Functions
+
+.center[<img src="../02_scripts/img/04/sdf_01.png" alt="sdf_01" style="width:40%;">
+<img src="../02_scripts/img/04/sdf_02.png" alt="sdf_02" style="width:40%;">]
+
+
+???
+.task[COMMENT:]  
+
+* A signed distance field is a function that represents a shape by computing for an input point the shortest distance to that shape. 
+* The sign of the output value determines if the point exists inside the shape or not.
+* length(p) - radius;
+
+
+---
+## Function Design
+
+.center[![sdf_05](../02_scripts/img/04/sdf_05.gif)]
+
+???
+.task[COMMENT:]  
+
+* We can build upon the above method, and shape with different functions different shapes. 
+* We also used that in the islamic shader and will come back to that again and again.
+
+
+
+---
+template:inverse
+
+## Tilings
+
+???
+.task[COMMENT:]  
+
+* Know about the formal world of tilings and be aware of their mathematical complex constructions
+* Know which terms to investigate if you are further interested in the formal aspects of tilings
+* Understand the design of islamic art and its characteristics
+* Be able to construct an islamic design (this comes more through the exercise though)
+* Learn about contexts and interpretations of geometry
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/tilings_27.png" alt="tilings_27" style="width:80%;">]
+  
+[[encyclopedia of tilings]](https://tilings.math.uni-bielefeld.de/substitution/a-ab--b-c--c-a-dual/) 
+
+
+???
+.task[COMMENT:]  
+
+* Formulas for tilings and mathematical proof on what is possible?
+* The dual tiling of the 1D tiling a->ab, b->c, c->a, resp. the version with polygonal tiles.
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/islamic_32.png" alt="islamic_32" style="width:90%;">]
+  
+[[Craig S. Kaplan]](http://www.cgl.uwaterloo.ca/csk/projects/starpatterns/)
+
+
+???
+.task[COMMENT:]  
+
+* Computer generated star patterns, inspired by islamic art, applied to the Euclidean plane, the surface of the sphere, and the hyperbolic plane.
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/composition_01.png" alt="composition_01" style="width:20%;"><img src="../02_scripts/img/05/construction_07.jpeg" alt="construction_07" style="width:80%;">]
+
+[[ricoflow]](https://www.youtube.com/watch?v=FqBWjJQKICk)
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/composition_04.png" alt="composition_04" style="width:60%;">]  
+[[travelingalchemists]](https://travelingalchemists.wordpress.com/) 
+
+
+???
+.task[COMMENT:]  
+
+* The above image, depicts the *seed of life*, which is believed to be an ancient geometric universal symbol for all creation.
+* Speaking of religion, there is a discipline called *sacred geometry*. Sacred geometry ascribes symbolic and sacred meanings to certain geometric shapes and certain geometric proportions. It is associated with the belief that god is a mathematician, specializing in geometry, applying this mastery when building the world. Here, the synchronicity of the universe is determined by certain mathematical constants, which express themselves in the form of patterns and cycles in nature. The geometry used in the design and construction of religious structures such as churches, temples, mosques, religious monuments, altars, and tabernacles has then sometimes been considered sacred. 
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/seedoflife_01.png" alt="seedoflife_01" style="width:60%;">]  
+[[etemetaphysical]](https://blog.etemetaphysical.com/seedoflife/) 
+
+???
+.task[COMMENT:]  
+
+* The above image, depicts the *seed of life*, which is believed to be an ancient geometric universal symbol for all creation.
+* Speaking of religion, there is a discipline called *sacred geometry*. Sacred geometry ascribes symbolic and sacred meanings to certain geometric shapes and certain geometric proportions. It is associated with the belief that god is a mathematician, specializing in geometry, applying this mastery when building the world. Here, the synchronicity of the universe is determined by certain mathematical constants, which express themselves in the form of patterns and cycles in nature. The geometry used in the design and construction of religious structures such as churches, temples, mosques, religious monuments, altars, and tabernacles has then sometimes been considered sacred. 
+
+
+---
+## Tilings
+
+.center[<img src="../02_scripts/img/05/forgingmind_05.png" alt="forgingmind_05" style="width:100%;">]
+
+[[forgingmind]](https://www.forgingmind.com/collections/frontpage/products/bioluminescence)
+
+
+---
+template:inverse
+
+## Noise Functions
+
+
+???
+.task[COMMENT:]  
+
+With this chapter you will gain
+
+* an understanding of what a procedural noise function is and the requirements for it,
+* an understanding of the different types of noise, and
+* knowledge on how to use noise.
+
+---
+## Noise Functions
+
+.center[<img src="../02_scripts/img/06/prn_09.png" alt="prn_09" style="width:100%;">]
+
+```js
+
+smooth_pseudo_noise(x) = smooth_saw(x) * step_random(x) 
+                         + smooth_saw(x - 1) * (step_random(x - 1) * -1 + 1)
+```
+
+
+---
+## Noise Functions
+
+![noise_23](../02_scripts/img/06/noise_23.png)  
+[[Jackson Pollock - Number 14 gray (1948)]](https://thebookofshaders.com/11/)
+
+---
+## Noise Functions
+
+![bounce](../02_scripts/img/06/bounce.gif)  
+[[processing]](https://www.processing.org/examples/bouncybubbles.html)
+
+
+---
+## Noise Functions
+
+![perlin_12](../02_scripts/img/06/perlin_12.png)  
+[[iquilezles]](http://www.iquilezles.org/)
+
+---
+## Noise Functions
+
+.center[<img src="../02_scripts/img/06/houdini_01.png" alt="houdini_01" style="width:100%;">]
+[[sidefx]](https://vimeo.com/75313908)
+
+---
+## Noise Functions
+
+### Turbulence Noise
+
+![turbulence_07](../02_scripts/img/06/turbulence_07.png)  
+  
+![turbulence_06](../02_scripts/img/06/turbulence_06.png)
+
+---
+## Noise Functions
+
+![fbm_fbm](../02_scripts/img/06/fbm_fbm.gif)  
+[[Warping by Iq]](https://www.shadertoy.com/view/4s23zz)
+
+---
+## Noise Functions
+
+### Cellular Noise
+
+![cellular_04](../02_scripts/img/06/cellular_04.png)  
+[[thebookofshaders]](https://thebookofshaders.com/12/)
+
+--
+
+![voronoi_01](../02_scripts/img/06/voronoi_01.png)  
+[[wiki]](https://en.wikipedia.org/wiki/Voronoi_diagram#/media/File:Euclidean_Voronoi_diagram.svg)
+
+---
+template:inverse
+
+## Dynamics
+
+
+???
+.task[COMMENT:]  
+
+* an understanding of the different approaches to moving stuff,
+* an understanding of the theoretical backgrounds of dynamics
+    * Calculus
+    * Velocity, acceleration, forces, ...
+    * Newton’s Laws of Motion
+* the ability to transfer the theory to examples of dynamic systems in Houdini.
+
+
+---
+## Dynamics
+
+![maths_03](../02_scripts/img/07/maths_03.png)
+
+
+???
+.task[COMMENT:]  
+
+In short, velocity is a *rate of change*.
+
+Computations in regard to moving objects and changing locations are part of *[Calculus](https://en.wikipedia.org/wiki/Calculus)*, *the study of change*.  
+
+---
+## Dynamics
+
+If we want to compute a new location for a point **p** over time t, we apply its velocity **v** and acceleration **a**:
+
+**v'** = **v** + **a** · **Δt**  
+**p'** = **p** + **v'** · **Δt**  
+
+* Velocity measures the change in location over a certain time.
+* Acceleration measures the change in velocity over time
+
+---
+## Dynamics
+
+#### Newton’s Second Law of Motion
+
+> Force equals mass times acceleration, hence **F** = **M** · **A**.  
+
+With **F** as force, **M** as mass and **A** as acceleration.
+
+--
+
+![maths_08](../02_scripts/img/07/maths_08.png)
+
+---
+## Dynamics
+
+### Example Air and Fluid Resistance
+
+![drag_force](../02_scripts/img/07/drag_force.gif)  
+[[codingtrain]](https://editor.p5js.org/codingtrain/sketches/5V8nSBOS)  
+
+???
+.task[COMMENT:]  
+
+* Friction occurs when a body passes through a liquid or gas. This force is called a *drag force*, or a *viscous force*, or *fluid resistance*. With that we want to model e.g. a drag force for a liquid (the gray area).
+
+
+---
+template:inverse
+
+## Particles
+
+???
+.task[COMMENT:]  
+
+* With this chapter you gain
+
+* an overview of the components of particles systems,
+* an understanding of the characteristics for more natural movements with agents, and
+* the ability to transfer the theory to examples of dynamic particle systems in Houdini (also through the exercise of next week).
+
+
+---
+## Particles
+
+.center[<img src="../02_scripts/img/08/particles_01.png" alt="particles_01" style="width:50%;"><img src="../02_scripts/img/08/particles_02.png" alt="particles_02" style="width:30%;">]
+
+[[princeton.edu]](https://www.princeton.edu/news/2013/02/07/birds-feather-track-seven-neighbors-flock-together) *Flocks of birds.*, [[pinterest]](https://www.pinterest.de/pin/31243791139408749/) *A school of fish.*
+
+---
+## Particles
+
+.center[<img src="../02_scripts/img/08/agents_04.png" alt="agents_04" style="width:90%;">]
+[[11]](https://natureofcode.com/book/chapter-6-autonomous-agents/)  
+
+Agency as the desire to move in a certain way.
+
+---
+## Particles
+
+![boids_02](../02_scripts/img/08/boids_02a.gif)  
+[[codingtrain]](https://editor.p5js.org/codingtrain/sketches/ry4XZ8OkN) 
+
+
+???
+.task[COMMENT:]  
+
+* The left slider adjusts the influence of alignment, the middle one cohesion and the right one separation
+* http://www.basis64.nl/flocking3D/
+
+---
+template:inverse
+
+## Fluids
+
+---
+## Fluids
+
+
+.center[<img src="../02_scripts/img/09/turbulence_02.gif" alt="turbulence_02" style="width:80%;">]  
+[[Created with Wind Tunnel/Quanta Magazine]](https://www.quantamagazine.org/what-makes-the-hardest-equations-in-physics-so-difficult-20180116/)
+
+
+
+---
+template:inverse
+
+## Houdini
+
+
+---
+## Houdini
+
+.center[<img src="../02_scripts/img/02/houdini_02.jpg" alt="houdini_02" style="width:100%;">]
+
+---
+## Houdini
+
+.center[<img src="../02_scripts/img/02/houdini_vs_01.png" alt="houdini_vs_01" style="width:48%;">  <img src="../02_scripts/img/02/houdini_vs_02.png" alt="houdini_vs_02" style="width:48%;">]
+
+[kreativemantra](https://kreativemantra.com/2021/06/13/best-introduction-to-houdini/)
+
+---
+## Houdini
+
+### A Procedural Workflow
+
+Always think about your work as creating a process, rather than a thing.  
+  
+For example, don't make a table, but a procedure that builds tables and which is adaptable
+
+---
+## Fragment Shader
+
+Best environment to practice "pure" function designs and procedural generation!
+
+![tutorial_07_islamicpattern_04](../02_scripts/img/05/tutorial_07_islamicpattern_04.gif)
+---
+template: inverse
+
+# *That's it!*
+
+
+???
+.task[COMMENT:]  
+
+* Look at final project and session 10
+
+
+
+---
+.header[Open Questions]
+
+## Plugins & Tools
+
+
+???
+.task[COMMENT:]  
+
+* One the one hand it is quite easy to build custom-made, re-usable setups in Houdini, on the other hand Houdini shelves are pretty much a collection of plugins. Hence, there are not that many plugins around.
+* [Procedural Oil Painting in Houdini](http://www.willmacneil.com/portfolio/oil-painting-the-houdini-way) 
+
+---
+.header[Open Questions]
+
+## Plugins & Tools
+
+### Realtime Engines
+
+* Plugin for integration of Houdini assets into the Unity / Unreal editor
+* Assets remain editable in the editor but are baked for the runtime experience
+* Unity / Unreal geometry can also be sent into Houdini 
+
+This topic is really well documented!
+
+* [Unity Plugin](https://www.sidefx.com/products/houdini-engine/plug-ins/unity-plug-in/)
+    * [Unity Starter Kit](https://www.sidefx.com/tutorials/unity-starter-kit/)
+    * [Sci Fi Level Design](https://www.sidefx.com/learn/collections/sci-fi-level-design/)
+    * [Guard Tower](https://www.sidefx.com/learn/collections/guard-tower/)
+* [Unreal Plugin](https://www.sidefx.com/products/houdini-engine/plug-ins/unreal-plug-in/)
+
+
+
+???
+.task[COMMENT:]  
+
+* to be used as input, for * modification, and/or manipulation.”
+
+---
+.header[Open Questions]
+
+## Plugins & Tools
+
+* Modeling with [ZBrush](https://pixologic.com/), [GoZ](https://www.sidefx.com/tutorials/installing-goz-plugin-for-zbrush/) 
+* Texturing & Shading (?) with [Substance](https://www.adobe.com/products/substance3d-designer.html), [Substance Plugin for Houdini](https://www.sidefx.com/tutorials/sidefx-labs-substance-plugin/)
+* Compositing, e.g. with [Nuke](https://www.foundry.com/products/nuke)
+
+
+???
+.task[COMMENT:]  
+
+* Allegorithmic
+    * https://www.youtube.com/watch?v=hlAxkJGeAT0
+
+---
+template:inverse
+
+# Next Steps
+
+---
+# Next Steps
+
+Does it makes sense for you
+
+--
+
+* ...to have procedural generation in your set of skills?
+    * If yes, with which tool do you want to work?
+    * Create your own outputs / designs / setups
+--
+* ...to have Houdini in your set of skills?
+    * If yes, pick a topic to look into that...
+    * ...or start with doing once a complete tour through Houdini.
+    * Keep notes on your insights
+    * Get as much as possible into the procedural work flow
+    * Use as little as possible the shelf tools
+--
+* ...to have fragment shader programming in your set of skills?
+    * If yes, pick an environment
+    * Do the fragment shader exercise
+    * Come to the shader workshop
+    * Look at examples and understand them
+    * Create your own outputs / designs
+
+
+
+
+
+
+
 
 ---
 template:inverse
