@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/93442123/178205556-36727d6b-81a2-491f-
 
 <img src="gif.gif" width="800">
 <img src="01.png" width="800">
-<img src="02.png" width="800">
+<img src="02.jpg" width="800">
 <img src="03.png" width="800">
 <img src="04.png" width="800">
 <img src="05.png" width="800">
