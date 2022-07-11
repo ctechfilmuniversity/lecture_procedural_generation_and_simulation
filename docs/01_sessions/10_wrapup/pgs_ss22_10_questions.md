@@ -23,7 +23,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 * How well did the given time estimates for each session match the time you needed to complete the session?
 * What do you think about Houdini as tool to learn for a CTecht student? Is it valuable?
 * What do you think about Houdini as a tool for this class? Does the work with Houdini connect to the theoretical topics reasonably?
-* Do you have any other ideas reading which tools to use for this class?
+* Do you have any other ideas reading which tools and software packages to use for this class?
 * Do you have any useful hints to pass on to future students, e.g. utility tools, further resources?
 * What is your opinion regarding practical exercises in class? Do you think it would be helpful to substitute some of the theory parts with doing e.g. an Houdini exercise in class (there can be no additional time for the class though, it is "either...or")?
 * Which one was your favorite chapter, which one your least favorite?
