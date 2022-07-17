@@ -18,16 +18,16 @@
 * Which of the chapter topics given in the syllabus are of most interest to you? Why?
 > Given that Houdini and all its features are pretty new to me, all chapters are of interest to me.
 > A few years ago I tried to build an electric guitar with blender (using Google and lots of luck), I am hoping
-> to now at least be able to know and understand some tools within the program.
+> to now at least be able to understand some tools within the software.
 > I am also really interested in visual effects and therefore pretty excited about moving particles and dynamics.
 
 * Are there any further topics in regard to procedural generation and simulation that would interest you?
-> Not a topic, but I am excited to apply the acquired knowledge and try to create realistic looking scenes.
+> Not a topic, but I am excited to apply the acquired knowledge and try to create realistic scenes.
 
 * Which tool would you personally prefer to use for the practical tasks (e.g. Houdini, Unreal, Unity, Maya, Blender, JavaScript, p5, GLSL, ...)?
 > I have only had a brief encounter with Unity yet and did not like it that much. Blender would also be interesting 
 > in order to finally understand the software better and maybe finish that guitar (see above). 
-> In retrospect, the things I have learned about Houdini can probably be applied to Blender as well.
+> Given that most software in that field has similarities, the things I have learned about Houdini can probably be applied to Blender as well.
 
 * How would you rate your level of experience with SideFX's Houdini?
     * [ ] I have only used it in TI
