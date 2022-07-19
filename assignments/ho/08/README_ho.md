@@ -59,6 +59,9 @@ Submit your houdini file as `pgs_ss22_tutorial_05_lastname.hipnc`, at least one 
 ---
 
 **Happy Simulating!**
+In this render, I modified the tutorial output by using metaballs instead of primitive geometry, which resulted in this kind of pulsating ball of slime / goo? 
+
+In the beginning of the shot, the attraction force is still great enough to keep all the particles in the center of the ball, but as some parts start to escape, the attraction center becomes unstable and it starts a chain reaction that causes more and more of the mass to escape. The reaction becomes faster and faster until at the end, the attraction of the swarm becomes diffused and many parts can escape.
 
 ![render_png](./imgs/pgs_ss22_tutorial_05_ho.png)
 ![render_gif](./imgs/pgs_ss22_tutorial_05_ho.gif)

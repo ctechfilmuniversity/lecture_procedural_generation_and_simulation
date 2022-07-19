@@ -34,7 +34,7 @@
 
 Briefly in your own words: how would you explain your nanny what *procedural generation* means?
 
-* Procedural generation is like writing a recipe for someone else to cook a very complex dish, but in this case, the dish is a piece of art, and the chef is a computer that executes your code, or recipe. By knowing how the computer likes to cook, we can modify the recipe to get the dish to turn out the way we like, but there's also some elements of randomness or unexpected outcomes that might actually inspire us and make the dish better.
+* Procedural generation is like writing a recipe for someone else to cook a very complex dish, but in this case, the dish is a piece of art, and the chef is a computer that executes your code, or recipe. By knowing how the computer likes to cook, we can modify the recipe to get the dish to turn out the way we like, but there's also some elements of randomness or unexpected-ness that might actually inspire us and make the dish better.
 
 ## Questions 3 - Patterns
 
@@ -59,7 +59,14 @@ Write for one of your pattern images a generating algorithm in pseudo-code or co
 
 This is an abstract implementation of the leaf pattern in the last photo in P5.js. It uses a formula I found in TBAG last semester to procedurally generate the leaf shapes from a few parameters, and randomly fills the canvas with the resulting shape. Each parameter can be changed, which would result in different leaf shapes. I've also colored the leaves based on a randomly assigned depth layer, so that leaves further down have a lower maximum green brightness.
 
-```let canvasWidth = 800
+The formula:
+
+![superformula](./imgs/superformula.jpg)
+
+The code:
+
+```javascript
+let canvasWidth = 800
 let canvasHeight = 800
 let maxLeafDepth = 3;
 let numLeaves = 150;

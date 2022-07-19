@@ -34,4 +34,15 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 Link all images in this file.
 
 
+## Renders
 
+![render01](./imgs/pgs_ss22_tutorial_03_ho_reduced.gif)
+![render02](./imgs/pgs_ss22_tutorial_03_ho.png)
+
+Work in Progress Shots:
+
+![WIP-blender](./imgs/wip01.png)
+![WIP_01](./imgs/noise1.png)
+![WIP_02](./imgs/noise02.png)
+![WIP_03](./imgs/noise03.png)
+![WIP_04](./imgs/noise04.png)
