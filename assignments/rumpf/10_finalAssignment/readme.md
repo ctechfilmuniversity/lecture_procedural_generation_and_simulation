@@ -17,3 +17,6 @@ I made heavy use of these two projects:
 - [**THREE.js - webgl gpu birds**](https://threejs.org/examples/webgl_gpgpu_birds.html)
 
 [![ImpossibleAquarium](./img/impossibleAquarium_3.png)](https://timrumpf.com/ImpossibleAquarium/ "Impossible Aquarium")
+[![ImpossibleAquarium](./img/impossibleAquarium_2.png)](https://timrumpf.com/ImpossibleAquarium/ "Impossible Aquarium")
+[![ImpossibleAquarium](./img/impossibleAquarium_1.png)](https://timrumpf.com/ImpossibleAquarium/ "Impossible Aquarium")
+[![ImpossibleAquarium](./img/impossibleAquarium_4.png)](https://timrumpf.com/ImpossibleAquarium/ "Impossible Aquarium")
