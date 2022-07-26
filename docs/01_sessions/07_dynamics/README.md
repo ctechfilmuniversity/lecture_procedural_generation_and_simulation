@@ -16,7 +16,7 @@ This session should take less than 4h.
 
 ## Task 1: Chapter 07 - Dynamics
 
-* Read [Chapter 07 - Dynamics](../../02_scripts/pgs_ss22_06_dynamics_script.md)
+* Read [Chapter 07 - Dynamics](../../02_scripts/pgs_ss22_07_dynamics_script.md)
 
 ## Task 2: A Basic Force Setup
 

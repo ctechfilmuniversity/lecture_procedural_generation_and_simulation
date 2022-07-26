@@ -50,6 +50,16 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ### Janine
 ### Jannis
 ### Jonathan
+
+
+![noise_example-01](img/results/ho/06/imgs/naturalNoise_01.gif)
+![noise_example-02](img/results/ho/06/imgs/naturalNoise_02.jpg)
+![noise_example-03](img/results/ho/06/imgs/naturalNoise_03.jpeg)
+![noise_example-04](img/results/ho/06/imgs/naturalNoise_04.jpeg)
+![noise_example-05](img/results/ho/06/imgs/naturalNoise_05.jpeg)
+
+![noise](./img/FVoVOWOXsAAEw9U.jpg)
+
 ### Katja
 ### Marco B.
 ### Marco W.
@@ -59,6 +69,14 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 
 ### Marton
+
+![1](img/results/gasparik/06/img/noise1.jpg)
+![2](img/results/gasparik/06/img/noise2.jpg)
+![3](img/results/gasparik/06/img/noise3.jpg)
+![4](img/results/gasparik/06/img/noise4.jpg)
+
+![4](img/results/gasparik/06/img/noise_cote.png)
+
 ### Tillman
 
 ![](img/results/schaeuble/06/media/img_0.png)        
@@ -71,6 +89,12 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ![](img/results/schaeuble/06/media/style3.png)
 
 ### Tim
+
+<img src="img/results/rumpf/06/img/plaster.jpg" width="200"/> <img src="img/results/rumpf/06//img/power_box.jpg" width="200"/> <img src="img/results/rumpf/06//img/pvc_floor.jpg" width="200"/> 
+
+
+[![Random Noir](img/results/rumpf/06/img/random_noir.png)](https://www.instagram.com/p/CAD4mulobJM/ "Random Noir")
+
 ### Vivien
 
 ![Tree](img/results/schreiber/06/imgs/noise_tree.jpg)
@@ -94,9 +118,31 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 
 ### Janine
+
+![](img/results/gueldner/06/pgs_ss22_tutorial_03_gueldner.png)
+![](img/results/gueldner/06/pgs_ss22_tutorial_03_gueldner.gif)
+
 ### Jannis
 ### Jonathan
+
+![render01](img/results/ho/06/imgs/pgs_ss22_tutorial_03_ho_reduced.gif)
+![render02](./imgs/pgs_ss22_tutorial_03_ho.png)
+
+![WIP_01](img/results/ho/06/imgs/noise1.png)
+![WIP_02](img/results/ho/06/imgs/noise02.png)
+![WIP_03](img/results/ho/06/imgs/noise03.png)
+![WIP_04](img/results/ho/06/imgs/noise04.png)
+
 ### Katja
+
+<img src="img/results/ka_schreiber/06/img/lightPorcelain.png" />
+
+<img src="img/results/ka_schreiber/06/img/liquid.png" />
+
+
+<img src="img/results/ka_schreiber/06/img/pgs_ss21_tutorial_04_01.gif" />
+<img src="img/results/ka_schreiber/06/img/pgs_ss21_tutorial_04_02.gif" />
+
 ### Marco B.
 
 ![](img/results/braune/06/img/Session06_img.png)  
@@ -104,6 +150,12 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ### Marco W.
 ### Marton
+
+![exp_1](img/results/gasparik/06/tutorial_results/exp_1.png)
+![exp_1](img/results/gasparik/06/tutorial_results/exp_2.png)
+![exp_1](img/results/gasparik/06/tutorial_results/gif_0038.png)
+![exp_1](img/results/gasparik/06/tutorial_results/pgs_assignment_06_gasparik.gif)
+
 ### Tillman
 
 ![Houdini Task 4](img/results/schaeuble/06/media/pgs_ss22_tutorial_03_schaeuble.png)       
