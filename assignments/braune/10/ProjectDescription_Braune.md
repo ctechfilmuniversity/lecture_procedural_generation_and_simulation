@@ -6,7 +6,7 @@ This project is an animated title sequence, done in Houdini. The idea for the ti
 
 
 ## Concept
-As the film is set in the future and deals with digital connections between everything and everyone (no spoilers here :) ), I wanted to give it that "modern sci-fi" look, with flowing data streams and connected data points. An example mood image is below. In the center should be the title of the film. But a first draft showed me, that this looks too unimpressive, so I decided to add an environment to it. 
+As the film is set in the future and deals with digital connections between everything and everyone (no spoilers here :) ), I wanted to give it that "modern sci-fi" look, with flowing data streams and connected data points. Example mood images are below. In the center should be the title of the film. But a first draft showed me, that this looks too unimpressive, so I decided to add an environment to it. 
 
 For this concept I thought that particle systems are the best option to achieve my goal. I also wanted to get more familiar with Houdini and see what I can already create with it. That's why I decided to stay in Houdini for my project. 
 
