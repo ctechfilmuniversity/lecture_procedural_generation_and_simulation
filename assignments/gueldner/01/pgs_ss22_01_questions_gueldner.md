@@ -105,6 +105,8 @@ Chose one CG image, which you like and of which you think that it has an artisti
 ### Ju Schnee
 
 I have been following Ju Schnee's work for a while now and I really like that she combines traditional brush and canvas art with digital art.
+https://user-images.githubusercontent.com/83589724/181116217-0bfe8db7-7e91-485d-88d3-42d61cec9ba6.mov
+
 
 ### Diana Smith
 
