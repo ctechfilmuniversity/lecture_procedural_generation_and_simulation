@@ -1,11 +1,4 @@
 
-    Abstract
-    Concept
-    Implementation
-    Results
-    Project Reflection & Discussion
-    Lessons Learned
-
 # Final Project
 
 ![banner](imgs/banner.png)
@@ -66,7 +59,7 @@ Some stills from the final render:
 
 And the final video:
 
-// WILL BE LINKED
+[CONSUMED BY THE HEARTH.webm](https://user-images.githubusercontent.com/93382434/181312060-46644828-0497-450d-9cb2-7652d658c9d1.webm)
 
 ## Project Reflection & Discussion & Lessons Learned
 
@@ -74,5 +67,6 @@ I'm very happy with my results, even though I can still see room for improvement
 
 Other than that, I felt like sticking to just one tutorial was a good idea. In my original concept I also wanted to melt the statue, following this [tutorial](https://www.youtube.com/watch?v=B3W-S0EW9xw&t=80s). I'm glad I didn't attempt that! :D Especially the rendering took quite a while - the final result is my 3rd render because I was often still unhappy with the "flow" or the development of the glow.  
 
-In summary, I'm happy with my result. Maybe I'll come back it eventually to implement the melting, but let's see... First I'll enjoy the summer!
+Maybe I'll come back it eventually to implement the melting, but let's see...  
+First I'll enjoy the summer! :beach_umbrella:
 
