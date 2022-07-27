@@ -1,6 +1,5 @@
 # Final Project
-
-I would like to check out topics either from the *beauty in maths* or *dynamics* chapters, but in Blender and using python.
+My goal was to revisit the topics either from the *beauty in maths* or *dynamics* chapters, but in Blender and using python.
 
 # Working Process
 
