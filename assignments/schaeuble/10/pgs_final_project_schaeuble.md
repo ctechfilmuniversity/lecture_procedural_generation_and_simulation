@@ -287,26 +287,19 @@ The rose curve generation and position animation of the spheres as well as point
 import bpy
 import math
 import random
-
-rose_nodes = bpy.data.collections['rose_curves'].objects
-pointPower = [300000, 2000000]
-pointKeyF = [0, 50, 100, 150, 200, 250, 300, 350, 400]
-
-
-
 bc = bpy.context
 bco = bpy.context.object
 bd = bpy.data
 
+rose_nodes = bpy.data.collections['rose_curves'].objects
+pointPower = [300000, 2000000]
+pointKeyF = [0, 50, 100, 150, 200, 250, 300, 350, 400]
 
 # Start
 sphere_r = 0.5
 theta = 0
 r = 20
 center = 0
-
-
-
 
 # draw rose
 while theta < 2 * math.pi:
@@ -315,7 +308,6 @@ while theta < 2 * math.pi:
     y = r * (math.cos(k*theta) * math.sin(theta))
     z = r * (math.sin(k*theta) * math.tan(theta))
     bpy.ops.mesh.primitive_uv_sphere_add(radius=sphere_r, enter_editmode=False, align='WORLD', location=(x * 2, y * 2, z), scale=(1, 1, 1))
-    
     
     if theta > 0:
         k = 3
@@ -332,12 +324,10 @@ while theta < 2 * math.pi:
     
     theta += 0.01
     print('build stage')
-     
-         
-         
-    
+
 print('rose curves drawn')
 
+# set keyframes for sphere movement
 for i in rose_nodes:
  
     startXpos = i.location[0]
@@ -368,10 +358,9 @@ for i in rose_nodes:
     i.location[2] = startZpos
     i.keyframe_insert(data_path = 'location', frame = 400)
    
-
     print('rose keyframes added')
 
-# Add keyframes for point light
+# Add keyframes for point light oscillation
  for i in range(8):
 
     if (i % 2) == 0:
