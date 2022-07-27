@@ -276,9 +276,9 @@ Creating an ocean - https://www.youtube.com/watch?v=17pjMvOqX8A
 
 ## The Final Product
 
-![final gif](media/pgs-ss22-final-project-schaeuble.gif)
+![final gif](media/rose-curve-final.gif)
 
-Full res render: https://owncloud.gwdg.de/index.php/s/8DV5qH5HPaOPvZJ
+[1080p export on gwdg cloud](https://owncloud.gwdg.de/index.php/s/8DV5qH5HPaOPvZJ)
 
 ### Procedural Generation of Rose Curve Structure
 The rose curve generation and position animation of the spheres as well as point light animation is done procedurally with the below python script. The background seabed was added / animated via the Blender UI.   
