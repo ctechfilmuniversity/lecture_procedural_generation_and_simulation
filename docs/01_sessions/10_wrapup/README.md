@@ -13,8 +13,8 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 
 ## Task 1: Wrap-Up
 
-* [Questions 01](pgs_ss22_09_questions.md)
-* [Questions 02](pgs_ss22_09_questions.md) (you do not need to submit anything)
+* [Questions 01](pgs_ss22_10_questions.md)
+* [Questions 02](pgs_ss22_10_questions.md) (you do not need to submit anything)
 
 
 Answer all questions directly in a copy of the [`pgs_ss22_10_questions.md`](pgs_ss22_10_questions.md) file and also link and display your images in that file. Submit your copy as `pgs_ss22_10_questions_lastname.md` in your assignments folder.
