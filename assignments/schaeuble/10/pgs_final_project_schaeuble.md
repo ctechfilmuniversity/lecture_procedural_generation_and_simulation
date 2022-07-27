@@ -48,10 +48,10 @@ mod_displace.texture = new_tex
 Started to look at procedurally generating with python.
 https://www.youtube.com/watch?v=KI0tjZUkb5A
 
+### Tower Fall Simulation
 Procedurally generated cubes made into a tower.
 ![tower fall - code below](media/tower-fall.gif)
 
-### Tower Fall Simulation
 ```python
 import bpy
 
@@ -92,10 +92,12 @@ bpy.context.object.rigid_body_constraint.use_breaking = True
 ### Fracture Tutorials
 Looked into how to do fracturing in Blender to see if I wanted to go down that path for the project and how achievable it would be with scripting. 
 
-cell fracture: https://www.youtube.com/watch?v=T2nsntEzlAw
-cell fracture without pre-fractured visual: https://www.youtube.com/watch?v=Xdrz7icUvC4
+cell fracture: https://www.youtube.com/watch?v=T2nsntEzlAw   
+cell fracture without pre-fractured visual: https://www.youtube.com/watch?v=Xdrz7icUvC4   
 
-Got to this but its a cheap trick result. The cell fracture addon prefracture an object, unlike in houdini where a collission defines the fracture dynamics 💩 Apparently there's a new node in the latest insider version that allows procedurally generated fracturing, but I can't find access to it... yet. 
+Got to this, which works visually, but due to a cheap trick result. The cell fracture addon *prefractures* an object, unlike in houdini where a collission defines the fracture dynamics 💩    
+So you need to "wrap" the prefractured object with a solid object and then make it dissapear in render view at the chosen keyframe of impact...    
+Apparently there's a new node in the latest insider version that allows procedurally generated fracturing, but I can't find access to it... yet. 
 ![blender-fracture. deliberately poor qual export](./media/blender-fract-magick.gif)
 
 
@@ -184,13 +186,14 @@ I'm now perhaps seeing a limitation of scripting in blender which is that the sc
 
 The sollution I found was to add a keyframe at each step, which I managed to do with a for loop but of course it pooled every sphere together into the same location.
 
-![all balls moving together](media/all-balls-moving-together.mov)
+![all balls moving together](media/all-balls-moving-together.gif)
 
 
 Got to this point with about 8 hours to go on the clock. 
 There are two problems. 
 1. The for loop is setting all spheres to the same position on frame 1 and frame 50 (360 degrees). This means that *all* balls only know *two* positions to interpolate between: 0 degrees and 360 degrees...
 2. But I only accidentally saw that the x and y parameters are actually not being saved as information into the animation keyframes... This is more of a problem right now. 
+   1. EDIT: Turns out in Blender, you can't automate with a vector eg `i.location = [x, y, z]` you can only assign individual indexes at a time `i.location[0] = x`
 
 ![x and y not being mapped](media/ani-variables-no-in-keyframe.png)
 
@@ -224,16 +227,13 @@ for i in flower_nodes:
     i.keyframe_insert(data_path = 'location', frame = 50)
 ```
 
-I think a solution to address each sphere on its own with its relative starting position relative to theta is to give the sphere an id on creation and to parametrically map that id to a starting point of theta. Could even give it the id of `id_theta` within the while loop. 
 
-After a short search, I decided it was a smarter move to work with what I have and start getting more creative rather than stumbling over the same technical issue for hours.    
-If I have time to spare at the end, it is something I can implement regardless of what I have - considering I'm going to continue with the same process of iteratively drawing spheres to create a path / shape. 
+I think a solution to address each sphere on its own with its relative starting position relative to theta is to give the sphere an id on creation and to parametrically map that id to a starting point of theta. Could even give it the id of `id_theta` within the while loop.    
+More than likely this could also be solved with filling each xyz coordinate into an array upon drawing each sphere, and then using that array within a for loop to define keyframes. This would take me more time than I would like and would only allow me to replicate the Houdini rose curve tutorial and not really "make it my own". So I will put the remainding time into exploring more creative design approaches working with what I have functioning right now. 
 
 ### Creative Direction
 
-The obvious idea was to start integrating the z axis. Here drawing two iterations of the rose curve; one with k = 2 and the other with k = 3. 
-![zaxis-exp](media/zaxis-exp.png)
-
+The obvious idea was to start integrating the z axis. Here drawing two iterations of the rose curve; one with k = 2 and the other with k = 3.    
 
 ```python 
 while theta < 2 * math.pi:
@@ -256,10 +256,133 @@ while theta < 2 * math.pi:
      
 ```
 
+![zaxis-exp](media/zaxis-exp.png)   
 
+Variation
+![divide-not-mult](media/divide-not-mult.png)  
+
+Scaling in the outer rose curve resultent from tan function.
+![rose curve 3](media/rose-cruve-3.png)   
+
+Adding lights to test
+![rose curve 3 lights](media/rose-curve-3-lights.png)
 
 ### Other Tutorials I Viewed
 Here mostly to do with the fact it was the first time using blender. 
 
-HDRI / Polyhaven - https://www.youtube.com/watch?v=Pi4Ft7M8UOU
-Animation with Python - https://www.youtube.com/watch?v=QnvN1dieIAU
+HDRI / Polyhaven - https://www.youtube.com/watch?v=Pi4Ft7M8UOU   
+Animation with Python - https://www.youtube.com/watch?v=QnvN1dieIAU   
+Creating an ocean - https://www.youtube.com/watch?v=17pjMvOqX8A   
+
+
+## The Final Product
+
+![final gif](media/pgs-ss22-final-project-schaeuble.gif)
+
+Full res render: https://owncloud.gwdg.de/index.php/s/8DV5qH5HPaOPvZJ
+
+### Procedural Generation of Rose Curve Structure
+The rose curve generation and position animation of the spheres as well as point light animation is done procedurally with the below python script. The background seabed was added / animated via the Blender UI.   
+
+```python
+import bpy
+import math
+import random
+
+rose_nodes = bpy.data.collections['rose_curves'].objects
+pointPower = [300000, 2000000]
+pointKeyF = [0, 50, 100, 150, 200, 250, 300, 350, 400]
+
+
+
+bc = bpy.context
+bco = bpy.context.object
+bd = bpy.data
+
+
+# Start
+sphere_r = 0.5
+theta = 0
+r = 20
+center = 0
+
+
+
+
+# draw rose
+while theta < 2 * math.pi:
+    k = 2
+    x = r * (math.cos(k*theta) * math.cos(theta))
+    y = r * (math.cos(k*theta) * math.sin(theta))
+    z = r * (math.sin(k*theta) * math.tan(theta))
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=sphere_r, enter_editmode=False, align='WORLD', location=(x * 2, y * 2, z), scale=(1, 1, 1))
+    
+    
+    if theta > 0:
+        k = 3
+        x = r / (math.cos(k*theta) * math.cos(theta))
+        y = r / (math.cos(k*theta) * math.sin(theta))
+        z = r / (math.sin(k*theta) * math.tan(theta))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=sphere_r + 3, enter_editmode=False, align='WORLD', location=(x * 0.8, y * 0.8, z * 0.8), scale=(1, 1, 1))
+        
+    k = 7
+    x = r * (math.cos(k*theta) * math.cos(theta))
+    y = r * (math.cos(k*theta) * math.sin(theta))
+    #z = r * (math.sin(k*theta) * math.tan(theta))
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=sphere_r + 1, enter_editmode=False, align='WORLD', location=(x * 2, y * 2, z), scale=(1, 1, 1))
+    
+    theta += 0.01
+    print('build stage')
+     
+         
+         
+    
+print('rose curves drawn')
+
+for i in rose_nodes:
+ 
+    startXpos = i.location[0]
+    startYpos = i.location[1]
+    startZpos = i.location[2]
+    i.keyframe_insert(data_path = 'location', frame = 0)
+    #i.modifiers.new(name = 'wave', type = 'WAVE')
+         
+    i.location[0] += random.randrange(-5, 5)
+    i.location[1] += random.randrange(-3, 3)
+    i.location[2] += random.randrange(-5, 5)
+    i.keyframe_insert(data_path = 'location', frame = 100)
+ 
+    i.location[0] += startXpos
+    i.location[1] += startYpos
+    i.location[2] += startZpos
+    i.keyframe_insert(data_path = 'location', frame = 200)
+
+    
+    i.location[0] += random.randrange(-5, 5)
+    i.location[1] += random.randrange(-3, 3)
+    i.location[2] += random.randrange(-5, 5)    
+    i.keyframe_insert(data_path = 'location', frame = 300)
+
+
+    i.location[0] = startXpos
+    i.location[1] = startYpos
+    i.location[2] = startZpos
+    i.keyframe_insert(data_path = 'location', frame = 400)
+   
+
+    print('rose keyframes added')
+
+# Add keyframes for point light
+ for i in range(8):
+
+    if (i % 2) == 0:
+        bpy.data.collections['others'].objects['Point'].data.energy = pointPower[0]
+        bpy.data.collections['others'].objects['Point'].data.keyframe_insert(data_path = 'energy', frame = pointKeyF[i])
+    else:
+        bpy.data.collections['others'].objects['Point'].data.energy = pointPower[1]
+        bpy.data.collections['others'].objects['Point'].data.keyframe_insert(data_path = 'energy', frame = pointKeyF[i])
+    print('point light keyframes added')
+
+```
+
+
