@@ -4,7 +4,7 @@ My goal was to revisit the topics either from the *beauty in maths* or *dynamics
 # Working Process
 
 ## Intro to Python in Blender Code
-Completed this tutorial to get aquainted with scripting in Blender:
+Completed this tutorial to get acquainted with scripting in Blender:
 https://www.youtube.com/watch?v=XqX5wh4YeRw
 
 ```python
@@ -94,8 +94,8 @@ Looked into how to do fracturing in Blender to see if I wanted to go down that p
 cell fracture: https://www.youtube.com/watch?v=T2nsntEzlAw   
 cell fracture without pre-fractured visual: https://www.youtube.com/watch?v=Xdrz7icUvC4   
 
-Got to this, which works visually, but due to a cheap trick result. The cell fracture addon *prefractures* an object, unlike in houdini where a collission defines the fracture dynamics 💩    
-So you need to "wrap" the prefractured object with a solid object and then make it dissapear in render view at the chosen keyframe of impact...    
+Got to this, which works visually, but due to a cheap trick result. The cell fracture addon *prefractures* an object, unlike in houdini where a collision defines the fracture dynamics 💩    
+So you need to "wrap" the prefractured object with a solid object and then make it disappear in render view at the chosen keyframe of impact...    
 Apparently there's a new node in the latest insider version that allows procedurally generated fracturing, but I can't find access to it... yet. 
 ![blender-fracture. deliberately poor qual export](./media/blender-fract-magick.gif)
 
@@ -136,7 +136,7 @@ Used a constant of 1 for sphere radius and radius used in function (r)
 ![second result - now identifiable](media/rose-curve-2.png)
 
 #### Animation
-This animates the growth in scale of the spehres, so the rose "grows" in size. 
+This animates the growth in scale of the spheres, so the rose "grows" in size. 
 ```python 
 import bpy
 import math
@@ -183,7 +183,7 @@ At the moment it seems like I need to implement it programatically into the for 
 
 I'm now perhaps seeing a limitation of scripting in blender which is that the script is run once at setup, rather than in a loop. But maybe there are ways around this. 
 
-The sollution I found was to add a keyframe at each step, which I managed to do with a for loop but of course it pooled every sphere together into the same location.
+The solution I found was to add a keyframe at each step, which I managed to do with a for loop but of course it pooled every sphere together into the same location.
 
 ![all balls moving together](media/all-balls-moving-together.gif)
 
@@ -228,7 +228,7 @@ for i in flower_nodes:
 
 
 I think a solution to address each sphere on its own with its relative starting position relative to theta is to give the sphere an id on creation and to parametrically map that id to a starting point of theta. Could even give it the id of `id_theta` within the while loop.    
-More than likely this could also be solved with filling each xyz coordinate into an array upon drawing each sphere, and then using that array within a for loop to define keyframes. This would take me more time than I would like and would only allow me to replicate the Houdini rose curve tutorial and not really "make it my own". So I will put the remainding time into exploring more creative design approaches working with what I have functioning right now. 
+More than likely this could also be solved with filling each xyz coordinate into an array upon drawing each sphere, and then using that array within a for loop to define keyframes. This would take me more time than I would like and would only allow me to replicate the Houdini rose curve tutorial and not really "make it my own". So I will put the remaining time into exploring more creative design approaches working with what I have functioning right now. 
 
 ### Creative Direction
 
@@ -373,4 +373,9 @@ for i in rose_nodes:
 
 ```
 
+## Final Thoughts
+Overall I prefer Blender. I find it much more usable. 
+However I didn't get to figure out whether you can run python scripts in a loop - ie to update animations as they go... 
+This would be a major pitfall. 
 
+For this project I'm relatively happy with the result in a design sense, but would've like to achieve something a bit more complex than a bunch of for loops. This was down to the time needed to learn Blender from scratch while also sticking close to the 16h time goal - all up spent 19h. But for me it was worth it, as I now have a good feeling of comparisons between Blender and Houdini. 
