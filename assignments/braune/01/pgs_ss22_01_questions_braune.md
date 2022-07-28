@@ -32,7 +32,7 @@
 
 Briefly in your own words: how would you explain your nanny what *procedural generation* means? 
 
-> Procedual generation decribes the process to create something graphical, by defining rules and algorithms that can be modified to modify the whole creation.
+> Procedual generation decribes the process to create something, e.g. something graphical, by defining rules and algorithms that can be modified to modify the whole creation.
 
 ## Questions 3 - Patterns
 
