@@ -30,12 +30,12 @@ Submit one stylized / artistic image that uses noise as generating principle or 
 
 I chose the work of the romanian painter Adrian Ghenie. I think what he does in traditional painting is exactly adding up this noise-layer to the very-representative-scene that he is portraying. 
 
-For example this is the scene where Nicolae Ceausescu and his wife had the trial before their very-fast-paced death sentence. 
-![](img/noise_EXAMPLE_2.png)
+For example this is the scene where Nicolae Ceausescu and his wife had the trial before their very-fast-paced death sentence (The Trial, 2010)
+![](img/noise_EXAMPLE_2.PNG)
 
 Other works by him:
-![](img/noise_EXAMPLE_1.png)
-![](img/noise_EXAMPLE_3.png)
+![](img/noise_EXAMPLE_1.PNG)
+![](img/noise_EXAMPLE_3.PNG)
 
 ## Task 2: Using Noise in Houdini 
 
