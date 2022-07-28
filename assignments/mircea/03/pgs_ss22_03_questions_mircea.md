@@ -37,10 +37,10 @@ Of course, as it is physical, each sculpture would be limited but would have a v
 
 References: 
 ![sculpture](img/example.PNG)
-![sculpture](img/example_1.PNG)
+![sculpture](img/example_2.PNG)
 
 Or this proposal, the difference being in making something of a smaller size and instead of one piece, multiple pieces (let's say 4). 
-![sculpture](img/example_2.PNG)
+![sculpture](img/example_3.PNG)
 https://amazingarchitecture.com/pavilion/hole-zero-timeless-kinetic-art-sculpture-by-mask-architects
 
 Concept:
