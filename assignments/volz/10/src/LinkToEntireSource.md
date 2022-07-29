@@ -1,0 +1,2 @@
+As an Unreal Project is too large for GitHub, I only added the Niagara File and the Niagara Module Script. Just copying those to another project did not work for me however. In the project copied to nothing renders, but you can open the Niagara Editor and look at implementation. The entire project is uploaded to my Google Drive:  
+[Entire Source](https://drive.google.com/file/d/1XvmFioOkdx0dTpnOMczApJwo8YOsVUjR/view?usp=sharing)
