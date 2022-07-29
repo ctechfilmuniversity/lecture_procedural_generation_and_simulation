@@ -19,6 +19,7 @@ Prof. Dr. Lena Gieseke \| l.gieseke@filmuniversitaet.de \| Film University Babel
 ## Question 1: Wrap-Up
 
 * How would you rate the difficulty of this lecture from 1 (far too easy) to 5 (far too difficult)?
+
       3
 * How would you rate the amount of work you had to put into this lecture so far from 1 (no work at all) to 5 (far too much work)?
       3
