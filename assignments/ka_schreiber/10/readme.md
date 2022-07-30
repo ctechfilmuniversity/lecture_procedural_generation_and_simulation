@@ -38,7 +38,10 @@ https://user-images.githubusercontent.com/103817814/181996165-dadfec7b-3593-4bd6
 I'm pretty happy with my result and still impressed how the change of the density of the single pixels can lead to this natural-looking fluid movement. But there are still some issues with the visualization: 
 - In my code is something wrong with the correct edge detection and this leads to some weird unexpected behavior:
 
-...video
+
+https://user-images.githubusercontent.com/103817814/181996274-4e10b11b-2996-4796-ab61-85c177ac1541.mov
+
+
 - It is just possible to run the fluid simulation in a window that has the same height and width.
 - The density pixels that are close to the cursor are a bit blocky.
 - I couldn't find the perfect parameters for the spinning of the flow field lines that's why they are rotating too much at some points.
