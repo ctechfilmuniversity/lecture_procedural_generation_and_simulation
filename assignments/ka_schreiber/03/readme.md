@@ -1,5 +1,5 @@
 # Tutorial
-<img src="img/tutorial_result.png" />
+<img src="img/pgs_ss22_tutorial_02_ka_schreiber_tutorial.png" />
 
 # Own Interpretation
-<img src="img/color_flower02.png" />
+<img src="img/pgs_ss22_tutorial_02_ka_schreiber_flower.png" />

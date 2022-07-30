@@ -2,17 +2,61 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetWindowShape(N*SCALE, N*SCALE);
+    ofSetWindowShape(N*SCALE + 270, N*SCALE);
+    gui->addButton("Reset");
+    gui->addSlider("Viscosity", 0.0, 2.0, fluid.viscosity/0.0001);
+    gui->addSlider("Diffusion", 0.0, 2.0, fluid.diffusion/0.0001);
+    gui->addSlider("Time step", 0.0, 2.0, fluid.lengthOfTimestep/0.1);
+    gui->addSlider("Fade", 0.0, 1.0, 0.0);
+    gui->addToggle("Color Gradient", false);
+    gui->addToggle("Noise", false);
+    gui->addToggle("Flow Field", false);
+    ofxDatGuiSlider* viscositySlider = gui->getSlider("Viscosity");
+    viscositySlider->setPrecision(3);
+    ofxDatGuiSlider* diffusionSlider = gui->getSlider("Diffusion");
+    diffusionSlider->setPrecision(3);
+    gui->onButtonEvent(this, &ofApp::onButtonEvent);
+    gui->onSliderEvent(this, &ofApp::onSliderEvent);
+    gui->onToggleEvent(this, &ofApp::onToggleEvent);
 }
+
+void ofApp::onSliderEvent(ofxDatGuiSliderEvent e) {
+    string label = e.target->getLabel();
+    if (label == "Viscosity") {
+        fluid.viscosity = e.value * 0.0001;
+    }
+    
+    if (label == "Diffusion") {
+        fluid.diffusion = e.value * 0.0001;
+    }
+    
+    if (label == "Time step") {
+        fluid.lengthOfTimestep = e.value * 0.1;
+    }
+}
+
+void ofApp::onButtonEvent(ofxDatGuiButtonEvent e) {
+    string label = e.target->getLabel();
+    if(label == "Reset") {
+        fluid.resetFluid();
+    }
+}
+
+void ofApp::onToggleEvent(ofxDatGuiToggleEvent e) {
+    if (e.target->getLabel() == "Noise") {
+        fluid.setNoiseDensity(e.target->getChecked());
+    }
+}
+
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    if (ofGetMousePressed()) {
+    if (ofGetMousePressed() & (ofGetMouseX() < N*SCALE)) {
         for (int i = 0; i < 5; i++) {
             float amountX = (ofGetMouseX() - ofGetPreviousMouseX())*2;
             float amountY = (ofGetMouseY() - ofGetPreviousMouseY())*2;
@@ -24,13 +68,15 @@ void ofApp::draw(){
         
         for (int x = ofGetMouseX()-2; x < ofGetMouseX()+2; x++) {
           for (int y = ofGetMouseY()-2; y < ofGetMouseY()+2; y++) {
-            fluid.addDensity(x/SCALE, y/SCALE, ofRandom(10, 25));
+              fluid.addDensity(x/SCALE, y/SCALE, ofRandom(10, 25));
           }
         }
     }
     
     fluid.step();
-    fluid.renderDensity();
+    fluid.renderDensity(gui->getToggle("Color Gradient")->getChecked(), gui->getToggle("Flow Field")->getChecked());
+    float fadeValue = gui->getSlider("Fade")->getValue();
+    if (fadeValue > 0) fluid.fadeDensity(fadeValue);
 }
 
 //--------------------------------------------------------------

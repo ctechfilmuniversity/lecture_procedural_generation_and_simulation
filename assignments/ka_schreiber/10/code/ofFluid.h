@@ -11,7 +11,10 @@ public:
     void addDensity(int x, int y, float amount);
     void addVelocity(int x, int y, float amountX, float amountY);
     void step();
-    void renderDensity();
+    void renderDensity(Boolean isColorGradient, Boolean isFlowField);
+    void fadeDensity(float fade);
+    void resetFluid();
+    void setNoiseDensity(Boolean isNoise);
     
     int size;
     float lengthOfTimestep;
@@ -26,4 +29,6 @@ public:
     
     std::vector<float> velocityXOld;
     std::vector<float> velocityYOld;
+    
+    float inc = 0.01;
 };

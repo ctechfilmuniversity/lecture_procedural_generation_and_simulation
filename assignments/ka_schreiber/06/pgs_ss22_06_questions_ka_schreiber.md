@@ -16,11 +16,11 @@ Submit your houdini file as `pgs_ss22_tutorial_03_lastname.hipnc`, at least one 
 
 Image:
 
-<img src="img/lightPorcelain.png" />
+<img src="img/pgs_ss22_tutorial_03_ka_schreiber_lightPorcelain.png" />
 
-<img src="img/liquid.png" />
+<img src="img/pgs_ss22_tutorial_03_ka_schreiber_liquid.png" />
 
 GIF:
 
-<img src="img/pgs_ss21_tutorial_04_01.gif" />
-<img src="img/pgs_ss21_tutorial_04_02.gif" />
+<img src="img/pgs_ss22_tutorial_03_ka_schreiber_01.gif" />
+<img src="img/pgs_ss22_tutorial_03_ka_schreiber_02.gif" />

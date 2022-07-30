@@ -1,4 +1,4 @@
-<img src="img/render01.png" />
+<img src="img/pgs_ss22_tutorial_05_ka_schreiber.png" />
 
 [Link to Flipbook 1](https://drive.google.com/file/d/1_I5yVeu-MUmmf8rXXo_oANT5Anu1kpKT/view?usp=sharing)
 

@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofFluid.h"
+#include "ofxDatGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,5 +23,10 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    void onButtonEvent(ofxDatGuiButtonEvent e);
+    void onSliderEvent(ofxDatGuiSliderEvent e);
+    void onToggleEvent(ofxDatGuiToggleEvent e);
+    
     ofFluid fluid{N, 0, 0.000001, 0.01};
+    ofxDatGui* gui = new ofxDatGui(ofxDatGuiAnchor::TOP_RIGHT);
 };
