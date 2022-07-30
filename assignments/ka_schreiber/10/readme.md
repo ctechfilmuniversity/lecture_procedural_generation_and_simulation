@@ -31,7 +31,7 @@ The GUI parameter "fade" and "diffusion" are sliders and behave similarly. Both 
 
 # Results
 
-...video
+https://user-images.githubusercontent.com/103817814/181996165-dadfec7b-3593-4bd6-866a-2d9349ce94c9.mov
 
 # Project Reflection & Diskussion
 
