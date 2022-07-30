@@ -15,10 +15,6 @@ Submit your houdini file as `pgs_ss22_08_lastname.hipnc` and at least one image 
 > I chose the tutorial [Doxia Studio: Mix Fluids From Image](https://www.youtube.com/watch?v=aT4mZphB154&t=230s) and applied it to some famouse old pictures:
 
 
-https://user-images.githubusercontent.com/103817814/181996339-f4d37f24-e0c4-4d9f-ad55-baf8e17f691c.mp4
-
-
-
 https://user-images.githubusercontent.com/103817814/181996343-e79ea183-d626-44b4-bca0-6418a1315674.mp4
 
 
