@@ -69,11 +69,18 @@ However, none of this works in Houdini Apprentice 🤠.
 
 Is there actually anything that can be exported out of Houdini Apprentice? Well, there are OBJ exports from within a geometry network. These Objs cannot contain an animation, they will just be a snapshot of the geometry at its current state in the timeline. This is not ideal, but it is enough to construct a alembic later. OBJs can be saved by right-clicking the last node in a geometry network and selecting "save" -> "geometry". Fortunately there is no need to save every frame by hand thanks to the extremly useful [ROP Geometry Output geometry node](https://www.sidefx.com/docs/houdini/nodes/sop/rop_geometry.html). With this most useful node, the whole process becomes automatic, so that a sequence of OBJs is exported for a set frame range. The controls should be quite familiar from the mantra render node. Keep in mind to include "$F" in the filename to save more than just one obj. 
 
-This is a good moment to have a look at my Houdini project as a whole:
+This is a good moment to have a look at my Houdini project:
+
+![houdini](https://user-images.githubusercontent.com/93442123/182043835-4d543b17-51c0-4c51-9ffe-3f7ab81e9502.png)
+
 
 There is nothing crazy going this, this is mostly my original mandelbulb setup based on Lena's pseudocode. To reduce the size of the OBJs, I use a [PolyReduce node](https://www.sidefx.com/docs/houdini/nodes/sop/polyreduce.html). The quality tolerance setting is especially useful here since it allows Houdini to reduce polygons more dynamically depending on the geometry - you can see my settings in the screenshot (my calculation was wrong though and the meshes ended up a bit too big...).
 
 For my animation I exported 1000 OBJs. Now the only step that is to finally create the Alembic that I wanted since the very beginning. Both Blender and Maya are flexible enough for this task, but in both cases it's a bit hacky (you can ask Vivien how to do it in Maya). I use Blender because it's free, here's a short tutorial:
+
+
+https://user-images.githubusercontent.com/93442123/182043849-719514e2-a56c-4bb3-9462-19bbb62f2a74.mp4
+
 
 I got this workaround from [this forum thread](https://blenderartists.org/t/stop-motion-obj-obj-stl-ply-sequence-importer-v2-1-1/670105/107). 
 
