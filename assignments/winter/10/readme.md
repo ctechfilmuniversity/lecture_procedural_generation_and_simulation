@@ -27,6 +27,8 @@ This tool could be so amazing as an official "it just works" solution , but as o
 
 ### Alembics
 
+https://upload.wikimedia.org/wikipedia/commons/c/ca/Alambik1.jpg
+
 Alembic is a truly wonderful format to not just share geomteries, but entire 3d scenes, including animations. A perfect fit for me! [This video by Doxia](https://www.youtube.com/watch?v=BPK-1nYXjUY&list=PLMUuuDyzvcZI1_Z_oNFcy8GtfNIqG3vIg&index=7&t=680s) shows you how easy it can be (I subscribed to their patreon for this...). However, none of this works in Houdini Apprentice 🤠. Just great. 
 For most cases, it's probably the best option....
 
