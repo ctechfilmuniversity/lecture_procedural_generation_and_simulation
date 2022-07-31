@@ -38,7 +38,15 @@ Chose any fluid-related Houdini tutorial. For example:
 
 Submit your houdini file as `pgs_ss22_08_lastname.hipnc` and at least one image file as `pgs_ss22_08_lastname.png`.
 
-### Option 3 - ***I completed this one in combination with my final project***
+I completed the first tutorial ([Doxia Studio: Mix Fluids From Image](https://www.youtube.com/watch?v=aT4mZphB154&t=230s)) and generated the following image and animation from a source image:
+
+[source image](https://wallpapercave.com/wp/wp3144233.jpg)
+
+![img](./imgs/pgs_ss22_08_ho.png)
+
+[VIDEO](./imgs/pgs_ss22_fluids_ho.mp4)
+
+### Option 3 - ***I integrated this tutorial into my final project***
 
 If fluids are at this point not of interest to you, alternatively you can complete the following tutorial from Simon Stimberg that connects Audio to Houdini.
 
