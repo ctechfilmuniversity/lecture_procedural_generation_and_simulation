@@ -23,8 +23,8 @@ Answer all questions directly in a copy of the [`pgs_ss22_06_questions.md`](pgs_
 
 * Complete the [Houdini Tutorial](pgs_ss22_tutorial_03_noise.md)
 
-![](pgs_ss22_tutorial_03_gueldner.png)
-![](pgs_ss22_tutorial_03_gueldner.gif)
+![](img/pgs_ss22_tutorial_03_gueldner.png)
+![](img/pgs_ss22_tutorial_03_gueldner.gif)
 
 
 Submit your houdini file as `pgs_ss22_tutorial_03_lastname.hipnc`, at least one image file as `pgs_ss22_tutorial_03_lastname.png` and one animation as `pgs_ss22_tutorial_03_lastname.gif`.

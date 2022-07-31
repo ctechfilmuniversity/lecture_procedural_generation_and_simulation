@@ -90,7 +90,7 @@ Vividy logo face in bookshelf
 
 Chose one "traditional" painting, which is inspirational to you. The image can come from the script or you can refer to any artists or image you like.
 
-![](gustav-klimt.jpeg)
+![](img/gustav-klimt.jpeg)
 **Gustav Klimt**
 Hope, II (1907-08)
 
@@ -111,7 +111,7 @@ https://user-images.githubusercontent.com/83589724/181117135-941b4353-4eb1-43f9-
 
 ### Diana Smith
 
-![](purecss-francine.jpeg)
+![](img/purecss-francine.jpeg)
 
 Explain briefly what you like about the image and why you consider it to be somewhat a pice of art. 
 > This is a slightly different interpretation of the question but I found this a while ago and thought it was worth a mention!

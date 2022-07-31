@@ -1,8 +1,8 @@
 ### Basic Force Setup
 
-![](swarm.gif)
+![](img/swarm.gif)
 
 ### FLIP Interface Reactions
-![](pgs_ss22_tutorial_04_gueldner.png)
+![](img/pgs_ss22_dynamics_gueldner.png)
 
-![](bubbles-render.gif)
+![](img/pgs_ss22_dynamics_gueldner.gif)
