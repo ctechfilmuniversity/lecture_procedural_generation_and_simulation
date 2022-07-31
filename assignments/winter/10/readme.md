@@ -41,6 +41,8 @@ For most cases, it's probably the best option....
 
 The new kid in town - VATs! Also known as Vertex Animation Textures. They're so pretty:
 
+![vat](https://user-images.githubusercontent.com/93442123/182043279-a605b1de-6caf-40ff-b50f-e776f2af60b4.png)
+
 This texture contains an animation that can be reproduced with a vertex shader. Compared to the cached meshes of an Alembic, this is much memory and computation efficient! Because this method relies on shaders, the result can be tweaked further inside the game engine, for example with Unreal's Cascade or Niagara. [This introduction by SideFX](https://www.sidefx.com/tutorials/vertex-animation-textures-for-unreal/) is a great gateway into the whole topic. This tutorial also explains how Houdini differentiates between four different methods to create a VAT, each suited for one specific use-case:
 
 * Cloth/Soft Body Simulation
