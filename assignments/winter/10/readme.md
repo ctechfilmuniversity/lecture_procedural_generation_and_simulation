@@ -80,6 +80,10 @@ I got this workaround from [this forum thread](https://blenderartists.org/t/stop
 Now it's finally Unity-Time! I'd like to point out that the following workflow is in large the result of Vivien's additional reasearch. Without her I would not have made it through the 10000000000000000000 mental breakdowns that Houdini caused me. 
 
 
+https://user-images.githubusercontent.com/93442123/182043730-39ac4a75-a427-4ed0-84b4-8a5488bb6d70.mp4
+
+
+
 I used [this tutorial](https://learn.unity.com/tutorial/particle-system-lights#) for the particle systems. 
 
 ## Final Thoughts
