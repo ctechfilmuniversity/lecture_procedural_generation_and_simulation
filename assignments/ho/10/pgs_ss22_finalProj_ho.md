@@ -116,11 +116,11 @@ To drive the animation, I combined the result from the Chladni sim with Simon's 
 Here's the Chladni particle sim running:
 ![chladni-results01](./imgs/chladni-01.gif)
 
-And here's a demo of the shaded material with audio reactivity. I find that with the shaded material it is easier to see the audio reactivity, so I prefer to play the demo in shaded mode. Please watch the version linked below with sound - I couldn't embed it in markdown with sound.
+And here's a demo of the shaded material with audio reactivity. I find that with the shaded material it is easier to see the audio reactivity, so I prefer to play the demo in shaded mode. *Please watch the version linked below with sound!* - I couldn't embed it in markdown with sound.
 
 ![demo-gif](./imgs/pgs_ss22_finalProj_ho.gif)
 
-![chladni-demo-sound](./imgs/pgs_ss22_finalProj_ho.mp4)
+![chladni-demo-WITH-SOUND!](./imgs/pgs_ss22_finalProj_ho.mp4)
 ![chladni-img](./imgs/pgs_ss22_finalProj_ho.png)
 
 # Project Reflection & Discussion
@@ -130,3 +130,17 @@ Overall I'm pretty happy with the way things turned out with this project, and i
 # Lessons Learned
 
 I learned that things take much longer in Houdini than expected (well, I knew that a bit before :) ) but just the tutorials took me almost the whole amount of time, even though they were not that long. I didn't factor in the work needed to just understand what was happening on a conceptual basis. I was pretty satisfied at the end that I was able to integrate audio into Houdini, but there is still a bit more to learn how to optimize it for real-time playback.
+
+During the course of the project, I wanted to find a faster way to iterate designs, and thought about integrating midi input to control some of the parameters. The interface in Houdini wasn't working too well for me, since I had to click into too many nodes to get to the parameters I wanted to change - I thought it would be much faster to have a dedicated slider or knob that I could always reach to change parameters no matter where I was in the network, and more importantly, to be able to change multiple parameters simultaneously. After about 4 hours of research into Midi input into Houdini, I found from an old forum post that Midi input is not supported on OSX or Linux 🤦
+
+Midi not working:
+
+https://www.sidefx.com/forum/topic/20470/?page=1#post-268988
+
+https://www.cgcircuit.com/tutorial/rapid-asset-creation-in-houdini-and-midi
+
+https://www.sidefx.com/forum/topic/84057/?page=1#post-363431
+
+https://www-technical--artist-net.translate.goog/?p=1217&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en
+
+https://www.sidefx.com/forum/topic/74022/

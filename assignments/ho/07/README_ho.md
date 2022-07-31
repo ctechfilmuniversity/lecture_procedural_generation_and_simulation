@@ -45,7 +45,9 @@ If you prefer to do a different tutorial, you can. The tutorial should be somewh
 * [Rigid Body Simulation with Glue Constraints](https://www.youtube.com/watch?v=pjRlqjmoEOg&t=0s), [Control Destruction with Force Fields in Houdini Simulations](https://www.youtube.com/watch?v=PH-GnpAaLhI&t=0s), [Control How Glue Constraints Break in Destruction Simulations](https://www.youtube.com/watch?v=5S7AxS7Xjq4&t=0s)
 * [Splintering a Wooden Fence With Rigid Body Simulations](https://www.youtube.com/watch?v=zyDeW7EiDsg)
 
-If you chose your own tutorial, also submit a link to the tutorial you followed.  
+If you chose your own tutorial, also submit a link to the tutorial you followed. 
+
+[I followed this tutorial, which I can highly recommend](https://www.appliedhoudini.com/blog/2018/2/16/rigids-i-fundamentals)
 
 You are not required (but encouraged!) to submit a proper rendering. However, for this exercise a flipbook rendering of the simulation is just fine.
 
