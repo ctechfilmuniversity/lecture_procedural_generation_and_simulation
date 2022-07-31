@@ -1,5 +1,11 @@
 # Realtime Mandelgrowth in Unity/Unreal
 
+
+
+https://user-images.githubusercontent.com/93442123/182045598-4808273e-4099-4589-b881-96e6c94c796e.mp4
+
+
+
 ## Abstract
 Houdini apprentice does not include the Unity/Unreal engine nor the export of VATs, FBXs or Alembic files (more about these later). The only usable export option available to us are oldschool OBJs. You can use Houdini's [ROP Geometry Output Node](https://www.sidefx.com/docs/houdini/nodes/sop/rop_geometry.html) to export a sequence of OBJs corresponding to the framenumber of the Houdini timeline. With the [Stop Motion OBJ Addon for Blender](https://github.com/neverhood311/Stop-motion-OBJ), these OBJs can be summed into a single Alembic file for a game engine. The video above is realtime-rendered in Unity, using this workaround. 
 
