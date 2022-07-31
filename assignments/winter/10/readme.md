@@ -73,9 +73,12 @@ There is nothing crazy going this, this is mostly my original mandelbulb setup b
 
 For my animation I exported 1000 OBJs. Now the only step that is to finally create the Alembic that I wanted since the very beginning. Both Blender and Maya are flexible enough for this task, but in both cases it's a bit hacky (you can ask Vivien how to do it in Maya). I use Blender because it's free, here's a short tutorial:
 
-I got this workaround from this forum thread. 
+I got this workaround from [this forum thread](https://blenderartists.org/t/stop-motion-obj-obj-stl-ply-sequence-importer-v2-1-1/670105/107). 
 
 Now it's finally Unity-Time! I'd like to point out that the following workflow is in large the result of Vivien's additional reasearch. Without her I would not have made it through the 10000000000000000000 mental breakdowns that Houdini caused me. 
+
+
+I used [this tutorial](https://learn.unity.com/tutorial/particle-system-lights#) for the particle systems. 
 
 ## Final Thoughts
 
