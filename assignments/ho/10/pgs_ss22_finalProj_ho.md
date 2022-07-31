@@ -1,5 +1,6 @@
 
 # Abstract
+For my final project, I created a digital version of a Chladni Plate, parameterized the simulation and animated it procedurally using an audio input. It runs in near real-time and 
 
 # Concept
 
@@ -112,8 +113,12 @@ To drive the animation, I combined the result from the Chladni sim with Simon's 
 ![animationcurves](./imgs/Screen%20Shot%202022-07-30%20at%2023.48.58.png)
 
 # Results
-
+Here's the Chladni particle sim running:
 ![chladni-results01](./imgs/chladni-01.gif)
+
+And here's a demo of the shaded material with audio reactivity. I find that with the shaded material it is easier to see the audio reactivity, so I prefer to play the demo in shaded mode:
+
+![chladni-demo-sound](./imgs/final_proj_demo01.mp4)
 
 # Project Reflection & Discussion
 
