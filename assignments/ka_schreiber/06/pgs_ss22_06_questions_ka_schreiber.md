@@ -6,6 +6,19 @@
 
 Answer all questions directly in a copy of the [`pgs_ss22_06_questions.md`](pgs_ss22_06_questions.md) file and also link and display your images in that file. Submit your copy as `pgs_ss22_06_questions_lastname.md` in your assignments folder.
 
+### Own noise pictures
+
+<img src="img/pgs_ss22_questions_ka_schreiber_noise01.png" />
+
+<img src="img/pgs_ss22_questions_ka_schreiber_noise02.png" />
+
+<img src="img/pgs_ss22_questions_ka_schreiber_noise03.png" />
+
+# Artistic image with noise
+
+<img src="img/pgs_ss22_questions_ka_schreiber_noise04.png" />
+
+[Procedurally Generated Art from Perlin Noise](https://www.tomesoftware.com/labs/procedurally-generated-art-perlin-noise/)
 
 ## Task 2: Using Noise in Houdini 
 
