@@ -24,8 +24,8 @@ This session should take less than 4h.
 
 Submit your houdini file as `pgs_ss22_tutorial_04_lastname.hipnc`, at least one image file as `pgs_ss22_tutorial_04_lastname.png` and one animation as `pgs_ss22_tutorial_04_lastname.gif`.
 
-![strange_attractors_gif](./pgs_ss22_tutorial_04_ho.gif)
-![strange_attractors_png](./pgs_ss22_tutorial_04_ho.png)
+![strange_attractors_gif](./imgs/pgs_ss22_tutorial_04_ho.gif)
+![strange_attractors_png](./imgs/pgs_ss22_tutorial_04_ho.png)
 
 ## Task 3: Intro Rigid Body Dynamics
 
@@ -50,6 +50,9 @@ If you chose your own tutorial, also submit a link to the tutorial you followed.
 You are not required (but encouraged!) to submit a proper rendering. However, for this exercise a flipbook rendering of the simulation is just fine.
 
 Submit your houdini file as `pgs_ss22_dynamics_lastname.hipnc`, at least one image file as `pgs_ss22_dynamics_lastname.png` and one animation as `pgs_ss22_dynamics_lastname.gif`.
+
+![thumb](./imgs/pgs_ss22_dynamics_ho.png)
+![gif](./imgs/pgs_ss22_dynamics_ho.gif)
 
 ---
 
