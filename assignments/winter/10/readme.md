@@ -97,7 +97,7 @@ https://user-images.githubusercontent.com/93442123/182043730-39ac4a75-a427-4ed0-
 
 
 
-I used [this tutorial](https://learn.unity.com/tutorial/particle-system-lights#) for the particle systems. 
+I used [this tutorial](https://learn.unity.com/tutorial/particle-system-lights#) for the particle systems. The Unity project/build is too big to upload it here, but I might put it on my Google drive if there is any interest. 
 
 ## Final Thoughts
 
