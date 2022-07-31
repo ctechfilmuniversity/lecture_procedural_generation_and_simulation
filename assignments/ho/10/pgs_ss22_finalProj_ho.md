@@ -118,9 +118,10 @@ Here's the Chladni particle sim running:
 
 And here's a demo of the shaded material with audio reactivity. I find that with the shaded material it is easier to see the audio reactivity, so I prefer to play the demo in shaded mode. Please watch the version linked below with sound - I couldn't embed it in markdown with sound.
 
-![demo-gif](./imgs/final_proj_demo01.gif)
+![demo-gif](./imgs/pgs_ss22_finalProj_ho.gif)
 
-![chladni-demo-sound](./imgs/final_proj_demo01.mp4)
+![chladni-demo-sound](./imgs/pgs_ss22_finalProj_ho.mp4)
+![chladni-img](./imgs/pgs_ss22_finalProj_ho.png)
 
 # Project Reflection & Discussion
 
