@@ -6,8 +6,8 @@ It took me some time to make it work, but it was very rewarding, and I was intri
 Given my interest in visual effects I like somewhat realistic scenes and wanted to create some more fluid reactions.
 
 ### Concept
-I wanted to create a Martini glass that has an olive falling into it and (as a hangover cure) a glass of water that has
-an Aspirin falling into it, that is then topped with water from a carafe.
+I wanted to create a Martini glass that has an olive falling into it and (as a hangover cure) a glass that has
+an Aspirin thrown into it, that is then topped with water from a carafe.
 
 ### Implementation
 In the beginning I had a clear vision and steps in mind:
@@ -53,7 +53,6 @@ it work was to change the order of objects within the merge tool – because the
 After that the water stayed inside the cup and everything was great.
 
 Here is a screenshot collection of some fun little problems:
-
 
 
 Curve was not drawn around origin but revolve starts at origin
