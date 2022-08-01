@@ -120,7 +120,7 @@ And here's a demo of the shaded material with audio reactivity. I find that with
 
 ![demo-gif](./imgs/pgs_ss22_finalProj_ho.gif)
 
-![chladni-demo-WITH-SOUND!](./imgs/pgs_ss22_finalProj_ho.mp4)
+[chladni-demo-WITH-SOUND!](./imgs/pgs_ss22_finalProj_ho.mp4)
 ![chladni-img](./imgs/pgs_ss22_finalProj_ho.png)
 
 # Project Reflection & Discussion
