@@ -103,3 +103,5 @@ I used [this tutorial](https://learn.unity.com/tutorial/particle-system-lights#)
 
 After this whole ordeal, I'm quite sick of Houdini. I could make a Madelbulb in Blender and skip the whole OBJ export. What surprises me is how much more professional Blender felt to me, I never encountered any of the obscure (and often just wrong) errors that I'm so used to from Houdini, which unlike Blender isn't free. Of course Blender will never get close to the procedural powers of Houdini, but there are many workaround-tutorials already thanks the much larger community. I'm sorry Houdini, but I think this will be the end for us :(. 
 
+*I uploaded the houdini project too late, sorry :|
+
