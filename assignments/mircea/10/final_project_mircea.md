@@ -16,11 +16,11 @@ Conceptually, this idea has two different strong references:
 Firstly, when I was a child, next to my school there was this huge church that had a very tall brick wall without any window. Going close to it, because of its imensity and the way the bricks were organized similarly to a pavement, one could feel like they are flying. And that’s a memory I always wanted to find ways to recreate.
 As a second inspiration, there is this video with the ducks from Nick Cave’s song, where they fly across lands from a ducks perspective, which I also find fascinating. 
 
-![Nick Cave Link](https://www.youtube.com/watch?v=P0v9vd4JEeo )
+[Nick Cave - By your side](https://www.youtube.com/watch?v=P0v9vd4JEeo )
 
 Mock-up of the set-up:
-![Exhibition-Mock-up](..img/1.png)
-![Exhibition-Mock-up](..img/2.png)
+![Exhibition-Mock-up](img/1.png)
+![Exhibition-Mock-up](img/2.png)
 
 ## Implementation
 
