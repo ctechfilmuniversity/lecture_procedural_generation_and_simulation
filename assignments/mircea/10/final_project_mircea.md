@@ -1,13 +1,13 @@
-#FLOATING (videoart prototype)
+# FLOATING (videoart prototype)
 
-##Abstract
+## Abstract
 
 Procedural mountain-scape and camera path-line movement in Blender
 Bird-view simulation
 
-##Concept
+## Concept
 
-###_The world is flat and you are a bird. There are no more humans and there is no more water or vegetation. Only an endless deserted mountain scape. Just that it’s not endless. And behind it there’s nothing._
+### _The world is flat and you are a bird. There are no more humans and there is no more water or vegetation. Only an endless deserted mountain scape. Just that it’s not endless. And behind it there’s nothing._
 
 Floating is the prototype of a video-art installation: 
 a white room, a very--good quality rendering, in a loop, on a big white wall making the viewer float through known and unknown surfaces.
@@ -15,13 +15,14 @@ a white room, a very--good quality rendering, in a loop, on a big white wall mak
 Conceptually, this idea has two different strong references:
 Firstly, when I was a child, next to my school there was this huge church that had a very tall brick wall without any window. Going close to it, because of its imensity and the way the bricks were organized similarly to a pavement, one could feel like they are flying. And that’s a memory I always wanted to find ways to recreate.
 As a second inspiration, there is this video with the ducks from Nick Cave’s song, where they fly across lands from a ducks perspective, which I also find fascinating. 
+
 ![Nick Cave Link](https://www.youtube.com/watch?v=P0v9vd4JEeo )
 
 Mock-up of the set-up:
 ![Exhibition-Mock-up](...img/1.png)
 ![Exhibition-Mock-up](...img/2.png)
 
-##Implementation
+## Implementation
 
 One of the things that fascinated me in this course was noise. SImilarly, I would say, to our musical computin class, where by combining and playing around with different noises one could create a relatable soundscape, I like the way noise can create things that we perceive and relate to. Noise can tell a story.
 So I wanted to find a way to play with that.
@@ -55,13 +56,13 @@ Then followed the camera movement. On the same structure as what I tried impleme
 
 When I thought I am finally done, I had to render. That was a bit hussle. I had to watch many tutorials to understand how to render an animation properly [How to render](https://www.youtube.com/watch?v=JCLSJg9sdNI) [Render correctly]https://www.youtube.com/watch?v=THgQ5t5WIMw&t=136s AND I did two fragment renderings that I lost haha because I haven’t put an output folder and I just didn’t find them anymore. It all took a lot lot lot of time and I eventually simplified the whole set in order to make it faster (300 frames at 20% took 12h and a half).
 
-##Results
+## Results
 
 ![result_short1](.../img/0057-0083.mkv)
 ![result_short2](.../img/0001-0059.mkv)
 
 
-##Project Reflection & Discussion
+## Project Reflection & Discussion
 
 I am not happy of the results but I am happy of my learning experience.
 
@@ -73,7 +74,7 @@ I feel like Houdini was more clear when it came to the procedural aspect, I felt
 Overall, I feel like this task was depressing, as I was very excited to follow along and I was checking tutorials, I knew the steps etc but when actually implementing it everything would crash without me understanding why. 
 In the future, I would like to recreate this project in a better rendering and more detailed structure (I had to simplify it a lot due to the long render time). 
 
-##Lessons Learned
+## Lessons Learned
 
 Noise is cool. Due to this task, I want to explore more this realistic aspect of noise.
 
