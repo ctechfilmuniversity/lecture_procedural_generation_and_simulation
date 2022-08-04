@@ -19,8 +19,8 @@ As a second inspiration, there is this video with the ducks from Nick Cave’s s
 ![Nick Cave Link](https://www.youtube.com/watch?v=P0v9vd4JEeo )
 
 Mock-up of the set-up:
-![Exhibition-Mock-up](...img/1.png)
-![Exhibition-Mock-up](...img/2.png)
+![Exhibition-Mock-up](..img/1.png)
+![Exhibition-Mock-up](..img/2.png)
 
 ## Implementation
 
@@ -39,7 +39,7 @@ I tried two different scenarios:
 
 From this tutorial (which I am not sure why I haven’t saved the file, I got extremely frustrated with it and just closed it apparently :( ) [Tutorial Heightfields](https://www.youtube.com/watch?v=iogVyO_nK6g&t=339s)
 And even this ugly abstract:
-![houdini2](.../img/mountains.png)
+![houdini2](../img/mountains.png)
 
 But I had hard time making the camera follow the path, it was working and then failing or also the lights, render time was very long and the lights kind of always random. 
 
@@ -58,8 +58,8 @@ When I thought I am finally done, I had to render. That was a bit hussle. I had 
 
 ## Results
 
-![result_short1](.../img/0057-0083.mkv)
-![result_short2](.../img/0001-0059.mkv)
+![result_short1](../img/0057-0083.mkv)
+![result_short2](../img/0001-0059.mkv)
 
 
 ## Project Reflection & Discussion
