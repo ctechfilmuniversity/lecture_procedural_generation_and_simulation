@@ -48,10 +48,10 @@ After I tried for a very long time (I really mean very long time) to do my final
 (my “big” goal was a procedural geometry coral-style that is growing on sound and I just couldn’t make the camera work through the highlands) it crashed and crashed my laptop as well.The rendering time was endless and already I had spent way too much time on this and had nothing. 
 
 My experience with Blender is irrelevant, I opened the software several times and watched a few tutorials last year when I was assisting a group project of a 360 video and tried 2D animation in it. 
-Firstly, I tried to follow this introduction to Blender  ![Tutorial Mountains](https://www.youtube.com/watch?v=Rqhtw7dg6Wk). I was quite happy (and proud about it) that even if I previously to PGS had no experience with these kind of softwares, because of the Houdini experience I managed to get along there. By that I mean, even if it was a new software, it didn’t freak me out and seemed somewhat familiar.
- I found this: [Tutorial Mountains](https://www.youtube.com/watch?v=yrMee2gcS20) which I found a bit too realistic for my taste but gave me some insight on how Blender works and then I found the perfect one: [Procedural Mountains](https://www.youtube.com/watch?v=yrMee2gcS20)
+Firstly, I tried to follow this introduction to Blender  ![Blender Introduction](https://www.youtube.com/watch?v=Rqhtw7dg6Wk). I was quite happy (and proud about it) that even if I previously to PGS had no experience with these kind of softwares, because of the Houdini experience I managed to get along there. By that I mean, even if it was a new software, it didn’t freak me out and seemed somewhat familiar.
+ I found this: [Tutorial Mountains](https://www.youtube.com/watch?v=yrMee2gcS20) which I found a bit too realistic (and complex) for my taste but gave me some insight on how Blender works and then I found the perfect one: [Procedural Mountains](https://www.youtube.com/watch?v=yrMee2gcS20)
 
-I tested different lights but ended up remaining with the Sky Texture because I really liked the shadows and the highlights.
+I tested different lights but ended up remaining with the Sky Texture because I really liked the shadows and the highlights. However, I changed the nodes. 
 
 Then followed the camera movement. On the same structure as what I tried implementing in Houdini, I wanted to have the camera movement on a path through the whole structure. Even if there are many tutorials who claim to explain this, they skip valid information and short keys and things end up not working for no reason. [Camera Path](https://www.youtube.com/watch?v=FIWxL4M0t2s) this tutorial helped me to manage that, eventually. 
 
