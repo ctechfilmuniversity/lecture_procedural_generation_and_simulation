@@ -18,7 +18,7 @@ As a second inspiration, there is this video with the ducks from Nick Cave’s s
 
 [Nick Cave - By your side](https://www.youtube.com/watch?v=P0v9vd4JEeo )
 
-Mock-up of the set-up:
+Mock-up of an ideal set-up:
 ![Exhibition-Mock-up](img/1.png)
 ![Exhibition-Mock-up](img/2.png)
 
@@ -29,8 +29,8 @@ So I wanted to find a way to play with that.
 
 Initially, inspired by this tutorial [Tutorial_Coral](https://www.youtube.com/watch?v=l-rt4jSkhPE) and this [Tutorial_Coral2](https://www.youtube.com/watch?v=NqdnTXuxn6k&list=PLdFfFRXT0K_gyA6VVBnYVDgAEGYeaJlKN&index=10) I tried to create a sort of noisy-figure that would grow at the same time connected to a song (with Simons tutorial).
 I failed terribly. 
-![coral-growing-thing](.../img/coral-thing.png)
-![audio-bug](.../img/bug.PNG)
+![coral-growing-thing](img/coral-thing.png)
+![audio-bug](img/bug.PNG)
 
 Going back to the noise course, I really felt like when manipulating the grid with “mountains”, it looks very much like… mountains. And I liked that, the God-effect of creating earth.
 I decided to leave the sound reactivity behind and to learn how to animate the camera, in order to create this bird-view sensation. 
@@ -39,7 +39,7 @@ I tried two different scenarios:
 
 From this tutorial (which I am not sure why I haven’t saved the file, I got extremely frustrated with it and just closed it apparently :( ) [Tutorial Heightfields](https://www.youtube.com/watch?v=iogVyO_nK6g&t=339s)
 And even this ugly abstract:
-![houdini2](../img/mountains.png)
+![houdini2](img/mountains.png)
 
 But I had hard time making the camera follow the path, it was working and then failing or also the lights, render time was very long and the lights kind of always random. 
 
@@ -58,8 +58,8 @@ When I thought I am finally done, I had to render. That was a bit hussle. I had 
 
 ## Results
 
-![result_short1](../img/0057-0083.mkv)
-![result_short2](../img/0001-0059.mkv)
+![result_short1](img/0057-0083.mkv)
+![result_short2](img/0001-0059.mkv)
 
 
 ## Project Reflection & Discussion
