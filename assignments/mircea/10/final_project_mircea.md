@@ -39,7 +39,7 @@ I tried two different scenarios:
 
 From this tutorial (which I am not sure why I haven’t saved the file, I got extremely frustrated with it and just closed it apparently :( ) [Tutorial Heightfields](https://www.youtube.com/watch?v=iogVyO_nK6g&t=339s)
 And even this simple abstract shape for a potential "trippy" travel:
-![houdini2](img/mountains basic.PNG)
+![houdini2](img/mountains.PNG)
 ![houdini2](img/mountains_detail.png)
 
 But I had hard time making the camera follow the path, it was working and then failing + the lights, render time was very long and the lights kind of always random. 
