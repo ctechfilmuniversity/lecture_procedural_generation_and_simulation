@@ -7,7 +7,7 @@ Bird-view simulation
 
 ## Concept
 
-### _The world is flat and you are a bird. There are no more humans and there is no more water or vegetation. Only an endless deserted mountain scape. Just that it’s not endless. And behind it there’s nothing._
+### _The world is flat and you are a bird. There are no humans and there is no water or vegetation. Only an endless deserted mountain scape. Just that it’s not endless. And behind it there’s nothing?_
 
 Floating is the prototype of a video-art installation: 
 a white room, a very--good quality rendering, in a loop, on a big white wall making the viewer float through known and unknown surfaces.
@@ -59,6 +59,34 @@ When I thought I am finally done, I had to render. That was a bit hussle. I had 
 
 ## Results
 
+The final rendering with the current camera path:
+![result_short1](img/final_render.gif)
+Detail of the rendering:
+![result_short1](img/detail_render.gif)
+
+I really like the view of the landscape:
+![landscape1](img/0268.png)
+![landscape2](img/0239.png)
+![landscape3](img/0144.png)
+
+
+The negative side:
+The sky:
+![landscape5](img/0004.png)
+The land:
+![landscape4](img/0005.png)
+![landscape6](img/0033.png)
+
+Through a happy accident I discovered the negative of this landscape and I like the contrast between the two a lot:
+the pink-sunny side, feels very warm
+the dark side seems misterious
+![landscape6](img/0028.png)
+![contrast](img/0054.png)
+![contrast](img/0053.png)
+
+
+Videos here:
+![result_full](img/0001-0300.mkv)
 ![result_short1](img/0057-0083.mkv)
 ![result_short2](img/0001-0059.mkv)
 
