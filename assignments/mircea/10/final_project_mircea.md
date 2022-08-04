@@ -39,8 +39,8 @@ I tried two different scenarios:
 
 From this tutorial (which I am not sure why I haven’t saved the file, I got extremely frustrated with it and just closed it apparently :( ) [Tutorial Heightfields](https://www.youtube.com/watch?v=iogVyO_nK6g&t=339s)
 And even this simple abstract shape for a potential "trippy" travel:
-![houdini2](img/mountains.PNG)
-![houdini2](img/mountains_detail.png)
+![mountains](img/mountains basic.PNG)
+![mountains](img/mountains_detail.png)
 
 But I had hard time making the camera follow the path, it was working and then failing + the lights, render time was very long and the lights kind of always random. 
 
@@ -49,7 +49,7 @@ After I tried for a very long time (I really mean very long time) to do my final
 
 My experience with Blender is irrelevant, I opened the software several times and watched a few tutorials last year when I was assisting a group project of a 360 video and tried 2D animation in it. 
 Firstly, I tried to follow this introduction to Blender  ![Blender Introduction](https://www.youtube.com/watch?v=Rqhtw7dg6Wk). I was quite happy (and proud about it) that even if I previously to PGS had no experience with these kind of softwares, because of the Houdini experience I managed to get along there. By that I mean, even if it was a new software, it didn’t freak me out and seemed somewhat familiar.
- I found this: [Tutorial Mountains](https://www.youtube.com/watch?v=yrMee2gcS20) which I found a bit too realistic (and complex) for my taste but gave me some insight on how Blender works and then I found the perfect one: [Procedural Mountains](https://www.youtube.com/watch?v=yrMee2gcS20)
+I found this: [Tutorial Mountains](https://www.youtube.com/watch?v=yrMee2gcS20) which I found a bit too realistic (and complex) for my taste but gave me some insight on how Blender works and then I found the perfect one: [Procedural Mountains](https://www.youtube.com/watch?v=yrMee2gcS20)
 
 I tested different lights but ended up remaining with the Sky Texture because I really liked the shadows and the highlights. However, I changed the nodes. 
 
