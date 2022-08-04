@@ -116,7 +116,7 @@ Videos here:
 
 ## Project Reflection & Discussion
 
-I am not happy of the results but I am happy of my learning experience.
+Initially I was not happy of the results, now I think it's ok for a first try, but I am happy of my learning experience.
 
 PGS was my first experience into this kind of softwares (I include here everything Houdini, Blender etc) so that I enjoyed a lot the process and started to think “procedurally” in general. 
 I am happy that I got to have an introduction to Blender now and it was very nice to see how connecting it with what I already knew from Houdini made it much easier than it was last year when I tried understanding it. 
