@@ -38,10 +38,11 @@ I decided to leave the sound reactivity behind and to learn how to animate the c
 I tried two different scenarios: 
 
 From this tutorial (which I am not sure why I haven’t saved the file, I got extremely frustrated with it and just closed it apparently :( ) [Tutorial Heightfields](https://www.youtube.com/watch?v=iogVyO_nK6g&t=339s)
-And even this ugly abstract:
-![houdini2](img/mountains.png)
+And even this simple abstract shape for a potential "trippy" travel:
+![houdini2](img/mountains basic.PNG)
+![houdini2](img/mountains_detail.png)
 
-But I had hard time making the camera follow the path, it was working and then failing or also the lights, render time was very long and the lights kind of always random. 
+But I had hard time making the camera follow the path, it was working and then failing + the lights, render time was very long and the lights kind of always random. 
 
 After I tried for a very long time (I really mean very long time) to do my final project in Houdini, I decided to move to Blender. Why? Houdini was crashing continuously, everything was very very slow and when I eventually did something in the direction I wanted to go 
 (my “big” goal was a procedural geometry coral-style that is growing on sound and I just couldn’t make the camera work through the highlands) it crashed and crashed my laptop as well.The rendering time was endless and already I had spent way too much time on this and had nothing. 
