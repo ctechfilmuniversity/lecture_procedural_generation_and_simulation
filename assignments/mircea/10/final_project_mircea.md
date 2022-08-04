@@ -76,6 +76,11 @@ I really like the view of the landscape:
 
 ![landscape3](img/0144.png)
 
+![landscape3](img/0129.png)
+
+![landscape3](img/219.png)
+
+![landscape3](img/0119.png)
 
 The negative side:
 
@@ -98,6 +103,9 @@ the dark side seems misterious
 ![contrast](img/0054.png)
 
 ![contrast](img/0053.png)
+
+![contrast](img/0104.png)
+
 
 
 Videos here:
